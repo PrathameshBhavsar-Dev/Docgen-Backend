@@ -42,6 +42,6 @@ public class User {
     private String accountNo;
     private String pfType;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Document> documents;
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+//    private List<Document> documents;
 }
