@@ -25,14 +25,14 @@ public class User {
     private String dateOfBirth;
 
     // Address
-    private String currentAddress;
-    private String permanentAddress;
+    private String address;
+//    private String permanentAddress;
 
     // Employment Details
     private String offerDate;
     private String joiningDate;
-    private Double joiningCtc;
-    private Double currentCtc;
+//    private Double joiningCtc;
+    private Double ctc;
     private String joiningDesignation;
     private String currentDesignation;
     private String department;
