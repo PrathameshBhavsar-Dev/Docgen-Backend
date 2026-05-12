@@ -32,5 +32,5 @@ public class UserProfileRequest {
     private String accountNo;
     private String pfType;
 
-    private List<String> documents; // selected docs
+//    private List<String> documents; // selected docs
 }

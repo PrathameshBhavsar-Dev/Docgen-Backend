@@ -2,7 +2,6 @@ package com.example.Docgen_Backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Data
