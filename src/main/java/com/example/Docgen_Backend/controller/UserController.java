@@ -1,52 +1,54 @@
 package com.example.Docgen_Backend.controller;
 
-import com.example.Docgen_Backend.dto.UserProfileRequest;
-import com.example.Docgen_Backend.entity.User;
-import com.example.Docgen_Backend.service.impl.UserService;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.Docgen_Backend.dto.ApiResponse;
+import com.example.Docgen_Backend.dto.CreateProfileRequest;
+import com.example.Docgen_Backend.entity.UserProfile;
+import com.example.Docgen_Backend.service.UserService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/users")
-@CrossOrigin("*")
+@RequestMapping("/api/v2/users")
+@RequiredArgsConstructor
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
 
-    // Create User
-    @PostMapping
-    public User createUser(@RequestBody UserProfileRequest request) {
-        return userService.saveUser(request);
+    @PostMapping("/create-profile")
+    public ResponseEntity<ApiResponse<Object>> createProfile(
+            @RequestBody CreateProfileRequest request
+    ) {
+        userService.createProfile(request);
+
+        ApiResponse<Object> response = new ApiResponse<>(
+                true,
+                201,
+                "Profile created successfully",
+                Map.of("employeeId", request.getEmployeeId())
+        );
+
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
-    // Get All Users
-    @GetMapping
-    public List<User> getAllUsers() {
-        return userService.getAllUsers();
-    }
-
-    // Get User By ID
     @GetMapping("/{id}")
-    public User getUserById(@PathVariable Long id) {
-        return userService.getUserById(id);
-    }
+    public ResponseEntity<ApiResponse<Object>> getProfileById(
+            @PathVariable Long id
+    ) {
+        UserProfile profile = userService.getUserById(id)
+                .orElseThrow(() -> new RuntimeException("Profile not found"));
 
-    // Update User
-    @PutMapping("/{id}")
-    public User updateUser(
-            @PathVariable Long id,
-            @RequestBody UserProfileRequest request) {
+        ApiResponse<Object> response = new ApiResponse<>(
+                true,
+                200,
+                "Profile fetched successfully",
+                profile
+        );
 
-        return userService.updateUser(id, request);
-    }
-
-    // Delete User
-    @DeleteMapping("/{id}")
-    public String deleteUser(@PathVariable Long id) {
-        return userService.deleteUser(id);
+        return ResponseEntity.ok(response);
     }
 }
