@@ -40,6 +40,9 @@ public class UserProfile {
     private String bankName;
     private String accountNo;
 
+    @Enumerated(EnumType.STRING)
+    private IdentityType identity;
+
     // 🔥 IMPORTANT: PF TYPE (GLOBAL)
     @Enumerated(EnumType.STRING)
     private PFType pfType;

@@ -5,6 +5,10 @@ import com.example.Docgen_Backend.entity.*;
 import com.example.Docgen_Backend.repository.UserRepository;
 import com.example.Docgen_Backend.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -40,13 +44,15 @@ public class UserServiceImpl implements UserService {
         user.setJoiningDate(request.getJoiningDate());
         user.setPanNo(request.getPanNo());
 
+        // Identity
+        user.setIdentity(IdentityType.valueOf(request.getIdentity().toUpperCase()));
 
-        // ✅ Company (store full name via enum)
+        // Company
         user.setCompany(
                 CompanyType.fromFullName(request.getCompany())
         );
 
-        // ✅ PF Type
+        // PF Type
         user.setPfType(
                 PFType.valueOf(request.getPfType().toUpperCase())
         );
@@ -122,6 +128,18 @@ public class UserServiceImpl implements UserService {
     public Optional<UserProfile> getUserById(Long id) {
         Optional<UserProfile> profile = userRepository.findById(id);
         return profile;
+    }
+
+    @Override
+    public Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction) {
+
+        Sort sort = direction.equalsIgnoreCase("asc") ?
+                Sort.by(sortBy).ascending() :
+                Sort.by(sortBy).descending();
+
+        Pageable pageable = PageRequest.of(page, size, sort);
+
+        return userRepository.findAll(pageable);
     }
 
 }

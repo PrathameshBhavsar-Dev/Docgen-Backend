@@ -29,6 +29,7 @@ public class CreateProfileRequest {
     // ✅ NEW
     private String company;   // full name (e.g. "SmartMatrix Digital Services Pvt. Ltd.")
     private String pfType;    // WITH_PF / WITHOUT_PF
+    private String identity;
 
     // =========================
     // DOCUMENT SELECTION
