@@ -1,12 +1,15 @@
 package com.example.Docgen_Backend.controller;
 
 import com.example.Docgen_Backend.config.JwtUtil;
+import com.example.Docgen_Backend.dto.ApiResponse;
 import com.example.Docgen_Backend.dto.AuthRequest;
+import com.example.Docgen_Backend.dto.AuthResponse;
 import com.example.Docgen_Backend.dto.RegisterRequest;
 import com.example.Docgen_Backend.entity.Role;
 import com.example.Docgen_Backend.entity.User;
 import com.example.Docgen_Backend.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -31,30 +34,41 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    // ✅ REGISTER API
     @PostMapping("/register")
-    public String register(@RequestBody RegisterRequest request) {
+    public ResponseEntity<ApiResponse<Object>> register(@RequestBody RegisterRequest request) {
 
-        // Check if user already exists
         if (userRepository.findByUsername(request.getUsername()).isPresent()) {
-            throw new RuntimeException("Username already exists");
+            return ResponseEntity
+                    .badRequest()
+                    .body(new ApiResponse<>(
+                            false,
+                            400,
+                            "Username already exists",
+                            null
+                    ));
         }
 
         User user = new User();
         user.setUsername(request.getUsername());
-
-        // 🔐 IMPORTANT: Encode password
         user.setPassword(passwordEncoder.encode(request.getPassword()));
-
-        // Convert role string → ENUM
         user.setRole(Role.valueOf(request.getRole().toUpperCase()));
 
         userRepository.save(user);
 
-        return "User registered successfully";
+        return ResponseEntity.ok(
+                new ApiResponse<>(
+                        true,
+                        200,
+                        "User registered successfully",
+                        null
+                )
+        );
     }
 
+    // ✅ LOGIN API
     @PostMapping("/login")
-    public String login(@RequestBody AuthRequest request) {
+    public ResponseEntity<ApiResponse<AuthResponse>> login(@RequestBody AuthRequest request) {
 
         authManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
@@ -65,6 +79,21 @@ public class AuthController {
 
         User user = userRepository.findByUsername(request.getUsername()).get();
 
-        return jwtUtil.generateToken(user.getUsername(), user.getRole().name());
+        String token = jwtUtil.generateToken(user.getUsername(), user.getRole().name());
+
+        AuthResponse authResponse = new AuthResponse(
+                token,
+                user.getUsername(),
+                user.getRole().name()
+        );
+
+        return ResponseEntity.ok(
+                new ApiResponse<>(
+                        true,
+                        200,
+                        "Login successful",
+                        authResponse
+                )
+        );
     }
 }

@@ -26,103 +26,151 @@ public class UserServiceImpl implements UserService {
     public void createProfile(CreateProfileRequest request) {
 
         // =========================
-        // 1️⃣ CREATE USER PROFILE
+        // 1️⃣ VALIDATION
+        // =========================
+        if (request.getEmployeeName() == null || request.getEmployeeName().isEmpty()) {
+            throw new IllegalArgumentException("Employee name is required");
+        }
+
+        if (request.getEmail() == null || request.getEmail().isEmpty()) {
+            throw new IllegalArgumentException("Email is required");
+        }
+
+        // =========================
+        // 2️⃣ CREATE USER PROFILE
         // =========================
         UserProfile user = new UserProfile();
 
-        user.setEmployeeName(request.getEmployeeName());
-        user.setEmail(request.getEmail());
-        user.setPhone(request.getMobileNo());
-        user.setEmployeeId(request.getEmployeeId());
-        user.setDesignation(request.getDesignation());
-        user.setDepartment(request.getDepartment());
-        user.setAccountNo(request.getAccountNo());
-        user.setBankName(request.getBankName());
-        user.setAddress(request.getAddress());
-        user.setCTC(request.getCTC());
-        user.setDateOfBirth(request.getDateOfBirth());
-        user.setOfferDate(request.getOfferDate());
-        user.setJoiningDate(request.getJoiningDate());
-        user.setPanNo(request.getPanNo());
+        try {
+            user.setEmployeeName(request.getEmployeeName());
+            user.setEmail(request.getEmail());
+            user.setPhone(request.getMobileNo());
+            user.setEmployeeId(request.getEmployeeId());
+            user.setDesignation(request.getDesignation());
+            user.setDepartment(request.getDepartment());
+            user.setAccountNo(request.getAccountNo());
+            user.setBankName(request.getBankName());
+            user.setAddress(request.getAddress());
+            user.setCTC(request.getCTC());
+            user.setDateOfBirth(request.getDateOfBirth());
+            user.setOfferDate(request.getOfferDate());
+            user.setJoiningDate(request.getJoiningDate());
+            user.setPanNo(request.getPanNo());
 
-        // Identity
-        user.setIdentity(IdentityType.valueOf(request.getIdentity().toUpperCase()));
+            // ENUM SAFE PARSING
+            user.setIdentity(
+                    IdentityType.valueOf(request.getIdentity().toUpperCase())
+            );
 
-        // Company
-        user.setCompany(
-                CompanyType.fromFullName(request.getCompany())
-        );
+            user.setCompany(
+                    CompanyType.fromFullName(request.getCompany())
+            );
 
-        // PF Type
-        user.setPfType(
-                PFType.valueOf(request.getPfType().toUpperCase())
-        );
+            user.setPfType(
+                    PFType.valueOf(request.getPfType().toUpperCase())
+            );
+
+        } catch (Exception e) {
+            throw new IllegalArgumentException("Invalid enum or input value provided");
+        }
 
         // =========================
-        // 2️⃣ HANDLE DOCUMENTS
+        // 3️⃣ HANDLE DOCUMENTS
         // =========================
+        if (request.getDocuments() == null || request.getDocuments().isEmpty()) {
+            throw new IllegalArgumentException("At least one document must be provided");
+        }
+
         for (String doc : request.getDocuments()) {
 
             Map<String, Object> data =
                     (Map<String, Object>) request.getDocumentData().get(doc);
 
-            if (data == null) continue;
+            if (data == null) {
+                throw new IllegalArgumentException("Missing data for document: " + doc);
+            }
 
-            switch (doc) {
+            try {
+                switch (doc) {
 
-                // ================= OFFER LETTER =================
-                case "OFFER_LETTER":
+                    // ================= OFFER LETTER =================
+                    case "OFFER_LETTER":
 
-                    OfferLetter offer = new OfferLetter();
-                    offer.setIssueDate(LocalDate.parse((String) data.get("issueDate")));
-                    offer.setProbationPeriod(
-                            Integer.parseInt(data.get("probationPeriod").toString())
-                    );
+                        if (data.get("issueDate") == null || data.get("probationPeriod") == null) {
+                            throw new IllegalArgumentException("Missing fields in OFFER_LETTER");
+                        }
 
-                    // 🔥 BI-DIRECTIONAL LINK
-                    offer.setUserProfile(user);
-                    user.setOfferLetter(offer);
+                        OfferLetter offer = new OfferLetter();
 
-                    break;
+                        offer.setIssueDate(
+                                LocalDate.parse((String) data.get("issueDate"))
+                        );
 
-                // ================= INTERNSHIP LETTER =================
-                case "INTERNSHIP_LETTER":
+                        offer.setProbationPeriod(
+                                Integer.parseInt(data.get("probationPeriod").toString())
+                        );
 
-                    InternshipLetter internship = new InternshipLetter();
-                    internship.setInternshipType(
-                            InternshipType.valueOf((String) data.get("internshipType"))
-                    );
-                    internship.setStartDate(LocalDate.parse((String) data.get("startDate")));
-                    internship.setEndDate(LocalDate.parse((String) data.get("endDate")));
-                    internship.setIssueDate(LocalDate.parse((String) data.get("issueDate")));
+                        offer.setUserProfile(user);
+                        user.setOfferLetter(offer);
 
-                    // 🔥 LINK
-                    internship.setUserProfile(user);
-                    user.setInternshipLetter(internship);
+                        break;
 
-                    break;
+                    // ================= INTERNSHIP LETTER =================
+                    case "INTERNSHIP_LETTER":
 
-                // ================= SALARY SLIP =================
-                case "SALARY_SLIP":
+                        InternshipLetter internship = new InternshipLetter();
 
-                    SalarySlip salary = new SalarySlip();
+                        internship.setInternshipType(
+                                InternshipType.valueOf((String) data.get("internshipType"))
+                        );
 
-                    salary.setStartMonth((String) data.get("startMonth"));
-                    salary.setEndMonth((String) data.get("endMonth"));
+                        internship.setStartDate(
+                                LocalDate.parse((String) data.get("startDate"))
+                        );
 
-                    // 🔥 LINK
-                    salary.setUserProfile(user);
+                        internship.setEndDate(
+                                LocalDate.parse((String) data.get("endDate"))
+                        );
 
-                    user.getSalarySlips().add(salary);
+                        internship.setIssueDate(
+                                LocalDate.parse((String) data.get("issueDate"))
+                        );
 
-                    break;
+                        internship.setUserProfile(user);
+                        user.setInternshipLetter(internship);
+
+                        break;
+
+                    // ================= SALARY SLIP =================
+                    case "SALARY_SLIP":
+
+                        SalarySlip salary = new SalarySlip();
+
+                        salary.setStartMonth((String) data.get("startMonth"));
+                        salary.setEndMonth((String) data.get("endMonth"));
+
+                        salary.setUserProfile(user);
+                        user.getSalarySlips().add(salary);
+
+                        break;
+
+                    default:
+                        throw new IllegalArgumentException("Invalid document type: " + doc);
+                }
+
+            } catch (Exception e) {
+                throw new RuntimeException("Error processing document: " + doc + " - " + e.getMessage());
             }
         }
 
         // =========================
-        // 3️⃣ SAVE EVERYTHING (CASCADE)
+        // 4️⃣ SAVE
         // =========================
-        userRepository.save(user);
+        try {
+            userRepository.save(user);
+        } catch (Exception e) {
+            throw new RuntimeException("Database error while saving user profile");
+        }
     }
 
     @Override
