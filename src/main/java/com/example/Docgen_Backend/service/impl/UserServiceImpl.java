@@ -2,6 +2,7 @@ package com.example.Docgen_Backend.service.impl;
 
 import com.example.Docgen_Backend.dto.CreateProfileRequest;
 import com.example.Docgen_Backend.entity.*;
+import com.example.Docgen_Backend.exception.UserNotFoundException;
 import com.example.Docgen_Backend.repository.UserRepository;
 import com.example.Docgen_Backend.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -125,9 +126,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<UserProfile> getUserById(Long id) {
-        Optional<UserProfile> profile = userRepository.findById(id);
-        return profile;
+    public UserProfile getUserById(Long id) {
+
+        return userRepository.findById(id)
+                .orElseThrow(() ->
+                        new UserNotFoundException("User not found with id: " + id)
+                );
     }
 
     @Override

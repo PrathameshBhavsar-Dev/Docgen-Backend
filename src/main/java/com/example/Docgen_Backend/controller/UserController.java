@@ -20,10 +20,12 @@ public class UserController {
 
     private final UserService userService;
 
+    // CREATE PROFILE
     @PostMapping("/create-profile")
     public ResponseEntity<ApiResponse<Object>> createProfile(
             @RequestBody CreateProfileRequest request
     ) {
+
         userService.createProfile(request);
 
         ApiResponse<Object> response = new ApiResponse<>(
@@ -36,12 +38,16 @@ public class UserController {
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    // GET USER BY ID
     @GetMapping("/{id}")
     public ResponseEntity<ApiResponse<Object>> getProfileById(
             @PathVariable Long id
     ) {
-        UserProfile profile = userService.getUserById(id)
-                .orElseThrow(() -> new RuntimeException("Profile not found"));
+
+        // No orElseThrow here
+        // Service layer already handles exception
+
+        UserProfile profile = userService.getUserById(id);
 
         ApiResponse<Object> response = new ApiResponse<>(
                 true,
@@ -53,6 +59,7 @@ public class UserController {
         return ResponseEntity.ok(response);
     }
 
+    // GET ALL USERS WITH PAGINATION
     @GetMapping
     public ResponseEntity<ApiResponse<Object>> getAllUserProfiles(
             @RequestParam(defaultValue = "0") int page,
@@ -65,6 +72,7 @@ public class UserController {
                 userService.getAllUserProfiles(page, size, sortBy, direction);
 
         Map<String, Object> data = new HashMap<>();
+
         data.put("content", pageResult.getContent());
         data.put("currentPage", pageResult.getNumber());
         data.put("totalItems", pageResult.getTotalElements());
@@ -79,5 +87,4 @@ public class UserController {
 
         return ResponseEntity.ok(response);
     }
-
 }
