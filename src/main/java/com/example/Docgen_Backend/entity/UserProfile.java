@@ -30,7 +30,6 @@ public class UserProfile {
     // JOB INFO
     private String designation;
     private String department;
-
     private String offerDate;
     private String joiningDate;
 
