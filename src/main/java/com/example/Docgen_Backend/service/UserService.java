@@ -8,6 +8,6 @@ import java.util.Optional;
 
 public interface UserService {
     void createProfile(CreateProfileRequest request);
-    Optional<UserProfile> getUserById(Long id);
+    UserProfile getUserById(Long id);
     Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction);
 }
