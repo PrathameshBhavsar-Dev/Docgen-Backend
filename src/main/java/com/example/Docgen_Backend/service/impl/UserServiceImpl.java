@@ -6,15 +6,11 @@ import com.example.Docgen_Backend.exception.UserNotFoundException;
 import com.example.Docgen_Backend.repository.UserRepository;
 import com.example.Docgen_Backend.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.Map;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -22,12 +18,30 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
+    // =========================
+    // CREATE PROFILE
+    // =========================
     @Override
     public void createProfile(CreateProfileRequest request) {
 
-        // =========================
-        // 1️⃣ VALIDATION
-        // =========================
+        validateRequest(request);
+
+        UserProfile user = buildUser(request);
+
+        processDocuments(request, user);
+
+        try {
+            userRepository.save(user);
+        } catch (Exception e) {
+            throw new RuntimeException("Database error while saving user profile");
+        }
+    }
+
+    // =========================
+    // VALIDATION
+    // =========================
+    private void validateRequest(CreateProfileRequest request) {
+
         if (request.getEmployeeName() == null || request.getEmployeeName().isEmpty()) {
             throw new IllegalArgumentException("Employee name is required");
         }
@@ -36,9 +50,16 @@ public class UserServiceImpl implements UserService {
             throw new IllegalArgumentException("Email is required");
         }
 
-        // =========================
-        // 2️⃣ CREATE USER PROFILE
-        // =========================
+        if (request.getDocuments() == null || request.getDocuments().isEmpty()) {
+            throw new IllegalArgumentException("At least one document must be provided");
+        }
+    }
+
+    // =========================
+    // BUILD USER
+    // =========================
+    private UserProfile buildUser(CreateProfileRequest request) {
+
         UserProfile user = new UserProfile();
 
         try {
@@ -57,7 +78,6 @@ public class UserServiceImpl implements UserService {
             user.setJoiningDate(request.getJoiningDate());
             user.setPanNo(request.getPanNo());
 
-            // ENUM SAFE PARSING
             user.setIdentity(
                     IdentityType.valueOf(request.getIdentity().toUpperCase())
             );
@@ -74,12 +94,13 @@ public class UserServiceImpl implements UserService {
             throw new IllegalArgumentException("Invalid enum or input value provided");
         }
 
-        // =========================
-        // 3️⃣ HANDLE DOCUMENTS
-        // =========================
-        if (request.getDocuments() == null || request.getDocuments().isEmpty()) {
-            throw new IllegalArgumentException("At least one document must be provided");
-        }
+        return user;
+    }
+
+    // =========================
+    // PROCESS DOCUMENTS
+    // =========================
+    private void processDocuments(CreateProfileRequest request, UserProfile user) {
 
         for (String doc : request.getDocuments()) {
 
@@ -90,98 +111,164 @@ public class UserServiceImpl implements UserService {
                 throw new IllegalArgumentException("Missing data for document: " + doc);
             }
 
-            try {
-                switch (doc) {
+            switch (doc) {
 
-                    // ================= OFFER LETTER =================
-                    case "OFFER_LETTER":
+                case "OFFER_LETTER":
+                    handleOfferLetter(user, data);
+                    break;
 
-                        if (data.get("issueDate") == null || data.get("probationPeriod") == null) {
-                            throw new IllegalArgumentException("Missing fields in OFFER_LETTER");
-                        }
+                case "APPOINTMENT_LETTER":
+                    handleAppointmentLetter(user, data);
+                    break;
 
-                        OfferLetter offer = new OfferLetter();
+                case "INTERNSHIP_LETTER":
+                    handleInternshipLetter(user, data);
+                    break;
 
-                        offer.setIssueDate(
-                                LocalDate.parse((String) data.get("issueDate"))
-                        );
+                case "COMPLETION_LETTER":
+                    handleCompletionLetter(user, data);
+                    break;
 
-                        offer.setProbationPeriod(
-                                Integer.parseInt(data.get("probationPeriod").toString())
-                        );
+                case "CONFIRMATION_LETTER":
+                    handleConfirmationLetter(user, data);
+                    break;
 
-                        offer.setUserProfile(user);
-                        user.setOfferLetter(offer);
+                case "EXPERIENCE_LETTER":
+                    handleExperienceLetter(user, data);
+                    break;
 
-                        break;
+                case "RELIEVING_LETTER":
+                    handleRelievingLetter(user, data);
+                    break;
 
-                    // ================= INTERNSHIP LETTER =================
-                    case "INTERNSHIP_LETTER":
+                case "FULL_AND_FINAL":
+                    handleFullAndFinal(user, data);
+                    break;
 
-                        InternshipLetter internship = new InternshipLetter();
+                case "SALARY_SLIP":
+                    handleSalarySlip(user, data);
+                    break;
 
-                        internship.setInternshipType(
-                                InternshipType.valueOf((String) data.get("internshipType"))
-                        );
+                case "GENERIC":
+                    handleGenericDocument(user, data, doc);
+                    break;
 
-                        internship.setStartDate(
-                                LocalDate.parse((String) data.get("startDate"))
-                        );
-
-                        internship.setEndDate(
-                                LocalDate.parse((String) data.get("endDate"))
-                        );
-
-                        internship.setIssueDate(
-                                LocalDate.parse((String) data.get("issueDate"))
-                        );
-
-                        internship.setUserProfile(user);
-                        user.setInternshipLetter(internship);
-
-                        break;
-
-                    // ================= SALARY SLIP =================
-                    case "SALARY_SLIP":
-
-                        SalarySlip salary = new SalarySlip();
-
-                        salary.setStartMonth((String) data.get("startMonth"));
-                        salary.setEndMonth((String) data.get("endMonth"));
-
-                        salary.setUserProfile(user);
-                        user.getSalarySlips().add(salary);
-
-                        break;
-
-                    default:
-                        throw new IllegalArgumentException("Invalid document type: " + doc);
-                }
-
-            } catch (Exception e) {
-                throw new RuntimeException("Error processing document: " + doc + " - " + e.getMessage());
+                default:
+                    throw new IllegalArgumentException("Invalid document type: " + doc);
             }
-        }
-
-        // =========================
-        // 4️⃣ SAVE
-        // =========================
-        try {
-            userRepository.save(user);
-        } catch (Exception e) {
-            throw new RuntimeException("Database error while saving user profile");
         }
     }
 
+    // =========================
+    // DOCUMENT HANDLERS
+    // =========================
+
+    private void handleOfferLetter(UserProfile user, Map<String, Object> data) {
+        OfferLetter offer = new OfferLetter();
+        offer.setProbationPeriod(Integer.parseInt(data.get("probationPeriod").toString()));
+        offer.setUserProfile(user);
+        user.setOfferLetter(offer);
+    }
+
+    private void handleAppointmentLetter(UserProfile user, Map<String, Object> data) {
+        AppointmentLetter letter = new AppointmentLetter();
+        letter.setProbationPeriod(Integer.parseInt(data.get("probationPeriod").toString()));
+        letter.setUserProfile(user);
+        user.setAppointmentLetter(letter);
+    }
+
+    private void handleInternshipLetter(UserProfile user, Map<String, Object> data) {
+        InternshipLetter internship = new InternshipLetter();
+
+        internship.setInternshipType(
+                InternshipType.valueOf((String) data.get("internshipType"))
+        );
+
+        internship.setStartDate(LocalDate.parse((String) data.get("startDate")));
+        internship.setEndDate(LocalDate.parse((String) data.get("endDate")));
+
+        internship.setUserProfile(user);
+        user.setInternshipLetter(internship);
+    }
+
+    private void handleCompletionLetter(UserProfile user, Map<String, Object> data) {
+        CompletionLetter letter = new CompletionLetter();
+        letter.setStartDate(LocalDate.parse((String) data.get("startDate")));
+        letter.setCompletionDate(LocalDate.parse((String) data.get("completionDate")));
+        letter.setUserProfile(user);
+        user.setCompletionLetter(letter);
+    }
+
+    private void handleConfirmationLetter(UserProfile user, Map<String, Object> data) {
+        ConfirmationLetter letter = new ConfirmationLetter();
+        letter.setEffectiveDate(LocalDate.parse((String) data.get("effectiveDate")));
+        letter.setUserProfile(user);
+        user.setConfirmationLetter(letter);
+    }
+
+    private void handleExperienceLetter(UserProfile user, Map<String, Object> data) {
+        ExperienceLetter letter = new ExperienceLetter();
+        letter.setRelievingDate(LocalDate.parse((String) data.get("relievingDate")));
+        letter.setUserProfile(user);
+        user.setExperienceLetter(letter);
+    }
+
+    private void handleRelievingLetter(UserProfile user, Map<String, Object> data) {
+        RelievingLetter letter = new RelievingLetter();
+        letter.setRelievingDate(LocalDate.parse((String) data.get("relievingDate")));
+        letter.setUserProfile(user);
+        user.setRelievingLetter(letter);
+    }
+
+    private void handleFullAndFinal(UserProfile user, Map<String, Object> data) {
+        FullAndFinalLetter fnf = new FullAndFinalLetter();
+
+        fnf.setFnfDate(LocalDate.parse((String) data.get("fnfDate")));
+        fnf.setMonth((String) data.get("month"));
+        fnf.setResignationDate(LocalDate.parse((String) data.get("resignationDate")));
+        fnf.setLeavingDate(LocalDate.parse((String) data.get("leavingDate")));
+        fnf.setPaidDays(Integer.parseInt(data.get("paidDays").toString()));
+        fnf.setTotalDaysInMonth(Integer.parseInt(data.get("totalDaysInMonth").toString()));
+
+        fnf.setUserProfile(user);
+        user.setFullAndFinalLetter(fnf);
+    }
+
+    private void handleSalarySlip(UserProfile user, Map<String, Object> data) {
+        SalarySlip salary = new SalarySlip();
+
+        salary.setStartMonth((String) data.get("startMonth"));
+        salary.setEndMonth((String) data.get("endMonth"));
+
+        salary.setUserProfile(user);
+        user.getSalarySlips().add(salary);
+    }
+
+    private void handleGenericDocument(UserProfile user, Map<String, Object> data, String docType) {
+        GenericDocument generic = new GenericDocument();
+
+        generic.setDocumentType(docType);
+        generic.setMetadata(data.toString());
+        generic.setCreatedAt(LocalDate.now());
+
+        generic.setUserProfile(user);
+        user.getGenericDocuments().add(generic);
+    }
+
+    // =========================
+    // GET USER
+    // =========================
     @Override
     public UserProfile getUserById(Long id) {
-
         return userRepository.findById(id)
                 .orElseThrow(() ->
                         new UserNotFoundException("User not found with id: " + id)
                 );
     }
 
+    // =========================
+    // PAGINATION
+    // =========================
     @Override
     public Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction) {
 
@@ -193,5 +280,4 @@ public class UserServiceImpl implements UserService {
 
         return userRepository.findAll(pageable);
     }
-
 }
