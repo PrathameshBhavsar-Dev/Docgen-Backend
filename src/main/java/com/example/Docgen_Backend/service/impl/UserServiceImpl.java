@@ -30,11 +30,7 @@ public class UserServiceImpl implements UserService {
 
         processDocuments(request, user);
 
-        try {
-            userRepository.save(user);
-        } catch (Exception e) {
-            throw new RuntimeException("Database error while saving user profile");
-        }
+        userRepository.save(user);
     }
 
     // =========================
@@ -78,17 +74,9 @@ public class UserServiceImpl implements UserService {
             user.setJoiningDate(request.getJoiningDate());
             user.setPanNo(request.getPanNo());
 
-            user.setIdentity(
-                    IdentityType.valueOf(request.getIdentity().toUpperCase())
-            );
-
-            user.setCompany(
-                    CompanyType.fromFullName(request.getCompany())
-            );
-
-            user.setPfType(
-                    PFType.valueOf(request.getPfType().toUpperCase())
-            );
+            user.setIdentity(IdentityType.valueOf(request.getIdentity().toUpperCase()));
+            user.setCompany(CompanyType.fromFullName(request.getCompany()));
+            user.setPfType(PFType.valueOf(request.getPfType().toUpperCase()));
 
         } catch (Exception e) {
             throw new IllegalArgumentException("Invalid enum or input value provided");
@@ -113,50 +101,48 @@ public class UserServiceImpl implements UserService {
 
             switch (doc) {
 
-                case "OFFER_LETTER":
-                    handleOfferLetter(user, data);
-                    break;
+                case "OFFER_LETTER" -> handleOfferLetter(user, data);
+                case "APPOINTMENT_LETTER" -> handleAppointmentLetter(user, data);
+                case "INTERNSHIP_LETTER" -> handleInternshipLetter(user, data);
+                case "COMPLETION_LETTER" -> handleCompletionLetter(user, data);
+                case "CONFIRMATION_LETTER" -> handleConfirmationLetter(user, data);
+                case "EXPERIENCE_LETTER" -> handleExperienceLetter(user, data);
+                case "RELIEVING_LETTER" -> handleRelievingLetter(user, data);
+                case "FULL_AND_FINAL" -> handleFullAndFinal(user, data);
+                case "SALARY_SLIP" -> handleSalarySlip(user, data);
+                case "GENERIC" -> handleGenericDocument(user, data, doc);
 
-                case "APPOINTMENT_LETTER":
-                    handleAppointmentLetter(user, data);
-                    break;
-
-                case "INTERNSHIP_LETTER":
-                    handleInternshipLetter(user, data);
-                    break;
-
-                case "COMPLETION_LETTER":
-                    handleCompletionLetter(user, data);
-                    break;
-
-                case "CONFIRMATION_LETTER":
-                    handleConfirmationLetter(user, data);
-                    break;
-
-                case "EXPERIENCE_LETTER":
-                    handleExperienceLetter(user, data);
-                    break;
-
-                case "RELIEVING_LETTER":
-                    handleRelievingLetter(user, data);
-                    break;
-
-                case "FULL_AND_FINAL":
-                    handleFullAndFinal(user, data);
-                    break;
-
-                case "SALARY_SLIP":
-                    handleSalarySlip(user, data);
-                    break;
-
-                case "GENERIC":
-                    handleGenericDocument(user, data, doc);
-                    break;
-
-                default:
-                    throw new IllegalArgumentException("Invalid document type: " + doc);
+                default -> throw new IllegalArgumentException("Invalid document type: " + doc);
             }
         }
+    }
+
+    // =========================
+    // 🔥 COMMON HELPERS (IMPORTANT)
+    // =========================
+
+    private String getRequiredString(Map<String, Object> data, String key) {
+        Object value = data.get(key);
+        if (value == null) {
+            throw new IllegalArgumentException(key + " is required");
+        }
+        return value.toString();
+    }
+
+    private Integer getRequiredInteger(Map<String, Object> data, String key) {
+        Object value = data.get(key);
+        if (value == null) {
+            throw new IllegalArgumentException(key + " is required");
+        }
+        return Integer.parseInt(value.toString());
+    }
+
+    private LocalDate getRequiredDate(Map<String, Object> data, String key) {
+        Object value = data.get(key);
+        if (value == null) {
+            throw new IllegalArgumentException(key + " is required");
+        }
+        return LocalDate.parse(value.toString());
     }
 
     // =========================
@@ -165,14 +151,16 @@ public class UserServiceImpl implements UserService {
 
     private void handleOfferLetter(UserProfile user, Map<String, Object> data) {
         OfferLetter offer = new OfferLetter();
-        offer.setProbationPeriod(Integer.parseInt(data.get("probationPeriod").toString()));
+        offer.setProbationPeriod(getRequiredInteger(data, "probationPeriod"));
+        offer.setIssueDate(getRequiredDate(data, "issueDate"));
         offer.setUserProfile(user);
         user.setOfferLetter(offer);
     }
 
     private void handleAppointmentLetter(UserProfile user, Map<String, Object> data) {
         AppointmentLetter letter = new AppointmentLetter();
-        letter.setProbationPeriod(Integer.parseInt(data.get("probationPeriod").toString()));
+        letter.setProbationPeriod(getRequiredInteger(data, "probationPeriod"));
+        letter.setIssueDate(getRequiredDate(data, "issueDate"));
         letter.setUserProfile(user);
         user.setAppointmentLetter(letter);
     }
@@ -181,11 +169,12 @@ public class UserServiceImpl implements UserService {
         InternshipLetter internship = new InternshipLetter();
 
         internship.setInternshipType(
-                InternshipType.valueOf((String) data.get("internshipType"))
+                InternshipType.valueOf(getRequiredString(data, "internshipType"))
         );
 
-        internship.setStartDate(LocalDate.parse((String) data.get("startDate")));
-        internship.setEndDate(LocalDate.parse((String) data.get("endDate")));
+        internship.setStartDate(getRequiredDate(data, "startDate"));
+        internship.setEndDate(getRequiredDate(data, "endDate"));
+        internship.setIssueDate(getRequiredDate(data, "issueDate"));
 
         internship.setUserProfile(user);
         user.setInternshipLetter(internship);
@@ -193,29 +182,33 @@ public class UserServiceImpl implements UserService {
 
     private void handleCompletionLetter(UserProfile user, Map<String, Object> data) {
         CompletionLetter letter = new CompletionLetter();
-        letter.setStartDate(LocalDate.parse((String) data.get("startDate")));
-        letter.setCompletionDate(LocalDate.parse((String) data.get("completionDate")));
+        letter.setStartDate(getRequiredDate(data, "startDate"));
+        letter.setCompletionDate(getRequiredDate(data, "completionDate"));
+        letter.setIssueDate(getRequiredDate(data, "issueDate"));
         letter.setUserProfile(user);
         user.setCompletionLetter(letter);
     }
 
     private void handleConfirmationLetter(UserProfile user, Map<String, Object> data) {
         ConfirmationLetter letter = new ConfirmationLetter();
-        letter.setEffectiveDate(LocalDate.parse((String) data.get("effectiveDate")));
+        letter.setEffectiveDate(getRequiredDate(data, "effectiveDate"));
+        letter.setIssueDate(getRequiredDate(data, "issueDate"));
         letter.setUserProfile(user);
         user.setConfirmationLetter(letter);
     }
 
     private void handleExperienceLetter(UserProfile user, Map<String, Object> data) {
         ExperienceLetter letter = new ExperienceLetter();
-        letter.setRelievingDate(LocalDate.parse((String) data.get("relievingDate")));
+        letter.setRelievingDate(getRequiredDate(data, "relievingDate"));
+        letter.setIssueDate(getRequiredDate(data, "issueDate"));
         letter.setUserProfile(user);
         user.setExperienceLetter(letter);
     }
 
     private void handleRelievingLetter(UserProfile user, Map<String, Object> data) {
         RelievingLetter letter = new RelievingLetter();
-        letter.setRelievingDate(LocalDate.parse((String) data.get("relievingDate")));
+        letter.setRelievingDate(getRequiredDate(data, "relievingDate"));
+        letter.setIssueDate(getRequiredDate(data, "issueDate"));
         letter.setUserProfile(user);
         user.setRelievingLetter(letter);
     }
@@ -223,12 +216,13 @@ public class UserServiceImpl implements UserService {
     private void handleFullAndFinal(UserProfile user, Map<String, Object> data) {
         FullAndFinalLetter fnf = new FullAndFinalLetter();
 
-        fnf.setFnfDate(LocalDate.parse((String) data.get("fnfDate")));
-        fnf.setMonth((String) data.get("month"));
-        fnf.setResignationDate(LocalDate.parse((String) data.get("resignationDate")));
-        fnf.setLeavingDate(LocalDate.parse((String) data.get("leavingDate")));
-        fnf.setPaidDays(Integer.parseInt(data.get("paidDays").toString()));
-        fnf.setTotalDaysInMonth(Integer.parseInt(data.get("totalDaysInMonth").toString()));
+        fnf.setFnfDate(getRequiredDate(data, "fnfDate"));
+        fnf.setIssueDate(getRequiredDate(data, "issueDate"));
+        fnf.setMonth(getRequiredString(data, "month"));
+        fnf.setResignationDate(getRequiredDate(data, "resignationDate"));
+        fnf.setLeavingDate(getRequiredDate(data, "leavingDate"));
+        fnf.setPaidDays(getRequiredInteger(data, "paidDays"));
+        fnf.setTotalDaysInMonth(getRequiredInteger(data, "totalDaysInMonth"));
 
         fnf.setUserProfile(user);
         user.setFullAndFinalLetter(fnf);
@@ -237,8 +231,8 @@ public class UserServiceImpl implements UserService {
     private void handleSalarySlip(UserProfile user, Map<String, Object> data) {
         SalarySlip salary = new SalarySlip();
 
-        salary.setStartMonth((String) data.get("startMonth"));
-        salary.setEndMonth((String) data.get("endMonth"));
+        salary.setStartMonth(getRequiredString(data, "startMonth"));
+        salary.setEndMonth(getRequiredString(data, "endMonth"));
 
         salary.setUserProfile(user);
         user.getSalarySlips().add(salary);
