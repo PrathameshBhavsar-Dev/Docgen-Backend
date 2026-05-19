@@ -2,6 +2,7 @@ package com.example.Docgen_Backend.controller;
 
 import com.example.Docgen_Backend.dto.ApiResponse;
 import com.example.Docgen_Backend.dto.CreateProfileRequest;
+import com.example.Docgen_Backend.dto.UserProfileResponseDTO;
 import com.example.Docgen_Backend.entity.UserProfile;
 import com.example.Docgen_Backend.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -44,10 +45,8 @@ public class UserController {
             @PathVariable Long id
     ) {
 
-        // No orElseThrow here
-        // Service layer already handles exception
-
-        UserProfile profile = userService.getUserById(id);
+        UserProfileResponseDTO profile =
+                userService.getUserForEdit(id);
 
         ApiResponse<Object> response = new ApiResponse<>(
                 true,
@@ -83,6 +82,28 @@ public class UserController {
                 200,
                 "Profiles fetched successfully",
                 data
+        );
+
+        return ResponseEntity.ok(response);
+    }
+
+    // UPDATE PROFILE + DOCUMENTS
+    @PatchMapping("/{id}")
+    public ResponseEntity<ApiResponse<Object>> updateProfile(
+            @PathVariable Long id,
+            @RequestBody CreateProfileRequest request
+    ) {
+
+        userService.updateProfile(id, request);
+
+        ApiResponse<Object> response = new ApiResponse<>(
+                true,
+                200,
+                "Profile updated successfully",
+                Map.of(
+                        "userId", id,
+                        "employeeId", request.getEmployeeId()
+                )
         );
 
         return ResponseEntity.ok(response);
