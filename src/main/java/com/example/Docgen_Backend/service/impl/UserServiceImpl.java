@@ -8,6 +8,7 @@ import com.example.Docgen_Backend.exception.UserNotFoundException;
 import com.example.Docgen_Backend.repository.UserRepository;
 import com.example.Docgen_Backend.service.UserService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
@@ -27,13 +29,35 @@ public class UserServiceImpl implements UserService {
     @Override
     public void createProfile(CreateProfileRequest request) {
 
-        validateRequest(request);
+        log.info("Creating user profile for employeeId={}", request.getEmployeeId());
 
-        UserProfile user = buildUser(request);
+        try {
+            // Step 1: Validate
+            log.debug("Validating request for employeeId={}", request.getEmployeeId());
+            validateRequest(request);
 
-        processDocuments(request, user);
+            // Step 2: Build user
+            log.debug("Building UserProfile entity for employeeId={}", request.getEmployeeId());
+            UserProfile user = buildUser(request);
 
-        userRepository.save(user);
+            // Step 3: Process documents
+            log.debug("Processing documents for employeeId={} | documents={}",
+                    request.getEmployeeId(), request.getDocuments());
+            processDocuments(request, user);
+
+            // Step 4: Save to DB
+            log.debug("Saving user profile to database for employeeId={}", request.getEmployeeId());
+            userRepository.save(user);
+
+            log.info("User profile created successfully for employeeId={}", request.getEmployeeId());
+
+        } catch (Exception ex) {
+            log.error("Error while creating profile for employeeId={} | error={}",
+                    request.getEmployeeId(), ex.getMessage(), ex);
+
+            // rethrow so GlobalExceptionHandler can handle it
+            throw ex;
+        }
     }
 
     // =========================
@@ -143,9 +167,11 @@ public class UserServiceImpl implements UserService {
 
     private LocalDate getRequiredDate(Map<String, Object> data, String key) {
         Object value = data.get(key);
-        if (value == null) {
+
+        if (value == null || value.toString().isBlank()) {
             throw new IllegalArgumentException(key + " is required");
         }
+
         return LocalDate.parse(value.toString());
     }
 
@@ -289,55 +315,62 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserProfileResponseDTO getUserForEdit(Long id) {
 
-        UserProfile user = userRepository.findById(id)
-                .orElseThrow(() ->
-                        new UserNotFoundException("User not found"));
+        log.info("Fetching user profile for edit | userId={}", id);
 
-        Map<String, DocumentResponseDTO> docs = new HashMap<>();
+        long start = System.currentTimeMillis();
 
-        docs.put("OFFER_LETTER",
-                buildOfferLetter(user));
+        try {
 
-        docs.put("APPOINTMENT_LETTER",
-                buildAppointmentLetter(user));
+            UserProfile user = userRepository.findById(id)
+                    .orElseThrow(() -> {
+                        log.warn("User not found | userId={}", id);
+                        return new UserNotFoundException("User not found");
+                    });
 
-        docs.put("INCREMENT_LETTER",
-                buildIncrementLetter(user));
+            log.debug("User found | userId={} | employeeId={}",
+                    user.getId(), user.getEmployeeId());
 
-        docs.put("INTERNSHIP_LETTER",
-                buildInternshipLetter(user));
+            Map<String, DocumentResponseDTO> docs = new HashMap<>();
 
-        docs.put("COMPLETION_LETTER",
-                buildCompletionLetter(user));
+            docs.put("OFFER_LETTER", buildOfferLetter(user));
+            docs.put("APPOINTMENT_LETTER", buildAppointmentLetter(user));
+            docs.put("INCREMENT_LETTER", buildIncrementLetter(user));
+            docs.put("INTERNSHIP_LETTER", buildInternshipLetter(user));
+            docs.put("COMPLETION_LETTER", buildCompletionLetter(user));
+            docs.put("CONFIRMATION_LETTER", buildConfirmationLetter(user));
+            docs.put("EXPERIENCE_LETTER", buildExperienceLetter(user));
+            docs.put("RELIEVING_LETTER", buildRelievingLetter(user));
+            docs.put("FULL_AND_FINAL", buildFullAndFinalLetter(user));
+            docs.put("SALARY_SLIP", buildSalarySlip(user));
 
-        docs.put("CONFIRMATION_LETTER",
-                buildConfirmationLetter(user));
+            UserProfileResponseDTO response = UserProfileResponseDTO.builder()
+                    .id(user.getId())
+                    .employeeName(user.getEmployeeName())
+                    .employeeId(user.getEmployeeId())
+                    .email(user.getEmail())
+                    .mobileNo(user.getPhone())
+                    .designation(user.getDesignation())
+                    .department(user.getDepartment())
+                    .company(user.getCompany().name())
+                    .identity(user.getIdentity().name())
+                    .pfType(user.getPfType().name())
+                    .documents(docs)
+                    .build();
 
-        docs.put("EXPERIENCE_LETTER",
-                buildExperienceLetter(user));
+            long end = System.currentTimeMillis();
 
-        docs.put("RELIEVING_LETTER",
-                buildRelievingLetter(user));
+            log.info("User profile fetched successfully | userId={} | timeTaken={}ms",
+                    id, (end - start));
 
-        docs.put("FULL_AND_FINAL",
-                buildFullAndFinalLetter(user));
+            return response;
 
-        docs.put("SALARY_SLIP",
-                buildSalarySlip(user));
+        } catch (Exception ex) {
 
-        return UserProfileResponseDTO.builder()
-                .id(user.getId())
-                .employeeName(user.getEmployeeName())
-                .employeeId(user.getEmployeeId())
-                .email(user.getEmail())
-                .mobileNo(user.getPhone())
-                .designation(user.getDesignation())
-                .department(user.getDepartment())
-                .company(user.getCompany().name())
-                .identity(user.getIdentity().name())
-                .pfType(user.getPfType().name())
-                .documents(docs)
-                .build();
+            log.error("Error while fetching user profile | userId={} | error={}",
+                    id, ex.getMessage(), ex);
+
+            throw ex; // Let GlobalExceptionHandler handle response
+        }
     }
 
     private DocumentResponseDTO buildOfferLetter(UserProfile user) {
@@ -572,42 +605,93 @@ public class UserServiceImpl implements UserService {
     @Override
     public void updateProfile(Long id, CreateProfileRequest request) {
 
-        UserProfile user = userRepository.findById(id)
-                .orElseThrow(() ->
-                        new UserNotFoundException("User not found"));
+        log.info("Updating user profile | userId={} | employeeId={}",
+                id, request.getEmployeeId());
 
-        // UPDATE BASIC PROFILE
-        user.setEmployeeName(request.getEmployeeName());
-        user.setEmail(request.getEmail());
-        user.setPhone(request.getMobileNo());
-        user.setEmployeeId(request.getEmployeeId());
-        user.setDesignation(request.getDesignation());
-        user.setDepartment(request.getDepartment());
-        user.setAccountNo(request.getAccountNo());
-        user.setBankName(request.getBankName());
-        user.setAddress(request.getAddress());
-        user.setCTC(request.getCTC());
-        user.setDateOfBirth(request.getDateOfBirth());
-        user.setOfferDate(request.getOfferDate());
-        user.setJoiningDate(request.getJoiningDate());
-        user.setPanNo(request.getPanNo());
+        long start = System.currentTimeMillis();
 
-        user.setIdentity(
-                IdentityType.valueOf(request.getIdentity().toUpperCase())
-        );
+        try {
 
-        user.setCompany(
-                CompanyType.fromFullName(request.getCompany())
-        );
+            UserProfile user = userRepository.findById(id)
+                    .orElseThrow(() -> {
+                        log.warn("User not found for update | userId={}", id);
+                        return new UserNotFoundException("User not found");
+                    });
 
-        user.setPfType(
-                PFType.valueOf(request.getPfType().toUpperCase())
-        );
+            log.debug("Existing user fetched | userId={} | oldEmployeeId={}",
+                    user.getId(), user.getEmployeeId());
 
-        // UPDATE DOCUMENTS
-        processUpdateDocuments(request, user);
+            // ========================
+            // UPDATE BASIC PROFILE
+            // ========================
+            user.setEmployeeName(request.getEmployeeName());
+            user.setEmail(request.getEmail());
+            user.setPhone(request.getMobileNo());
+            user.setEmployeeId(request.getEmployeeId());
+            user.setDesignation(request.getDesignation());
+            user.setDepartment(request.getDepartment());
+            user.setAccountNo(request.getAccountNo());
+            user.setBankName(request.getBankName());
+            user.setAddress(request.getAddress());
+            user.setCTC(request.getCTC());
+            user.setDateOfBirth(request.getDateOfBirth());
+            user.setOfferDate(request.getOfferDate());
+            user.setJoiningDate(request.getJoiningDate());
+            user.setPanNo(request.getPanNo());
 
-        userRepository.save(user);
+            // ========================
+            // SAFE ENUM MAPPING
+            // ========================
+            try {
+                user.setIdentity(
+                        IdentityType.valueOf(request.getIdentity().toUpperCase())
+                );
+            } catch (Exception e) {
+                log.error("Invalid identity value | value={}", request.getIdentity());
+                throw new IllegalArgumentException("Invalid identity value");
+            }
+
+            try {
+                user.setCompany(
+                        CompanyType.fromFullName(request.getCompany())
+                );
+            } catch (Exception e) {
+                log.error("Invalid company value | value={}", request.getCompany());
+                throw new IllegalArgumentException("Invalid company value");
+            }
+
+            try {
+                user.setPfType(
+                        PFType.valueOf(request.getPfType().toUpperCase())
+                );
+            } catch (Exception e) {
+                log.error("Invalid PF type value | value={}", request.getPfType());
+                throw new IllegalArgumentException("Invalid PF type value");
+            }
+
+            // ========================
+            // UPDATE DOCUMENTS
+            // ========================
+            log.debug("Updating documents | userId={}", id);
+            processUpdateDocuments(request, user);
+
+            // ========================
+            // SAVE
+            // ========================
+            userRepository.save(user);
+
+            long end = System.currentTimeMillis();
+
+            log.info("User profile updated successfully | userId={} | timeTaken={}ms",
+                    id, (end - start));
+
+        } catch (Exception ex) {
+
+            log.error("Error while updating user profile | userId={} | error={}",
+                    id, ex.getMessage(), ex);
+
+            throw ex;
+        }
     }
 
     private void processUpdateDocuments(CreateProfileRequest request,
