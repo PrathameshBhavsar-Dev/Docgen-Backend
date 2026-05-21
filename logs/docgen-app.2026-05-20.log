@@ -1,0 +1,1121 @@
+2026-05-20 12:30:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 12:30:01 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 16184 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 12:30:01 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 12:30:01 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 12:30:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 12:30:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 12:30:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 12:30:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2026-05-20 12:30:03 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 12:30:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 12:30:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 12:30:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 12:30:03 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1608 ms
+2026-05-20 12:30:03 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 12:30:03 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 12:30:03 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 12:30:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 12:30:04 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@366aa7e3
+2026-05-20 12:30:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 12:30:04 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 12:30:04 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 12:30:06 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 12:30:06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 12:30:06 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 12:30:06 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 12:30:07 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 12:30:07 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 12:30:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 12:30:07 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 12:30:07 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 7.061 seconds (process running for 7.773)
+2026-05-20 12:37:09 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 12:37:09 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 12:37:09 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 12:37:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 12:37:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 12:42:31 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 12:42:31 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 2060 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 12:42:31 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 12:42:31 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 12:42:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 12:42:31 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 12:42:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 12:42:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2026-05-20 12:42:33 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 12:42:33 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 12:42:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 12:42:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 12:42:34 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2068 ms
+2026-05-20 12:42:34 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 12:42:34 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 12:42:34 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 12:42:34 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 12:42:35 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@187d7153
+2026-05-20 12:42:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 12:42:35 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 12:42:35 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 12:42:37 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 12:42:39 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 12:42:39 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 12:42:39 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 12:42:40 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 12:42:40 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 12:42:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 12:42:41 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 12:42:41 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 9.915 seconds (process running for 10.645)
+2026-05-20 12:45:17 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 12:45:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 12:45:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 65 ms
+2026-05-20 12:45:20 [http-nio-8080-exec-2] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:154)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:183)
+	at com.example.Docgen_Backend.controller.AuthController.login(AuthController.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.security.core.userdetails.UsernameNotFoundException: User not found
+	at com.example.Docgen_Backend.config.CustomUserDetailsService.lambda$loadUserByUsername$0(CustomUserDetailsService.java:23)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.Docgen_Backend.config.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:23)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:106)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:145)
+	... 93 common frames omitted
+2026-05-20 12:45:20 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-05-20 12:47:05 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users/3 - Fetch request received
+2026-05-20 12:47:05 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=3
+2026-05-20 12:47:05 [http-nio-8080-exec-8] WARN  c.e.D.service.impl.UserServiceImpl - User not found | userId=3
+2026-05-20 12:47:05 [http-nio-8080-exec-8] ERROR c.e.D.service.impl.UserServiceImpl - Error while fetching user profile | userId=3 | error=User not found
+com.example.Docgen_Backend.exception.UserNotFoundException: User not found
+	at com.example.Docgen_Backend.service.impl.UserServiceImpl.lambda$getUserForEdit$1(UserServiceImpl.java:327)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.Docgen_Backend.service.impl.UserServiceImpl.getUserForEdit(UserServiceImpl.java:325)
+	at com.example.Docgen_Backend.controller.UserController.getProfileById(UserController.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-20 12:47:05 [http-nio-8080-exec-8] ERROR c.e.D.e.GlobalExceptionHandler - User not found: User not found
+2026-05-20 12:47:05 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.example.Docgen_Backend.exception.UserNotFoundException: User not found]
+2026-05-20 12:47:22 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-20 12:47:22 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Fetched 0 users on page 0 of 0
+2026-05-20 12:47:51 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2026-05-20T06:48:01Z. Current time: 2026-05-20T07:17:51Z, a difference of 1790569 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.example.Docgen_Backend.config.JwtUtil.getClaims(JwtUtil.java:39)
+	at com.example.Docgen_Backend.config.JwtUtil.extractUsername(JwtUtil.java:28)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-20 12:48:00 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 12:48:00 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh@example.com, mobileNo=9876543210, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=HDFC Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 12:48:00 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 12:48:00 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 12:48:00 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=EMP101
+2026-05-20 12:48:00 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=EMP101 | documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL]
+2026-05-20 12:48:00 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=EMP101
+2026-05-20 12:48:01 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=EMP101
+2026-05-20 12:48:01 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=EMP101
+2026-05-20 12:48:08 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-20 12:48:08 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Fetched 1 users on page 0 of 1
+2026-05-20 12:48:19 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 12:48:19 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-05-20 12:48:19 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=EMP101
+2026-05-20 12:48:19 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=89ms
+2026-05-20 12:48:19 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 12:48:19 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Bhavsar, employeeId=EMP101, email=prathamesh@example.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=FULL_TIME, endDate=2023-12-01, issueDate=2023-06-01, startDate=2023-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-01-01, relievingDate=2025-01-01}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2025-01-10, totalDaysInMonth=31, month=January, issueDate=2025-01-10, resignationDate=2024-12-01, paidDays=25, leavingDate=2025-01-05}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=January, endMonth=February}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-01, probationPeriod=6})})
+2026-05-20 12:49:32 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 12:49:32 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 12:49:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 12:49:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 12:49:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 12:56:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 12:56:58 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 21240 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 12:56:58 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 12:56:58 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 12:56:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 12:56:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 12:56:59 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'jpaAuditingHandler' defined in null: Cannot register bean definition [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] for bean 'jpaAuditingHandler' since there is already [Root bean: class=org.springframework.data.auditing.AuditingHandler; scope=; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=from; initMethodNames=null; destroyMethodNames=null] bound.
+2026-05-20 12:56:59 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-20 12:56:59 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'jpaAuditingHandler' could not be registered. A bean with that name has already been defined and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-05-20 14:19:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 14:19:12 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 28724 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 14:19:12 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 14:19:12 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 14:19:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 14:19:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 14:19:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 14:19:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2026-05-20 14:19:14 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 14:19:14 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:19:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 14:19:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 14:19:14 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2218 ms
+2026-05-20 14:19:15 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 14:19:15 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 14:19:15 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 14:19:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 14:19:16 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@187d7153
+2026-05-20 14:19:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 14:19:16 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 14:19:16 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 14:19:18 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 14:19:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 14:19:20 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 14:19:20 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 14:19:20 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 14:19:20 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 14:19:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:19:21 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 14:19:21 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 9.7 seconds (process running for 10.543)
+2026-05-20 14:21:03 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 14:21:03 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 14:21:03 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-20 14:21:27 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 14:21:27 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh@example.com, mobileNo=9876543210, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=HDFC Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 14:21:27 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 14:21:27 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 14:21:27 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=EMP101
+2026-05-20 14:21:27 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=EMP101 | documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL]
+2026-05-20 14:21:27 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=EMP101
+2026-05-20 14:21:28 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=EMP101
+2026-05-20 14:21:28 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=EMP101
+2026-05-20 14:21:48 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 14:21:48 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-05-20 14:21:49 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=EMP101
+2026-05-20 14:21:49 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=126ms
+2026-05-20 14:21:49 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 14:21:49 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Bhavsar, employeeId=EMP101, email=prathamesh@example.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=FULL_TIME, endDate=2023-12-01, issueDate=2023-06-01, startDate=2023-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-01-01, relievingDate=2025-01-01}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2025-01-10, totalDaysInMonth=31, month=January, issueDate=2025-01-10, resignationDate=2024-12-01, paidDays=25, leavingDate=2025-01-05}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=January, endMonth=February}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-01, probationPeriod=6})})
+2026-05-20 14:22:24 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 14:22:24 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 14:22:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 14:22:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 14:22:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 15:35:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 15:35:02 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 10888 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 15:35:02 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 15:35:02 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 15:35:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 15:35:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 15:35:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 15:35:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-05-20 15:35:04 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 15:35:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 15:35:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 15:35:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 15:35:04 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1368 ms
+2026-05-20 15:35:04 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 15:35:04 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 15:35:04 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 15:35:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 15:35:05 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40514e7f
+2026-05-20 15:35:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 15:35:05 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 15:35:05 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 15:35:06 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 15:35:07 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 15:35:07 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 15:35:07 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 15:35:07 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 15:35:07 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 15:35:08 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 15:35:08 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 15:35:08 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 5.826 seconds (process running for 6.358)
+2026-05-20 15:35:19 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 15:35:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 15:35:19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-20 15:35:42 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 15:35:42 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh@example.com, mobileNo=9876543210, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=HDFC Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 15:35:42 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 15:35:42 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 15:35:42 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=EMP101
+2026-05-20 15:35:42 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=EMP101 | documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL]
+2026-05-20 15:35:42 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=EMP101
+2026-05-20 15:35:42 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=EMP101
+2026-05-20 15:35:42 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=EMP101
+2026-05-20 15:35:50 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 15:35:50 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-05-20 15:35:50 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=EMP101
+2026-05-20 15:35:50 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=67ms
+2026-05-20 15:35:50 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 15:35:50 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Bhavsar, employeeId=EMP101, email=prathamesh@example.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=FULL_TIME, endDate=2023-12-01, issueDate=2023-06-01, startDate=2023-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-01-01, relievingDate=2025-01-01}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2025-01-10, totalDaysInMonth=31, month=January, issueDate=2025-01-10, resignationDate=2024-12-01, paidDays=25, leavingDate=2025-01-05}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=January, endMonth=February}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-01, probationPeriod=6})})
+2026-05-20 15:55:16 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 15:55:16 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 15:55:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 15:55:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 15:55:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 15:55:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 15:55:21 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 5988 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 15:55:21 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 15:55:21 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 15:55:21 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 15:55:21 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 15:55:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 15:55:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-05-20 15:55:22 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 15:55:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 15:55:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 15:55:22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 15:55:22 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1312 ms
+2026-05-20 15:55:22 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 15:55:22 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 15:55:22 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 15:55:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 15:55:23 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41e6bd10
+2026-05-20 15:55:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 15:55:23 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 15:55:23 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 15:55:24 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 15:55:25 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 15:55:25 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 15:55:25 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 15:55:25 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 15:55:25 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 15:55:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 15:55:26 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 15:55:26 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 5.705 seconds (process running for 6.282)
+2026-05-20 15:55:43 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 15:55:43 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 15:55:43 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-20 15:56:23 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 15:56:23 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh@example.com, mobileNo=9876543210, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=HDFC Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 15:56:23 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 15:56:23 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 15:56:23 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=EMP101
+2026-05-20 15:56:23 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=EMP101 | documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL]
+2026-05-20 15:56:23 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=EMP101
+2026-05-20 15:56:23 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=EMP101
+2026-05-20 15:56:23 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=EMP101
+2026-05-20 15:57:00 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 15:57:00 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 15:57:00 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-20 16:00:03 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 16:00:03 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 16:00:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 16:00:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 16:00:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 16:00:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 16:00:28 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 7720 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 16:00:28 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 16:00:28 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 16:00:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 16:00:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 16:00:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 16:00:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-05-20 16:00:29 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 16:00:29 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 16:00:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 16:00:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 16:00:29 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1334 ms
+2026-05-20 16:00:29 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 16:00:29 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 16:00:30 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 16:00:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 16:00:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18665279
+2026-05-20 16:00:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 16:00:30 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 16:00:30 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 16:00:31 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 16:00:31 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 16:00:31 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 16:00:32 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 16:00:32 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 16:00:32 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 16:00:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 16:00:32 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 16:00:32 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 5.03 seconds (process running for 5.661)
+2026-05-20 16:00:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 16:00:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 16:00:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-20 16:00:49 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 16:00:49 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 16:00:49 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-20 16:01:45 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 16:01:45 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Janhavi Kundgir, email=janhavi@test.com, mobileNo=9876543210, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=Canara Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 16:01:45 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 16:01:45 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 16:01:45 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=EMP101
+2026-05-20 16:01:45 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=EMP101 | documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL]
+2026-05-20 16:01:45 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=EMP101
+2026-05-20 16:01:45 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=EMP101
+2026-05-20 16:01:45 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=EMP101
+2026-05-20 16:05:38 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 16:05:38 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 16:05:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 16:05:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 16:05:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 16:14:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 16:14:45 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 29096 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 16:14:45 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 16:14:45 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 16:14:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 16:14:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 16:14:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 16:14:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-05-20 16:14:46 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 16:14:46 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 16:14:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 16:14:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 16:14:46 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1381 ms
+2026-05-20 16:14:46 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 16:14:47 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 16:14:47 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 16:14:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 16:14:47 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40514e7f
+2026-05-20 16:14:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 16:14:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 16:14:48 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 16:14:49 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 16:14:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 16:14:49 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 16:14:49 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 16:14:49 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 16:14:49 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 16:14:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 16:14:50 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 16:14:50 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 5.145 seconds (process running for 5.685)
+2026-05-20 16:15:03 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 16:15:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 16:15:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-20 16:15:57 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.example.Docgen_Backend.config.JwtUtil.getClaims(JwtUtil.java:39)
+	at com.example.Docgen_Backend.config.JwtUtil.extractUsername(JwtUtil.java:28)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-20 16:16:36 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 16:16:36 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-05-20 16:16:36 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=EMP101
+2026-05-20 16:16:36 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=121ms
+2026-05-20 16:16:36 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 16:16:36 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Bhavsar, employeeId=EMP101, email=prathamesh@example.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=FULL_TIME, endDate=2023-12-01, issueDate=2023-06-01, startDate=2023-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-01-01, relievingDate=2025-01-01}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2025-01-10, totalDaysInMonth=31, month=January, issueDate=2025-01-10, resignationDate=2024-12-01, paidDays=25, leavingDate=2025-01-05}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=January, endMonth=February}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-01, probationPeriod=6})})
+2026-05-20 16:17:10 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 16:17:10 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 16:17:10 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-20 16:18:14 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 16:18:14 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 16:18:14 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 16:18:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 16:18:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-20 17:01:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-20 17:01:56 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 2132 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-20 17:01:56 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 17:01:56 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 17:01:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 17:01:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 17:01:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-20 17:01:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2026-05-20 17:01:58 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 17:01:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 17:01:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 17:01:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 17:01:59 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2653 ms
+2026-05-20 17:01:59 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-20 17:01:59 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-20 17:02:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-20 17:02:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-20 17:02:00 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18665279
+2026-05-20 17:02:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-20 17:02:00 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-20 17:02:00 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-20 17:02:02 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-20 17:02:03 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 17:02:03 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-20 17:02:03 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-20 17:02:03 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-20 17:02:03 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-20 17:02:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 17:02:04 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 17:02:04 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 9.155 seconds (process running for 10.234)
+2026-05-20 17:02:17 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-20 17:02:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-20 17:02:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-20 17:02:40 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 17:02:40 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Anil Jejurkar, email=null, mobileNo=9876543210, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=Canara Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 17:02:40 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 17:02:40 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 17:02:40 [http-nio-8080-exec-3] ERROR c.e.D.service.impl.UserServiceImpl - Error while creating profile for employeeId=EMP101 | error=Email is required
+java.lang.IllegalArgumentException: Email is required
+	at com.example.Docgen_Backend.service.impl.UserServiceImpl.validateRequest(UserServiceImpl.java:73)
+	at com.example.Docgen_Backend.service.impl.UserServiceImpl.createProfile(UserServiceImpl.java:37)
+	at com.example.Docgen_Backend.controller.UserController.createProfile(UserController.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-20 17:02:40 [http-nio-8080-exec-3] ERROR c.e.D.e.GlobalExceptionHandler - Invalid input: Email is required
+2026-05-20 17:02:40 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Email is required]
+2026-05-20 17:02:49 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 17:02:49 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Anil Jejurkar, email=null, mobileNo=null, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=Canara Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 17:02:49 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 17:02:49 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 17:02:49 [http-nio-8080-exec-5] ERROR c.e.D.service.impl.UserServiceImpl - Error while creating profile for employeeId=EMP101 | error=Email is required
+java.lang.IllegalArgumentException: Email is required
+	at com.example.Docgen_Backend.service.impl.UserServiceImpl.validateRequest(UserServiceImpl.java:73)
+	at com.example.Docgen_Backend.service.impl.UserServiceImpl.createProfile(UserServiceImpl.java:37)
+	at com.example.Docgen_Backend.controller.UserController.createProfile(UserController.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:53)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-20 17:02:49 [http-nio-8080-exec-5] ERROR c.e.D.e.GlobalExceptionHandler - Invalid input: Email is required
+2026-05-20 17:02:49 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Email is required]
+2026-05-20 17:02:56 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=EMP101
+2026-05-20 17:02:56 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Anil Jejurkar, email=janhavi@test.com, mobileNo=null, employeeId=EMP101, designation=Software Developer, department=Engineering, accountNo=1234567890, bankName=Canara Bank, address=Pune, Maharashtra, CTC=600000.0, dateOfBirth=1998-05-10, offerDate=2024-01-01, joiningDate=2024-02-01, panNo=ABCDE1234F, company=SmartMatrix Digital Services Pvt. Ltd., pfType=WITH_PF, identity=Mr, documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL], documentData={OFFER_LETTER={issueDate=2024-01-01, probationPeriod=6}, INTERNSHIP_LETTER={internshipType=FULL_TIME, startDate=2023-06-01, endDate=2023-12-01, issueDate=2023-06-01}, SALARY_SLIP={startMonth=January, endMonth=February}, EXPERIENCE_LETTER={relievingDate=2025-01-01, issueDate=2025-01-01}, FULL_AND_FINAL={fnfDate=2025-01-10, month=January, resignationDate=2024-12-01, leavingDate=2025-01-05, paidDays=25, totalDaysInMonth=31, issueDate=2025-01-10}})
+2026-05-20 17:02:56 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=EMP101
+2026-05-20 17:02:56 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=EMP101
+2026-05-20 17:02:56 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=EMP101
+2026-05-20 17:02:56 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=EMP101 | documents=[OFFER_LETTER, INTERNSHIP_LETTER, SALARY_SLIP, EXPERIENCE_LETTER, FULL_AND_FINAL]
+2026-05-20 17:02:56 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=EMP101
+2026-05-20 17:02:56 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=EMP101
+2026-05-20 17:02:56 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=EMP101
+2026-05-20 17:04:47 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.example.Docgen_Backend.config.JwtUtil.getClaims(JwtUtil.java:39)
+	at com.example.Docgen_Backend.config.JwtUtil.extractUsername(JwtUtil.java:28)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-20 17:05:09 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users/3 - Fetch request received
+2026-05-20 17:05:09 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=3
+2026-05-20 17:05:09 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-20 17:06:07 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 17:06:07 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-05-20 17:06:07 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=EMP101
+2026-05-20 17:06:07 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=170ms
+2026-05-20 17:06:07 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 17:06:07 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Bhavsar, employeeId=EMP101, email=prathamesh@example.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=FULL_TIME, endDate=2023-12-01, issueDate=2023-06-01, startDate=2023-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-01-01, relievingDate=2025-01-01}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2025-01-10, totalDaysInMonth=31, month=January, issueDate=2025-01-10, resignationDate=2024-12-01, paidDays=25, leavingDate=2025-01-05}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=January, endMonth=February}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-01, probationPeriod=6})})
+2026-05-20 17:06:21 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users/3 - Fetch request received
+2026-05-20 17:06:21 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=3
+2026-05-20 17:06:21 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=3 | employeeId=EMP101
+2026-05-20 17:06:21 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=3 | timeTaken=65ms
+2026-05-20 17:06:21 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=3
+2026-05-20 17:06:21 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=3, employeeName=Anil Jejurkar, employeeId=EMP101, email=janhavi@test.com, mobileNo=null, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=FULL_TIME, endDate=2023-12-01, issueDate=2023-06-01, startDate=2023-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-01-01, relievingDate=2025-01-01}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2025-01-10, totalDaysInMonth=31, month=January, issueDate=2025-01-10, resignationDate=2024-12-01, paidDays=25, leavingDate=2025-01-05}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=January, endMonth=February}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-01, probationPeriod=6})})
+2026-05-20 17:06:36 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-05-20 17:06:36 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-05-20 17:06:36 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-20 17:06:52 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users/3 - Fetch request received
+2026-05-20 17:06:52 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=3
+2026-05-20 17:06:52 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-20 17:14:29 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 17:14:29 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 17:14:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-20 17:14:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-20 17:14:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,6 +1,7 @@
 package com.example.Docgen_Backend.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -15,45 +16,63 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
+@RequiredArgsConstructor
 public class SecurityConfig {
 
-    @Autowired
-    private JwtFilter jwtFilter;
+    private final JwtFilter jwtFilter;
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http)
+            throws Exception {
 
         http
+
                 .csrf(csrf -> csrf.disable())
+
                 .authorizeHttpRequests(auth -> auth
 
-                        // ✅ FIXED
-                        .requestMatchers("/api/v2/auth/**").permitAll()
+                        // ADMIN ROUTES
+                        .requestMatchers("/api/admin/**")
+                        .hasRole("ADMIN")
 
-                        // Admin APIs
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        // USER ROUTES
+                        .requestMatchers("/api/user/**")
+                        .hasAnyRole("USER", "ADMIN")
 
-                        // User APIs
-                        .requestMatchers("/api/user/**").hasAnyRole("USER", "ADMIN")
+                        // DOCGEN V2
+                        .requestMatchers("/api/v2/users/**")
+                        .authenticated()
 
-                        .anyRequest().authenticated()
+                        .anyRequest()
+                        .authenticated()
                 )
-                .sessionManagement(sess -> sess
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+
+                .sessionManagement(sess ->
+                        sess.sessionCreationPolicy(
+                                SessionCreationPolicy.STATELESS
+                        )
                 );
 
-        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+        // JWT FILTER
+        http.addFilterBefore(
+                jwtFilter,
+                UsernamePasswordAuthenticationFilter.class
+        );
 
         return http.build();
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+    public AuthenticationManager authenticationManager(
+            AuthenticationConfiguration config
+    ) throws Exception {
+
         return config.getAuthenticationManager();
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
+
         return new BCryptPasswordEncoder();
     }
 }
