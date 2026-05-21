@@ -67,33 +67,33 @@ public class AuthController {
     }
 
     // ✅ LOGIN API
-    @PostMapping("/login")
-    public ResponseEntity<ApiResponse<AuthResponse>> login(@RequestBody AuthRequest request) {
-
-        authManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        request.getUsername(),
-                        request.getPassword()
-                )
-        );
-
-        User user = userRepository.findByUsername(request.getUsername()).get();
-
-        String token = jwtUtil.generateToken(user.getUsername(), user.getRole().name());
-
-        AuthResponse authResponse = new AuthResponse(
-                token,
-                user.getUsername(),
-                user.getRole().name()
-        );
-
-        return ResponseEntity.ok(
-                new ApiResponse<>(
-                        true,
-                        200,
-                        "Login successful",
-                        authResponse
-                )
-        );
-    }
+//    @PostMapping("/login")
+//    public ResponseEntity<ApiResponse<AuthResponse>> login(@RequestBody AuthRequest request) {
+//
+//        authManager.authenticate(
+//                new UsernamePasswordAuthenticationToken(
+//                        request.getUsername(),
+//                        request.getPassword()
+//                )
+//        );
+//
+//        User user = userRepository.findByUsername(request.getUsername()).get();
+//
+//        String token = jwtUtil.generateToken(user.getUsername(), user.getRole().name());
+//
+//        AuthResponse authResponse = new AuthResponse(
+//                token,
+//                user.getUsername(),
+//                user.getRole().name()
+//        );
+//
+//        return ResponseEntity.ok(
+//                new ApiResponse<>(
+//                        true,
+//                        200,
+//                        "Login successful",
+//                        authResponse
+//                )
+//        );
+//    }
 }

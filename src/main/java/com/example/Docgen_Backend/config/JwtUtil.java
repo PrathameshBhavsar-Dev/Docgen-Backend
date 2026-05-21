@@ -2,11 +2,8 @@ package com.example.Docgen_Backend.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
-import java.util.Date;
 
 @Component
 public class JwtUtil {
@@ -14,29 +11,67 @@ public class JwtUtil {
     @Value("${security.jwt.secret-key}")
     private String secret;
 
-    public String generateToken(String username, String role) {
-        return Jwts.builder()
-                .setSubject(username)
-                .claim("role", role)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + 86400000))
-                .signWith(Keys.hmacShaKeyFor(secret.getBytes()))
-                .compact();
-    }
-
-    public String extractUsername(String token) {
-        return getClaims(token).getSubject();
-    }
-
-    public String extractRole(String token) {
-        return getClaims(token).get("role", String.class);
-    }
+    // =========================
+    // EXTRACT CLAIMS
+    // =========================
 
     private Claims getClaims(String token) {
+
         return Jwts.parserBuilder()
                 .setSigningKey(secret.getBytes())
                 .build()
                 .parseClaimsJws(token)
                 .getBody();
+    }
+
+    // =========================
+    // EXTRACT USER ID
+    // =========================
+
+    public String extractUserId(String token) {
+
+        Claims claims = getClaims(token);
+
+        Object id = claims.get("id");
+
+        return id != null ? id.toString() : null;
+    }
+
+    // =========================
+    // EXTRACT EMAIL
+    // =========================
+
+    public String extractEmail(String token) {
+
+        return getClaims(token)
+                .get("email", String.class);
+    }
+
+    // =========================
+    // EXTRACT ROLE
+    // =========================
+
+    public String extractRole(String token) {
+
+        return getClaims(token)
+                .get("role", String.class);
+    }
+
+    // =========================
+    // VALIDATE TOKEN
+    // =========================
+
+    public boolean validateToken(String token) {
+
+        try {
+
+            getClaims(token);
+
+            return true;
+
+        } catch (Exception e) {
+
+            return false;
+        }
     }
 }
