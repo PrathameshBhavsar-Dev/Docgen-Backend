@@ -73,9 +73,9 @@
                 throw new IllegalArgumentException("Email is required");
             }
     
-            if (request.getDocuments() == null || request.getDocuments().isEmpty()) {
-                throw new IllegalArgumentException("At least one document must be provided");
-            }
+//            if (request.getDocuments() == null || request.getDocuments().isEmpty()) {
+//                throw new IllegalArgumentException("At least one document must be provided");
+//            }
         }
     
         // =========================
