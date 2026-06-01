@@ -1,0 +1,94 @@
+2026-05-25 15:26:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-25 15:26:07 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 8168 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-05-25 15:26:07 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-25 15:26:07 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-25 15:26:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-25 15:26:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-25 15:26:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-25 15:26:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2026-05-25 15:26:09 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-25 15:26:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-25 15:26:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-25 15:26:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-25 15:26:09 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1928 ms
+2026-05-25 15:26:09 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-05-25 15:26:09 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-25 15:26:09 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-25 15:26:10 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-25 15:26:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-25 15:26:10 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@711851d7
+2026-05-25 15:26:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-25 15:26:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25 15:26:11 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-25 15:26:12 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-25 15:26:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-25 15:26:12 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-25 15:26:12 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-25 15:26:13 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25 15:26:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-25 15:26:13 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-25 15:26:13 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 7.136 seconds (process running for 8.201)
+2026-05-25 15:29:13 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25 15:29:13 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-25 15:29:14 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
+2026-05-25 15:29:14 [http-nio-8080-exec-4] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-05-25 15:29:14 [http-nio-8080-exec-2] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-05-25 15:29:47 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:29:47 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:29:49 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:29:49 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:29:49 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:29:49 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:33:10 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:33:10 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/3 - Fetch request received
+2026-05-25 15:33:11 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=3
+2026-05-25 15:33:11 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: [FAILED toString()]
+2026-05-25 15:54:13 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:13 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:13 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:13 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:13 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:14 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:21 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:21 [http-nio-8080-exec-10] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:21 [http-nio-8080-exec-10] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:21 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:21 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:21 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:29 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:29 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:29 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:29 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:29 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:29 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:42 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:42 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:43 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 15:54:43 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 15:54:43 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 15:54:43 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 16:09:14 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m33s358ms888µs800ns).
+2026-05-25 16:09:35 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 16:09:35 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 16:09:35 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 16:09:35 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 16:09:35 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 16:09:35 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 16:35:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m14s486ms905µs100ns).
+2026-05-25 16:36:15 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 16:36:15 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 16:36:15 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1
+2026-05-25 16:36:15 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-05-25 16:36:15 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=5, sortBy=id, direction=asc
+2026-05-25 16:36:15 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Fetched 5 users on page 0 of 1

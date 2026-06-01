@@ -1,5 +1,8 @@
 package com.example.Docgen_Backend.entity;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum CompanyType {
 
     SMT("SmartMatrix Digital Services Pvt. Ltd."),
@@ -19,17 +22,29 @@ public enum CompanyType {
         this.fullName = fullName;
     }
 
+    @JsonValue
     public String getFullName() {
         return fullName;
     }
 
-    // 🔥 ADD THIS METHOD
-    public static CompanyType fromFullName(String fullName) {
+    @JsonCreator
+    public static CompanyType fromFullName(String value) {
+
         for (CompanyType type : CompanyType.values()) {
-            if (type.fullName.equalsIgnoreCase(fullName)) {
+
+            // match enum name
+            if (type.name().equalsIgnoreCase(value)) {
+                return type;
+            }
+
+            // match full company name
+            if (type.fullName.equalsIgnoreCase(value)) {
                 return type;
             }
         }
-        throw new IllegalArgumentException("Invalid company: " + fullName);
+
+        throw new IllegalArgumentException(
+                "Invalid company: " + value
+        );
     }
 }
