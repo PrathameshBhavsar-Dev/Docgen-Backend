@@ -23,5 +23,14 @@ public class UserProfileResponseDTO {
     private String identity;
     private String pfType;
 
+    private String accountNo;
+    private String bankName;
+    private String address;
+    private Double CTC;
+    private String dateOfBirth;
+    private String offerDate;
+    private String joiningDate;
+    private String panNo;
+
     private Map<String, DocumentResponseDTO> documents;
 }

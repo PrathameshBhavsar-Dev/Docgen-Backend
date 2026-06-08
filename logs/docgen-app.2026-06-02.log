@@ -1,0 +1,663 @@
+2026-06-02 00:09:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-02 00:09:12 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 29852 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-06-02 00:09:12 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-02 00:09:12 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-02 00:09:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-02 00:09:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-02 00:09:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02 00:09:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2026-06-02 00:09:13 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-02 00:09:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 00:09:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 00:09:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-02 00:09:13 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1488 ms
+2026-06-02 00:09:13 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-06-02 00:09:14 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-02 00:09:14 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-02 00:09:14 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02 00:09:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 00:09:15 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28f7f2a7
+2026-06-02 00:09:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 00:09:15 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-02 00:09:15 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 00:09:16 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 00:09:16 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 00:09:16 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02 00:09:16 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-02 00:09:16 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-02 00:09:17 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 00:09:17 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-02 00:09:17 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 5.419 seconds (process running for 6.155)
+2026-06-02 00:19:54 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02 00:19:54 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-02 00:19:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 00:19:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 00:19:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 10:24:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-02 10:24:01 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 23192 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-06-02 10:24:01 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-02 10:24:01 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-02 10:24:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-02 10:24:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-02 10:24:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02 10:24:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2026-06-02 10:24:03 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-02 10:24:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 10:24:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 10:24:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-02 10:24:03 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1766 ms
+2026-06-02 10:24:03 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-06-02 10:24:03 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-02 10:24:03 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-02 10:24:04 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02 10:24:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 10:24:04 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6120c786
+2026-06-02 10:24:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 10:24:05 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-02 10:24:05 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 10:24:06 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 10:24:06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 10:24:06 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02 10:24:06 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-02 10:24:07 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-02 10:24:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 10:24:07 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-02 10:24:07 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 6.655 seconds (process running for 7.585)
+2026-06-02 10:29:50 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-02 10:29:50 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-02 10:29:50 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 86 ms
+2026-06-02 10:29:50 [http-nio-8080-exec-3] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-06-02 10:29:50 [http-nio-8080-exec-5] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-06-02 10:30:45 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:45 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 10:30:46 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 10:30:47 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:47 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 10:30:47 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 10:30:50 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:50 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users/27 - Fetch request received
+2026-06-02 10:30:50 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=27
+2026-06-02 10:30:50 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=27 | employeeId=SMT124
+2026-06-02 10:30:50 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=27 | timeTaken=35ms
+2026-06-02 10:30:50 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=27
+2026-06-02 10:30:50 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=27, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=CTS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 10:30:50 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:50 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/27 - Fetch request received
+2026-06-02 10:30:50 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=27
+2026-06-02 10:30:50 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=27 | employeeId=SMT124
+2026-06-02 10:30:50 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=27 | timeTaken=18ms
+2026-06-02 10:30:50 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=27
+2026-06-02 10:30:50 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=27, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=CTS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 10:30:52 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:52 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 10:30:52 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 10:30:52 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:52 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 10:30:53 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 10:30:53 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:53 [http-nio-8080-exec-10] INFO  c.e.D.controller.UserController - GET /api/v2/users/26 - Fetch request received
+2026-06-02 10:30:53 [http-nio-8080-exec-10] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=26
+2026-06-02 10:30:53 [http-nio-8080-exec-10] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=26 | employeeId=EMP101
+2026-06-02 10:30:53 [http-nio-8080-exec-10] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=26 | timeTaken=13ms
+2026-06-02 10:30:53 [http-nio-8080-exec-10] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=26
+2026-06-02 10:30:53 [http-nio-8080-exec-10] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=26, employeeName=Sagar, employeeId=EMP101, email=janhavi@test.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 10:30:53 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:53 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users/26 - Fetch request received
+2026-06-02 10:30:53 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=26
+2026-06-02 10:30:53 [http-nio-8080-exec-9] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=26 | employeeId=EMP101
+2026-06-02 10:30:53 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=26 | timeTaken=14ms
+2026-06-02 10:30:53 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=26
+2026-06-02 10:30:53 [http-nio-8080-exec-9] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=26, employeeName=Sagar, employeeId=EMP101, email=janhavi@test.com, mobileNo=9876543210, designation=Software Developer, department=Engineering, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 10:30:55 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:55 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 10:30:55 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 10:30:55 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:55 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 10:30:55 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 10:30:56 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:56 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/25 - Fetch request received
+2026-06-02 10:30:56 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=25
+2026-06-02 10:30:56 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=25 | employeeId=NSS0763
+2026-06-02 10:30:56 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=25 | timeTaken=16ms
+2026-06-02 10:30:56 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=25
+2026-06-02 10:30:56 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=25, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 10:30:56 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 10:30:56 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users/25 - Fetch request received
+2026-06-02 10:30:56 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=25
+2026-06-02 10:30:56 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=25 | employeeId=NSS0763
+2026-06-02 10:30:56 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=25 | timeTaken=16ms
+2026-06-02 10:30:56 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=25
+2026-06-02 10:30:56 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=25, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 10:44:58 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02 10:44:58 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-02 10:44:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 10:44:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 10:44:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 12:09:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-02 12:09:46 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 26520 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-06-02 12:09:46 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-02 12:09:46 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-02 12:09:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-02 12:09:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-02 12:09:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02 12:09:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-06-02 12:09:47 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-02 12:09:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 12:09:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 12:09:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-02 12:09:47 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1337 ms
+2026-06-02 12:09:47 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-06-02 12:09:47 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-02 12:09:47 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-02 12:09:48 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02 12:09:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 12:09:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e29d076
+2026-06-02 12:09:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 12:09:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-02 12:09:48 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 12:09:49 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 12:09:50 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 12:09:50 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02 12:09:50 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-02 12:09:50 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-02 12:09:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 12:09:50 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-02 12:09:50 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 4.969 seconds (process running for 5.697)
+2026-06-02 12:11:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-02 12:11:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-02 12:11:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-06-02 12:11:04 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:11:04 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=SMT124
+2026-06-02 12:11:04 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, employeeId=SMT124, designation=Senior Java developer, department=Information Technology, accountNo=1234567890, bankName=HDFC Bank, address=N-42,VD-1/3/1,Sawta Nager,Cidco,Trimurti Chowk, CTC=500000.0, dateOfBirth=2026-06-02, offerDate=2026-06-02, joiningDate=2026-06-02, panNo=DTBPG9845J, company=SMT, pfType=WITH_PF, identity=MR, documents=[COMPLETION_CERTIFICATE], documentData={COMPLETION_CERTIFICATE={startDate=2026-06-02, completionDate=2026-06-02, issueDate=2026-06-02}})
+2026-06-02 12:11:04 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=SMT124
+2026-06-02 12:11:04 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=SMT124
+2026-06-02 12:11:04 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=SMT124
+2026-06-02 12:11:04 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=SMT124 | documents=[COMPLETION_CERTIFICATE]
+2026-06-02 12:11:04 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=SMT124
+2026-06-02 12:11:04 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=SMT124
+2026-06-02 12:11:04 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:13:50 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, employeeId=SMT124, designation=Senior Java developer, department=Information Technology, accountNo=1234567890, bankName=HDFC Bank, address=N-42,VD-1/3/1,Sawta Nager,Cidco,Trimurti Chowk, CTC=500000.0, dateOfBirth=2026-06-02, offerDate=2026-06-02, joiningDate=2026-06-02, panNo=DTBPG9845J, company=NSS, pfType=WITH_PF, identity=MR, documents=[COMPLETION_CERTIFICATE], documentData={COMPLETION_CERTIFICATE={startDate=2026-06-02, completionDate=2026-06-02, issueDate=2026-06-02}})
+2026-06-02 12:13:50 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=SMT124 | documents=[COMPLETION_CERTIFICATE]
+2026-06-02 12:13:50 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=SMT124
+2026-06-02 12:13:50 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:15:02 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, employeeId=SMT124, designation=Senior Java developer, department=Information Technology, accountNo=1234567890, bankName=HDFC Bank, address=N-42,VD-1/3/1,Sawta Nager,Cidco,Trimurti Chowk, CTC=500000.0, dateOfBirth=2026-06-02, offerDate=2026-06-02, joiningDate=2026-06-02, panNo=DTBPG9845J, company=CTS, pfType=WITH_PF, identity=MR, documents=[COMPLETION_CERTIFICATE], documentData={COMPLETION_CERTIFICATE={startDate=2026-06-02, completionDate=2026-06-02, issueDate=2026-06-02}})
+2026-06-02 12:15:02 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=SMT124 | documents=[COMPLETION_CERTIFICATE]
+2026-06-02 12:15:02 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=SMT124
+2026-06-02 12:15:02 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=SMT124
+2026-06-02 12:17:11 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:17:11 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=NSS0763
+2026-06-02 12:17:11 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, employeeId=NSS0763, designation=Senior Java developer, department=Information Technology, accountNo=1234567890, bankName=HDFC Bank, address=N-42,VD-1/3/1,Sawta Nager,Cidco,Trimurti Chowk, CTC=500000.0, dateOfBirth=2026-06-02, offerDate=2026-06-02, joiningDate=2026-06-02, panNo=GFZPS5852A, company=DCS, pfType=WITH_PF, identity=MR, documents=[COMPLETION_CERTIFICATE], documentData={COMPLETION_CERTIFICATE={startDate=2026-06-02, completionDate=2026-06-02, issueDate=2026-06-02}})
+2026-06-02 12:17:11 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=NSS0763
+2026-06-02 12:17:11 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=NSS0763
+2026-06-02 12:17:11 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=NSS0763
+2026-06-02 12:17:11 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=NSS0763 | documents=[COMPLETION_CERTIFICATE]
+2026-06-02 12:17:11 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=NSS0763
+2026-06-02 12:17:11 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=NSS0763
+2026-06-02 12:17:11 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=NSS0763
+2026-06-02 12:18:28 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:28 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:18:29 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:18:29 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:29 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:18:29 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:18:30 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:30 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users/31 - Fetch request received
+2026-06-02 12:18:30 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=31
+2026-06-02 12:18:30 [http-nio-8080-exec-9] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=31 | employeeId=NSS0763
+2026-06-02 12:18:30 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=31 | timeTaken=28ms
+2026-06-02 12:18:30 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=31
+2026-06-02 12:18:30 [http-nio-8080-exec-9] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=31, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=DCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=true, data={completionDate=2026-06-02, issueDate=2026-06-02, startDate=2026-06-02}), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:18:30 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:30 [http-nio-8080-exec-10] INFO  c.e.D.controller.UserController - GET /api/v2/users/31 - Fetch request received
+2026-06-02 12:18:30 [http-nio-8080-exec-10] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=31
+2026-06-02 12:18:30 [http-nio-8080-exec-10] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=31 | employeeId=NSS0763
+2026-06-02 12:18:30 [http-nio-8080-exec-10] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=31 | timeTaken=20ms
+2026-06-02 12:18:30 [http-nio-8080-exec-10] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=31
+2026-06-02 12:18:30 [http-nio-8080-exec-10] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=31, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=DCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=true, data={completionDate=2026-06-02, issueDate=2026-06-02, startDate=2026-06-02}), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/31 - Fetch request received
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=31
+2026-06-02 12:18:45 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=31 | employeeId=NSS0763
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=31 | timeTaken=15ms
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=31
+2026-06-02 12:18:45 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=31, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=DCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=true, data={completionDate=2026-06-02, issueDate=2026-06-02, startDate=2026-06-02}), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/31 - Fetch request received
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=31
+2026-06-02 12:18:45 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=31 | employeeId=NSS0763
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=31 | timeTaken=13ms
+2026-06-02 12:18:45 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=31
+2026-06-02 12:18:45 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=31, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=DCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=true, data={completionDate=2026-06-02, issueDate=2026-06-02, startDate=2026-06-02}), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:18:47 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:47 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:18:47 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:18:47 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:47 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:18:47 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:18:51 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:51 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users/28 - Fetch request received
+2026-06-02 12:18:51 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=28
+2026-06-02 12:18:51 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=28 | employeeId=SMT124
+2026-06-02 12:18:51 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=28 | timeTaken=13ms
+2026-06-02 12:18:51 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=28
+2026-06-02 12:18:51 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=28, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=true, data={completionDate=2026-06-02, issueDate=2026-06-02, startDate=2026-06-02}), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:18:51 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:18:51 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/28 - Fetch request received
+2026-06-02 12:18:51 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=28
+2026-06-02 12:18:51 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=28 | employeeId=SMT124
+2026-06-02 12:18:51 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=28 | timeTaken=14ms
+2026-06-02 12:18:51 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=28
+2026-06-02 12:18:51 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=28, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=true, data={completionDate=2026-06-02, issueDate=2026-06-02, startDate=2026-06-02}), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:22:13 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:22:13 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:22:13 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:22:13 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:22:13 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:22:14 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:22:16 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:22:16 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users/24 - Fetch request received
+2026-06-02 12:22:16 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=24
+2026-06-02 12:22:16 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=24 | employeeId=SMT124
+2026-06-02 12:22:16 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=24 | timeTaken=22ms
+2026-06-02 12:22:16 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=24
+2026-06-02 12:22:16 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=24, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-01, probationPeriod=9})})
+2026-06-02 12:22:16 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:22:16 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/24 - Fetch request received
+2026-06-02 12:22:16 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=24
+2026-06-02 12:22:16 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=24 | employeeId=SMT124
+2026-06-02 12:22:16 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=24 | timeTaken=18ms
+2026-06-02 12:22:16 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=24
+2026-06-02 12:22:16 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=24, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-01, probationPeriod=9})})
+2026-06-02 12:26:07 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:26:07 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - POST /api/v2/users/create-profile - Request received for employeeId=SMT124
+2026-06-02 12:26:07 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Full request payload: CreateProfileRequest(employeeName=Prathamesh Bhavsar, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, employeeId=SMT124, designation=Senior Java developer, department=Information Technology, accountNo=1234567890, bankName=HDFC Bank, address=N-42,VD-1/3/1,Sawta Nager,Cidco,Trimurti Chowk, CTC=500000.0, dateOfBirth=2026-06-02, offerDate=2026-06-02, joiningDate=2026-06-02, panNo=DTBPG9845J, company=SMT, pfType=WITH_PF, identity=MRS, documents=[OFFER_LETTER], documentData={OFFER_LETTER={issueDate=2026-06-02, probationPeriod=3}})
+2026-06-02 12:26:07 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Creating user profile for employeeId=SMT124
+2026-06-02 12:26:07 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Validating request for employeeId=SMT124
+2026-06-02 12:26:07 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Building UserProfile entity for employeeId=SMT124
+2026-06-02 12:26:07 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Processing documents for employeeId=SMT124 | documents=[OFFER_LETTER]
+2026-06-02 12:26:07 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - Saving user profile to database for employeeId=SMT124
+2026-06-02 12:26:07 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile created successfully for employeeId=SMT124
+2026-06-02 12:26:07 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile created successfully for employeeId=SMT124
+2026-06-02 12:27:16 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:27:16 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:27:17 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:27:17 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:27:17 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:27:17 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:27:18 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:27:18 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:27:18 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:27:18 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:27:18 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=17ms
+2026-06-02 12:27:18 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:27:18 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:27:18 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:27:18 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:27:18 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:27:18 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:27:18 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=13ms
+2026-06-02 12:27:18 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:27:18 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:41:53 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:41:53 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:41:53 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:41:54 [http-nio-8080-exec-9] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:41:54 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=120ms
+2026-06-02 12:41:54 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:41:54 [http-nio-8080-exec-9] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:41:54 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:41:54 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:41:54 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:41:54 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:41:54 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=18ms
+2026-06-02 12:41:54 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:41:54 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:46:10 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:46:10 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:46:10 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:46:10 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:46:10 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=182ms
+2026-06-02 12:46:10 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:46:10 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:46:11 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:46:11 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:46:11 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:46:11 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:46:11 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=19ms
+2026-06-02 12:46:11 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:46:11 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:49:11 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:49:11 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:49:11 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:49:11 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:49:11 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=35ms
+2026-06-02 12:49:11 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:49:11 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:49:11 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:49:11 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:49:11 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:49:11 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:49:11 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=98ms
+2026-06-02 12:49:11 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:49:11 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:52:27 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:52:27 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users/20 - Fetch request received
+2026-06-02 12:52:27 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=20
+2026-06-02 12:52:28 [http-nio-8080-exec-5] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=20 | employeeId=DSS132
+2026-06-02 12:52:28 [http-nio-8080-exec-5] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=20 | timeTaken=162ms
+2026-06-02 12:52:28 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=20
+2026-06-02 12:52:28 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=20, employeeName=Prathamesh Bhavsar, employeeId=DSS132, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=DCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=PAID, endDate=2026-06-01, issueDate=2026-06-01, startDate=2026-06-01}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 12:52:41 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:52:41 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-06-02 12:52:41 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-06-02 12:52:41 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=SMT124
+2026-06-02 12:52:41 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=37ms
+2026-06-02 12:52:41 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-06-02 12:52:41 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Pramod Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30}), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-05, endMonth=2026-05}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30, probationPeriod=9})})
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:55:37 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=115ms
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:55:37 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:55:37 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=26ms
+2026-06-02 12:55:37 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:55:37 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:56:31 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=26ms
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:56:31 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users/32 - Fetch request received
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=32
+2026-06-02 12:56:31 [http-nio-8080-exec-6] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=32 | employeeId=SMT124
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=32 | timeTaken=23ms
+2026-06-02 12:56:31 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=32
+2026-06-02 12:56:31 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=32, employeeName=Prathamesh Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MRS, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-06-02, probationPeriod=3})})
+2026-06-02 12:56:32 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:32 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:56:32 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:56:32 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:32 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 12:56:32 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 12:56:34 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:34 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=1, size=8, sortBy=id, direction=desc
+2026-06-02 12:56:34 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Fetched 8 users on page 1 of 4
+2026-06-02 12:56:35 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:35 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=2, size=8, sortBy=id, direction=desc
+2026-06-02 12:56:35 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Fetched 8 users on page 2 of 4
+2026-06-02 12:56:37 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:37 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=3, size=8, sortBy=id, direction=desc
+2026-06-02 12:56:37 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Fetched 7 users on page 3 of 4
+2026-06-02 12:56:38 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:38 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-06-02 12:56:38 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-06-02 12:56:38 [http-nio-8080-exec-9] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=SMT124
+2026-06-02 12:56:38 [http-nio-8080-exec-9] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=24ms
+2026-06-02 12:56:38 [http-nio-8080-exec-9] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-06-02 12:56:38 [http-nio-8080-exec-9] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Pramod Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30}), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-05, endMonth=2026-05}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30, probationPeriod=9})})
+2026-06-02 12:56:38 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:38 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-06-02 12:56:38 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-06-02 12:56:38 [http-nio-8080-exec-2] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=SMT124
+2026-06-02 12:56:38 [http-nio-8080-exec-2] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=20ms
+2026-06-02 12:56:38 [http-nio-8080-exec-2] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-06-02 12:56:38 [http-nio-8080-exec-2] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Pramod Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30}), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-05, endMonth=2026-05}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30, probationPeriod=9})})
+2026-06-02 12:56:42 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:42 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-06-02 12:56:42 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-06-02 12:56:42 [http-nio-8080-exec-1] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=SMT124
+2026-06-02 12:56:42 [http-nio-8080-exec-1] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=23ms
+2026-06-02 12:56:42 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-06-02 12:56:42 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Pramod Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30}), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-05, endMonth=2026-05}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30, probationPeriod=9})})
+2026-06-02 12:56:42 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 12:56:42 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users/1 - Fetch request received
+2026-06-02 12:56:42 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=1
+2026-06-02 12:56:42 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=1 | employeeId=SMT124
+2026-06-02 12:56:42 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=1 | timeTaken=20ms
+2026-06-02 12:56:42 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=1
+2026-06-02 12:56:42 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=1, employeeName=Prathamesh Pramod Bhavsar, employeeId=SMT124, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=SMT, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30}), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-05, endMonth=2026-05}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-05-30, probationPeriod=9})})
+2026-06-02 13:03:39 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02 13:03:39 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-02 13:03:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 13:03:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 13:03:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 14:08:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-02 14:08:55 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 22836 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-06-02 14:08:55 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-02 14:08:55 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-02 14:08:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-02 14:08:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-02 14:08:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02 14:08:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2026-06-02 14:08:57 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-02 14:08:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 14:08:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 14:08:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-02 14:08:57 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2269 ms
+2026-06-02 14:08:58 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-06-02 14:08:58 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-02 14:08:58 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-02 14:08:58 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02 14:08:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 14:08:59 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550f2fff
+2026-06-02 14:08:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 14:08:59 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-02 14:08:59 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 14:09:01 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 14:09:01 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 14:09:01 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02 14:09:01 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-02 14:09:01 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-02 14:09:02 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 14:09:02 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-02 14:09:02 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 7.685 seconds (process running for 8.681)
+2026-06-02 15:00:38 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m8s289ms885µs400ns).
+2026-06-02 15:01:59 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02 15:01:59 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-02 15:01:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 15:01:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 15:01:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 16:39:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-02 16:39:30 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 5436 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-06-02 16:39:30 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-02 16:39:30 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-02 16:39:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-02 16:39:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-02 16:39:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02 16:39:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2026-06-02 16:39:32 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-02 16:39:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 16:39:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 16:39:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-02 16:39:32 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1832 ms
+2026-06-02 16:39:32 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-06-02 16:39:32 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-02 16:39:32 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-02 16:39:33 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02 16:39:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 16:39:34 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ae9773b
+2026-06-02 16:39:34 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 16:39:34 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-02 16:39:34 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 16:39:36 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 16:39:36 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 16:39:36 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02 16:39:36 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-02 16:39:36 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-02 16:39:37 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 16:39:37 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-02 16:39:37 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 7.452 seconds (process running for 8.249)
+2026-06-02 16:39:59 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-02 16:39:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-02 16:39:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-06-02 16:39:59 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 16:39:59 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 16:39:59 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 16:40:00 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 16:40:00 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 16:40:00 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 16:40:04 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 16:40:04 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/25 - Fetch request received
+2026-06-02 16:40:04 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=25
+2026-06-02 16:40:04 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=25 | employeeId=NSS0763
+2026-06-02 16:40:04 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=25 | timeTaken=37ms
+2026-06-02 16:40:04 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=25
+2026-06-02 16:40:04 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=25, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 16:40:04 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 16:40:04 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users/25 - Fetch request received
+2026-06-02 16:40:04 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=25
+2026-06-02 16:40:04 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=25 | employeeId=NSS0763
+2026-06-02 16:40:04 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=25 | timeTaken=15ms
+2026-06-02 16:40:04 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=25
+2026-06-02 16:40:04 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=25, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 16:58:15 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02 16:58:16 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-02 16:58:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 16:58:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 16:58:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 17:45:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-02 17:45:48 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 28856 (E:\DocGen New Front V2\Docgen-Backend\target\classes started by prath in E:\DocGen New Front V2\Docgen-Backend)
+2026-06-02 17:45:48 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-02 17:45:48 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-02 17:45:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-02 17:45:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-02 17:45:49 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02 17:45:49 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2026-06-02 17:45:50 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-02 17:45:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 17:45:50 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 17:45:50 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-02 17:45:50 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1424 ms
+2026-06-02 17:45:50 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-06-02 17:45:50 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-02 17:45:50 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-02 17:45:50 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02 17:45:50 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 17:45:51 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550f2fff
+2026-06-02 17:45:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 17:45:51 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-02 17:45:51 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/docgen_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: docgen_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 17:45:52 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 17:45:52 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 17:45:52 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02 17:45:52 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-02 17:45:52 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-02 17:45:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 17:45:53 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-02 17:45:53 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 5.084 seconds (process running for 5.709)
+2026-06-02 18:28:16 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-02 18:28:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-02 18:28:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 45 ms
+2026-06-02 18:28:17 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 18:28:17 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 18:28:17 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 18:28:18 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 18:28:18 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users - Fetch all users request received | page=0, size=8, sortBy=id, direction=desc
+2026-06-02 18:28:18 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Fetched 8 users on page 0 of 4
+2026-06-02 18:28:20 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 18:28:20 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/25 - Fetch request received
+2026-06-02 18:28:20 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=25
+2026-06-02 18:28:20 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=25 | employeeId=NSS0763
+2026-06-02 18:28:20 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=25 | timeTaken=27ms
+2026-06-02 18:28:20 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=25
+2026-06-02 18:28:20 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=25, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 18:28:20 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=null
+2026-06-02 18:28:20 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users/25 - Fetch request received
+2026-06-02 18:28:20 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=25
+2026-06-02 18:28:20 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=25 | employeeId=NSS0763
+2026-06-02 18:28:20 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=25 | timeTaken=10ms
+2026-06-02 18:28:20 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=25
+2026-06-02 18:28:20 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=25, employeeName=Prathamesh Bhavsar, employeeId=NSS0763, email=prathamesh69bhavsar@gmail.com, mobileNo=8007454299, designation=Senior Java developer, department=Information Technology, company=NCS, identity=MR, pfType=WITH_PF, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-06, endMonth=2026-06}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-06-02 19:17:56 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m3s601ms942µs600ns).
+2026-06-02 19:18:25 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02 19:18:25 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-02 19:18:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02 19:18:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 19:18:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

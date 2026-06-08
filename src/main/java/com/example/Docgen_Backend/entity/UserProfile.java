@@ -25,7 +25,7 @@ public class UserProfile {
     private String dateOfBirth;
 
     // ADDRESS
-    private String address;
+    private String Address;
 
     // JOB INFO
     private String designation;
