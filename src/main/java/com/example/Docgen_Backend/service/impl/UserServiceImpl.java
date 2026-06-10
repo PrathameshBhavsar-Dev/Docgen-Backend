@@ -64,18 +64,27 @@
         // VALIDATION
         // =========================
         private void validateRequest(CreateProfileRequest request) {
-    
-            if (request.getEmployeeName() == null || request.getEmployeeName().isEmpty()) {
+
+            if (request.getEmployeeName() == null ||
+                    request.getEmployeeName().trim().isEmpty()) {
                 throw new IllegalArgumentException("Employee name is required");
             }
-    
-            if (request.getEmail() == null || request.getEmail().isEmpty()) {
+
+            if (request.getEmail() == null ||
+                    request.getEmail().trim().isEmpty()) {
                 throw new IllegalArgumentException("Email is required");
             }
-    
-//            if (request.getDocuments() == null || request.getDocuments().isEmpty()) {
-//                throw new IllegalArgumentException("At least one document must be provided");
-//            }
+
+            boolean exists = userRepository.existsByEmployeeNameAndEmail(
+                    request.getEmployeeName(),
+                    request.getEmail()
+            );
+
+            if (exists) {
+                throw new IllegalArgumentException(
+                        "User already exists with same employee name and email"
+                );
+            }
         }
     
         // =========================
@@ -342,18 +351,32 @@
                 docs.put("RELIEVING_LETTER", buildRelievingLetter(user));
                 docs.put("FULL_AND_FINAL", buildFullAndFinalLetter(user));
                 docs.put("SALARY_SLIP", buildSalarySlip(user));
-    
+
                 UserProfileResponseDTO response = UserProfileResponseDTO.builder()
                         .id(user.getId())
+
                         .employeeName(user.getEmployeeName())
                         .employeeId(user.getEmployeeId())
                         .email(user.getEmail())
                         .mobileNo(user.getPhone())
+
                         .designation(user.getDesignation())
                         .department(user.getDepartment())
+
                         .company(user.getCompany().name())
                         .identity(user.getIdentity().name())
                         .pfType(user.getPfType().name())
+
+                        // Additional Fields
+                        .accountNo(user.getAccountNo())
+                        .bankName(user.getBankName())
+                        .address(user.getAddress())
+                        .CTC(user.getCTC())
+                        .dateOfBirth(user.getDateOfBirth())
+                        .offerDate(user.getOfferDate())
+                        .joiningDate(user.getJoiningDate())
+                        .panNo(user.getPanNo())
+
                         .documents(docs)
                         .build();
     
@@ -699,7 +722,7 @@
     
             // REMOVE DOCS THAT ARE UNCHECKED
             removeUncheckedDocuments(request, user);
-    
+
             for (String doc : request.getDocuments()) {
     
                 Map<String, Object> data =
