@@ -25,7 +25,7 @@ RUN ./mvnw clean package -DskipTests
 # =========================
 # Stage 2: Run the app
 # =========================
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:21-jre
 
 WORKDIR /app
 
