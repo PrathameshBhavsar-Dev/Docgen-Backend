@@ -75,7 +75,8 @@
                 throw new IllegalArgumentException("Email is required");
             }
 
-            boolean exists = userRepository.existsByEmployeeNameAndEmail(
+            boolean exists = userRepository.existsByEmployeeIdAndEmployeeNameAndEmail(
+                    request.getEmployeeId(),
                     request.getEmployeeName(),
                     request.getEmail()
             );
