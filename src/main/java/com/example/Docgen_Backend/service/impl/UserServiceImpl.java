@@ -38,6 +38,11 @@
     
                 // Step 2: Build user
                 log.debug("Building UserProfile entity for employeeId={}", request.getEmployeeId());
+                log.info("Current Address : {}", request.getCurrentAddress());
+                log.info("Permanent Address : {}", request.getPermanentAddress());
+
+                log.info("Joining CTC : {}", request.getJoiningCTC());
+                log.info("Current CTC : {}", request.getCurrentCTC());
                 UserProfile user = buildUser(request);
     
                 // Step 3: Process documents
@@ -65,6 +70,11 @@
         // =========================
         private void validateRequest(CreateProfileRequest request) {
 
+            if (request.getEmployeeId() == null ||
+                    request.getEmployeeId().trim().isEmpty()) {
+                throw new IllegalArgumentException("Employee ID is required");
+            }
+
             if (request.getEmployeeName() == null ||
                     request.getEmployeeName().trim().isEmpty()) {
                 throw new IllegalArgumentException("Employee name is required");
@@ -75,19 +85,18 @@
                 throw new IllegalArgumentException("Email is required");
             }
 
-            boolean exists = userRepository.existsByEmployeeIdAndEmployeeNameAndEmail(
-                    request.getEmployeeId(),
-                    request.getEmployeeName(),
-                    request.getEmail()
-            );
+            if (userRepository.existsByEmployeeId(request.getEmployeeId())) {
+                throw new IllegalArgumentException("Employee ID already exists");
+            }
 
-            if (exists) {
-                throw new IllegalArgumentException(
-                        "User already exists with same employee name and email"
-                );
+            if (userRepository.existsByEmployeeName(request.getEmployeeName())) {
+                throw new IllegalArgumentException("Employee name already exists");
+            }
+
+            if (userRepository.existsByEmail(request.getEmail())) {
+                throw new IllegalArgumentException("Email already exists");
             }
         }
-    
         // =========================
         // BUILD USER
         // =========================
@@ -100,12 +109,18 @@
                 user.setEmail(request.getEmail());
                 user.setPhone(request.getMobileNo());
                 user.setEmployeeId(request.getEmployeeId());
-                user.setDesignation(request.getDesignation());
+                user.setJoiningDesignation(request.getJoiningDesignation());
+                user.setCurrentDesignation(request.getCurrentDesignation());
                 user.setDepartment(request.getDepartment());
+
                 user.setAccountNo(request.getAccountNo());
                 user.setBankName(request.getBankName());
-                user.setAddress(request.getAddress());
-                user.setCTC(request.getCTC());
+
+                user.setCurrentAddress(request.getCurrentAddress());
+                user.setPermanentAddress(request.getPermanentAddress());
+
+                user.setJoiningCTC(request.getJoiningCTC());
+                user.setCurrentCTC(request.getCurrentCTC());
                 user.setDateOfBirth(request.getDateOfBirth());
                 user.setOfferDate(request.getOfferDate());
                 user.setJoiningDate(request.getJoiningDate());
@@ -361,18 +376,22 @@
                         .email(user.getEmail())
                         .mobileNo(user.getPhone())
 
-                        .designation(user.getDesignation())
+                        .joiningDesignation(user.getJoiningDesignation())
+                        .currentDesignation(user.getCurrentDesignation())
                         .department(user.getDepartment())
 
                         .company(user.getCompany().name())
                         .identity(user.getIdentity().name())
                         .pfType(user.getPfType().name())
 
-                        // Additional Fields
                         .accountNo(user.getAccountNo())
                         .bankName(user.getBankName())
-                        .address(user.getAddress())
-                        .CTC(user.getCTC())
+
+                        .currentAddress(user.getCurrentAddress())
+                        .permanentAddress(user.getPermanentAddress())
+
+                        .joiningCTC(user.getJoiningCTC())
+                        .currentCTC(user.getCurrentCTC())
                         .dateOfBirth(user.getDateOfBirth())
                         .offerDate(user.getOfferDate())
                         .joiningDate(user.getJoiningDate())
@@ -652,12 +671,18 @@
                 user.setEmail(request.getEmail());
                 user.setPhone(request.getMobileNo());
                 user.setEmployeeId(request.getEmployeeId());
-                user.setDesignation(request.getDesignation());
+                user.setJoiningDesignation(request.getJoiningDesignation());
+                user.setCurrentDesignation(request.getCurrentDesignation());
                 user.setDepartment(request.getDepartment());
+
                 user.setAccountNo(request.getAccountNo());
                 user.setBankName(request.getBankName());
-                user.setAddress(request.getAddress());
-                user.setCTC(request.getCTC());
+
+                user.setCurrentAddress(request.getCurrentAddress());
+                user.setPermanentAddress(request.getPermanentAddress());
+
+                user.setJoiningCTC(request.getJoiningCTC());
+                user.setCurrentCTC(request.getCurrentCTC());
                 user.setDateOfBirth(request.getDateOfBirth());
                 user.setOfferDate(request.getOfferDate());
                 user.setJoiningDate(request.getJoiningDate());

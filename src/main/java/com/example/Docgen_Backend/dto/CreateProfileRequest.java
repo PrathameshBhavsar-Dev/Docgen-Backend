@@ -7,27 +7,38 @@ import java.util.Map;
 @Data
 public class CreateProfileRequest {
 
-    // =========================
-    // USER PROFILE
-    // =========================
+    // User Profile
     private String employeeName;
     private String email;
     private String mobileNo;
     private String employeeId;
-    private String designation;
+
+    // Job
+    private String joiningDesignation;
+    private String currentDesignation;
     private String department;
+
+    // Address
+    private String currentAddress;
+    private String permanentAddress;
+
+    // Bank
     private String accountNo;
     private String bankName;
-    private String address;
-    private Double CTC;
+
+    // Salary
+    private Double joiningCTC;
+    private Double currentCTC;
+
+    // Personal
     private String dateOfBirth;
     private String offerDate;
     private String joiningDate;
     private String panNo;
 
-    // ✅ NEW
-    private String company;   // full name (e.g. "SmartMatrix Digital Services Pvt. Ltd.")
-    private String pfType;    // WITH_PF / WITHOUT_PF
+    // Company
+    private String company;
+    private String pfType;
     private String identity;
 
     // =========================

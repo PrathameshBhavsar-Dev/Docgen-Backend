@@ -7,12 +7,12 @@ spring:
     username: u186356589_docgen
     password: Docgen@MadMax@69
     hikari:
-      maximum-pool-size: 5
-      minimum-idle: 1
-      max-lifetime: 30000
-      idle-timeout: 10000
-      keepalive-time: 5000
-      validation-timeout: 3000
+      minimum-idle: 2
+      maximum-pool-size: 10
+      idle-timeout: 600000        # 10 minutes
+      max-lifetime: 1500000       # 25 minutes
+      connection-timeout: 30000
+      validation-timeout: 5000
 
   # JPA Config
   jpa:

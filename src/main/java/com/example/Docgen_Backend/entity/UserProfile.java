@@ -25,15 +25,18 @@ public class UserProfile {
     private String dateOfBirth;
 
     // ADDRESS
-    private String Address;
+    private String currentAddress;
+    private String permanentAddress;
 
     // JOB INFO
-    private String designation;
+    private String joiningDesignation;
+    private String currentDesignation;
     private String department;
     private String offerDate;
     private String joiningDate;
 
-    private Double CTC;
+    private Double joiningCTC;
+    private Double currentCTC;
 
     // BANK DETAILS
     private String bankName;

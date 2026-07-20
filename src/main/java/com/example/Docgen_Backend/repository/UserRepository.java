@@ -6,8 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserProfile, Long> {
-    boolean existsByEmployeeIdAndEmployeeNameAndEmail(
-            String employeeId,
-            String employeeName,
-            String email);
+    boolean existsByEmployeeId(String employeeId);
+    boolean existsByEmail(String email);
+    boolean existsByEmployeeName(String employeeName); // Only if names must also be unique
 }

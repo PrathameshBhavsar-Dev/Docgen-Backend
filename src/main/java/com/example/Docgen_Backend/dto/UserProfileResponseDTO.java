@@ -16,17 +16,29 @@ public class UserProfileResponseDTO {
     private String email;
     private String mobileNo;
 
-    private String designation;
+    // Job Info
+    private String joiningDesignation;
+    private String currentDesignation;
     private String department;
 
+    // Company Info
     private String company;
     private String identity;
     private String pfType;
 
+    // Bank Info
     private String accountNo;
     private String bankName;
-    private String address;
-    private Double CTC;
+
+    // Address
+    private String currentAddress;
+    private String permanentAddress;
+
+    // Salary
+    private Double joiningCTC;
+    private Double currentCTC;
+
+    // Personal
     private String dateOfBirth;
     private String offerDate;
     private String joiningDate;
