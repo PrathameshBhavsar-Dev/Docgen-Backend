@@ -5,13 +5,15 @@
     import com.example.Docgen_Backend.dto.UserProfileResponseDTO;
     import com.example.Docgen_Backend.entity.*;
     import com.example.Docgen_Backend.exception.UserNotFoundException;
+    import com.example.Docgen_Backend.repository.CompanyEmployeeCounterRepository;
     import com.example.Docgen_Backend.repository.UserRepository;
     import com.example.Docgen_Backend.service.UserService;
     import lombok.RequiredArgsConstructor;
     import lombok.extern.slf4j.Slf4j;
     import org.springframework.data.domain.*;
     import org.springframework.stereotype.Service;
-    
+    import org.springframework.transaction.annotation.Transactional;
+
     import java.time.LocalDate;
     import java.util.HashMap;
     import java.util.Map;
@@ -22,47 +24,57 @@
     public class UserServiceImpl implements UserService {
     
         private final UserRepository userRepository;
+        private final CompanyEmployeeCounterRepository companyEmployeeCounterRepository;
     
         // =========================
         // CREATE PROFILE
         // =========================
         @Override
+        @Transactional
         public void createProfile(CreateProfileRequest request) {
-    
-            log.info("Creating user profile for employeeId={}", request.getEmployeeId());
-    
-            try {
-                // Step 1: Validate
-                log.debug("Validating request for employeeId={}", request.getEmployeeId());
-                validateRequest(request);
-    
-                // Step 2: Build user
-                log.debug("Building UserProfile entity for employeeId={}", request.getEmployeeId());
-                log.info("Current Address : {}", request.getCurrentAddress());
-                log.info("Permanent Address : {}", request.getPermanentAddress());
 
-                log.info("Joining CTC : {}", request.getJoiningCTC());
-                log.info("Current CTC : {}", request.getCurrentCTC());
+            try {
+                validateRequest(request);
+
+                CompanyType companyType = CompanyType.fromFullName(request.getCompany());
+
+                String generatedEmployeeId = generateEmployeeId(companyType);
+                log.info("Generated employeeId={} for company={}", generatedEmployeeId, request.getCompany());
+                request.setEmployeeId(generatedEmployeeId);
+
                 UserProfile user = buildUser(request);
-    
-                // Step 3: Process documents
-                log.debug("Processing documents for employeeId={} | documents={}",
-                        request.getEmployeeId(), request.getDocuments());
+
                 processDocuments(request, user);
-    
-                // Step 4: Save to DB
-                log.debug("Saving user profile to database for employeeId={}", request.getEmployeeId());
+
                 userRepository.save(user);
-    
+
                 log.info("User profile created successfully for employeeId={}", request.getEmployeeId());
-    
+
             } catch (Exception ex) {
-                log.error("Error while creating profile for employeeId={} | error={}",
-                        request.getEmployeeId(), ex.getMessage(), ex);
-    
-                // rethrow so GlobalExceptionHandler can handle it
+                log.error("Error while creating profile | error={}", ex.getMessage(), ex);
                 throw ex;
             }
+        }
+
+        @Transactional
+        public String generateEmployeeId(CompanyType companyType) {
+
+            String prefix = companyType.getEmpIdPrefix();
+
+            CompanyEmployeeCounter counter = companyEmployeeCounterRepository
+                    .findByPrefixForUpdate(prefix)
+                    .orElseGet(() -> {
+                        CompanyEmployeeCounter newCounter = new CompanyEmployeeCounter();
+                        newCounter.setCompanyPrefix(prefix);
+                        newCounter.setLastNumber(0);
+                        return newCounter;
+                    });
+
+            int nextNumber = counter.getLastNumber() + 1;
+            counter.setLastNumber(nextNumber);
+            companyEmployeeCounterRepository.save(counter);
+
+            return prefix + String.format("%03d", nextNumber);
         }
     
         // =========================
@@ -70,33 +82,29 @@
         // =========================
         private void validateRequest(CreateProfileRequest request) {
 
-            if (request.getEmployeeId() == null ||
-                    request.getEmployeeId().trim().isEmpty()) {
-                throw new IllegalArgumentException("Employee ID is required");
-            }
+            // employeeId no longer required from client — generated server-side
 
-            if (request.getEmployeeName() == null ||
-                    request.getEmployeeName().trim().isEmpty()) {
+            if (request.getEmployeeName() == null || request.getEmployeeName().trim().isEmpty()) {
                 throw new IllegalArgumentException("Employee name is required");
             }
 
-            if (request.getEmail() == null ||
-                    request.getEmail().trim().isEmpty()) {
+            if (request.getEmail() == null || request.getEmail().trim().isEmpty()) {
                 throw new IllegalArgumentException("Email is required");
             }
 
-            if (userRepository.existsByEmployeeId(request.getEmployeeId())) {
-                throw new IllegalArgumentException("Employee ID already exists");
+            if (request.getCompany() == null) {
+                throw new IllegalArgumentException("Company is required");
             }
 
-            if (userRepository.existsByEmployeeName(request.getEmployeeName())) {
-                throw new IllegalArgumentException("Employee name already exists");
-            }
+//            if (userRepository.existsByEmployeeName(request.getEmployeeName())) {
+//                throw new IllegalArgumentException("Employee name already exists");
+//            }
 
-            if (userRepository.existsByEmail(request.getEmail())) {
-                throw new IllegalArgumentException("Email already exists");
-            }
+//            if (userRepository.existsByEmail(request.getEmail())) {
+//                throw new IllegalArgumentException("Email already exists");
+//            }
         }
+
         // =========================
         // BUILD USER
         // =========================

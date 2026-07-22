@@ -5,26 +5,32 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum CompanyType {
 
-    SMT("SmartMatrix Digital Services Pvt. Ltd."),
-    DCS("Devcons Software Solutions Pvt. Ltd."),
-    PSS("Penta Software Consultancy Services (I) Pvt Ltd"),
-    CTS("Cubeage Technologies Services Pvt. Ltd."),
-    QMS("Quick Management Services"),
-    NCS("Neweage Cloud Solution Pvt. Ltd."),
-    RBS("RP Business Solutions LLP"),
-    JDT("JDIT Software Solutions Pvt. Ltd."),
-    NSS("NIMBJA SECURITY SOLUTIONS Pvt. Ltd."),
-    SSS("Smart Software Services (I) Pvt. Ltd.");
+    SMDS("SmartMatrix Digital Services Pvt. Ltd.", "SMDS"),
+    DSS("Devcons Software Solutions Pvt. Ltd.", "DSS"),
+    PSCS("Penta Software Consultancy Services (I) Pvt Ltd", "PSCS"),
+    CTS("Cubeage Technologies Services Pvt. Ltd.", "CTS"),
+    QMS("Quick Management Services", "QMS"),
+    NCSS("Neweage Cloud Solution Pvt. Ltd.", "NCSS"),
+    RPBS("RP Business Solutions LLP", "RPBS"),
+    JDIT("JDIT Software Solutions Pvt. Ltd.", "JDIT"),
+    NSS("NIMBJA SECURITY SOLUTIONS Pvt. Ltd.", "NSS"),
+    SSS("Smart Software Services (I) Pvt. Ltd.", "SSS");
 
     private final String fullName;
+    private final String empIdPrefix;
 
-    CompanyType(String fullName) {
+    CompanyType(String fullName, String empIdPrefix) {
         this.fullName = fullName;
+        this.empIdPrefix = empIdPrefix;
     }
 
     @JsonValue
     public String getFullName() {
         return fullName;
+    }
+
+    public String getEmpIdPrefix() {
+        return empIdPrefix;
     }
 
     @JsonCreator
