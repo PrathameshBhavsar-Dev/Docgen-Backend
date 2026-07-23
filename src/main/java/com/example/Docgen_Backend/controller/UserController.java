@@ -13,7 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
@@ -99,33 +101,43 @@ public class UserController {
             @RequestParam(defaultValue = "id") String sortBy,
             @RequestParam(defaultValue = "asc") String direction
     ) {
-
-        log.info("GET /api/v2/users - Fetch all users request received | page={}, size={}, sortBy={}, direction={}",
-                page, size, sortBy, direction);
-
         Page<UserProfile> pageResult =
                 userService.getAllUserProfiles(page, size, sortBy, direction);
 
-        log.info("Fetched {} users on page {} of {}",
-                pageResult.getNumberOfElements(),
-                pageResult.getNumber(),
-                pageResult.getTotalPages()
-        );
+        List<UserProfileResponseDTO> dtoList = pageResult.getContent().stream()
+                .map(user -> UserProfileResponseDTO.builder()
+                        .id(user.getId())
+                        .employeeName(user.getEmployeeName())
+                        .employeeId(user.getEmployeeId())
+                        .email(user.getEmail())
+                        .mobileNo(user.getPhone())
+                        .joiningDesignation(user.getJoiningDesignation())
+                        .currentDesignation(user.getCurrentDesignation())
+                        .department(user.getDepartment())
+                        .company(user.getCompany() != null ? user.getCompany().getFullName() : null)
+                        .identity(user.getIdentity() != null ? user.getIdentity().name() : null)
+                        .pfType(user.getPfType() != null ? user.getPfType().name() : null)
+                        .accountNo(user.getAccountNo())
+                        .bankName(user.getBankName())
+                        .currentAddress(user.getCurrentAddress())
+                        .permanentAddress(user.getPermanentAddress())
+                        .joiningCTC(user.getJoiningCTC())
+                        .currentCTC(user.getCurrentCTC())
+                        .dateOfBirth(user.getDateOfBirth())
+                        .offerDate(user.getOfferDate())
+                        .joiningDate(user.getJoiningDate())
+                        .panNo(user.getPanNo())
+                        // .documents(...) — omit for list view; only build for single-profile fetch
+                        .build())
+                .collect(Collectors.toList());
 
         Map<String, Object> data = new HashMap<>();
-
-        data.put("content", pageResult.getContent());
+        data.put("content", dtoList);
         data.put("currentPage", pageResult.getNumber());
         data.put("totalItems", pageResult.getTotalElements());
         data.put("totalPages", pageResult.getTotalPages());
 
-        ApiResponse<Object> response = new ApiResponse<>(
-                true,
-                200,
-                "Profiles fetched successfully",
-                data
-        );
-
+        ApiResponse<Object> response = new ApiResponse<>(true, 200, "Profiles fetched successfully", data);
         return ResponseEntity.ok(response);
     }
 

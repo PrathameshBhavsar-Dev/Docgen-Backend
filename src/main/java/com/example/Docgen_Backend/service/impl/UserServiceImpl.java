@@ -346,6 +346,7 @@
         }
     
         @Override
+        @Transactional(readOnly = true)
         public UserProfileResponseDTO getUserForEdit(Long id) {
     
             log.info("Fetching user profile for edit | userId={}", id);
@@ -654,6 +655,7 @@
         }
     
         @Override
+        @Transactional
         public void updateProfile(Long id, CreateProfileRequest request) {
     
             log.info("Updating user profile | userId={} | employeeId={}",
