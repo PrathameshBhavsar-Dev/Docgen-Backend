@@ -83,9 +83,16 @@ public class JwtFilter extends OncePerRequestFilter {
             SimpleGrantedAuthority authority =
                     new SimpleGrantedAuthority("ROLE_" + role);
 
+//            UsernamePasswordAuthenticationToken authentication =
+//                    new UsernamePasswordAuthenticationToken(
+//                            email,
+//                            null,
+//                            List.of(authority)
+//                    );
+
             UsernamePasswordAuthenticationToken authentication =
                     new UsernamePasswordAuthenticationToken(
-                            email,
+                            userId,   // ✅ now the principal is userId
                             null,
                             List.of(authority)
                     );

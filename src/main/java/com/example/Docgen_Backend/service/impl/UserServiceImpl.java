@@ -11,6 +11,7 @@
     import lombok.RequiredArgsConstructor;
     import lombok.extern.slf4j.Slf4j;
     import org.springframework.data.domain.*;
+    import org.springframework.security.core.context.SecurityContextHolder;
     import org.springframework.stereotype.Service;
     import org.springframework.transaction.annotation.Transactional;
 
@@ -44,11 +45,16 @@
 
                 UserProfile user = buildUser(request);
 
+                // ✅ capture creator
+                String currentUserId = SecurityContextHolder.getContext().getAuthentication().getName();
+                user.setCreatedByUserId(currentUserId);
+
                 processDocuments(request, user);
 
                 userRepository.save(user);
 
-                log.info("User profile created successfully for employeeId={}", request.getEmployeeId());
+                log.info("User profile created successfully for employeeId={} | createdBy={}",
+                        request.getEmployeeId(), currentUserId);
 
             } catch (Exception ex) {
                 log.error("Error while creating profile | error={}", ex.getMessage(), ex);
@@ -335,29 +341,33 @@
         // =========================
         @Override
         public Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction) {
-    
+
+            String currentUserId = SecurityContextHolder.getContext().getAuthentication().getName();
+
             Sort sort = direction.equalsIgnoreCase("asc") ?
                     Sort.by(sortBy).ascending() :
                     Sort.by(sortBy).descending();
-    
+
             Pageable pageable = PageRequest.of(page, size, sort);
-    
-            return userRepository.findAll(pageable);
+
+            return userRepository.findAllByCreatedByUserId(currentUserId, pageable);
         }
-    
+
         @Override
         @Transactional(readOnly = true)
         public UserProfileResponseDTO getUserForEdit(Long id) {
-    
-            log.info("Fetching user profile for edit | userId={}", id);
-    
+
+            String currentUserId = SecurityContextHolder.getContext().getAuthentication().getName();
+
+            log.info("Fetching user profile for edit | userId={} | requestedBy={}", id, currentUserId);
+
             long start = System.currentTimeMillis();
-    
+
             try {
-    
-                UserProfile user = userRepository.findById(id)
+
+                UserProfile user = userRepository.findByIdAndCreatedByUserId(id, currentUserId)
                         .orElseThrow(() -> {
-                            log.warn("User not found | userId={}", id);
+                            log.warn("User not found or not owned by requester | userId={} | requestedBy={}", id, currentUserId);
                             return new UserNotFoundException("User not found");
                         });
     

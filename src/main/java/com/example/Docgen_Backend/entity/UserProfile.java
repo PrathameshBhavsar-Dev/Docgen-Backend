@@ -3,6 +3,7 @@ package com.example.Docgen_Backend.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,6 +53,17 @@ public class UserProfile {
     // COMPANY
     @Enumerated(EnumType.STRING)
     private CompanyType company;
+
+    @Column(updatable = false)
+    private String createdByUserId;
+
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
+
+    @PrePersist
+    protected void onCreate() {
+        this.createdAt = LocalDateTime.now();
+    }
 
     // ================= RELATIONS =================
 
