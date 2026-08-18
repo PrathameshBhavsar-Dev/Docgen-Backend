@@ -51,6 +51,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/v2/users/**")
                         .authenticated()
 
+                        .requestMatchers("/api/v2/users/import-form")
+                        .permitAll()
+
                         .anyRequest()
                         .authenticated()
                 )

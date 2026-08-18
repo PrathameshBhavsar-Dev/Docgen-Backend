@@ -3,6 +3,7 @@ package com.example.Docgen_Backend.dto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @Data
@@ -43,6 +44,8 @@ public class UserProfileResponseDTO {
     private String offerDate;
     private String joiningDate;
     private String panNo;
+
+    private LocalDateTime createdAt;
 
     private Map<String, DocumentResponseDTO> documents;
 }

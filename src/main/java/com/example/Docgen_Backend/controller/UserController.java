@@ -127,6 +127,7 @@ public class UserController {
                         .offerDate(user.getOfferDate())
                         .joiningDate(user.getJoiningDate())
                         .panNo(user.getPanNo())
+                        .createdAt(user.getCreatedAt())
                         // .documents(...) — omit for list view; only build for single-profile fetch
                         .build())
                 .collect(Collectors.toList());
@@ -166,5 +167,15 @@ public class UserController {
         );
 
         return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/import-form")
+    public ResponseEntity<ApiResponse<Object>> importFromForm(
+            @RequestHeader("X-Import-Secret") String importSecret,
+            @RequestBody CreateProfileRequest request
+    ) {
+        userService.importFromForm(request, importSecret);
+        return ResponseEntity.status(201)
+                .body(new ApiResponse<>(true, 201, "Profile imported from form", null));
     }
 }

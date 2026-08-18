@@ -65,6 +65,9 @@ public class UserProfile {
         this.createdAt = LocalDateTime.now();
     }
 
+    @Column(length = 20)
+    private String source; // "FORM" or "MANUAL"
+
     // ================= RELATIONS =================
 
     @OneToOne(mappedBy = "userProfile", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)

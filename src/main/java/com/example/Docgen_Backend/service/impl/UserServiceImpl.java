@@ -10,6 +10,7 @@
     import com.example.Docgen_Backend.service.UserService;
     import lombok.RequiredArgsConstructor;
     import lombok.extern.slf4j.Slf4j;
+    import org.springframework.beans.factory.annotation.Value;
     import org.springframework.data.domain.*;
     import org.springframework.security.core.context.SecurityContextHolder;
     import org.springframework.stereotype.Service;
@@ -143,6 +144,8 @@
                 user.setIdentity(IdentityType.valueOf(request.getIdentity().toUpperCase()));
                 user.setCompany(CompanyType.fromFullName(request.getCompany()));
                 user.setPfType(PFType.valueOf(request.getPfType().toUpperCase()));
+
+                user.setSource("MANUAL");
     
             } catch (Exception e) {
                 throw new IllegalArgumentException("Invalid enum or input value provided");
@@ -1107,5 +1110,33 @@
             if (!request.getDocuments().contains("SALARY_SLIP")) {
                 user.getSalarySlips().clear();
             }
+        }
+
+        @Value("${import.form.secret}")
+        private String expectedImportSecret;
+
+        @Value("${import.form.owner-user-id}")
+        private String importOwnerUserId;
+
+        @Transactional
+        public void importFromForm(CreateProfileRequest request, String providedSecret) {
+
+            if (!expectedImportSecret.equals(providedSecret)) {
+                throw new IllegalArgumentException("Invalid import secret");
+            }
+
+            validateRequest(request);
+
+            CompanyType companyType = CompanyType.fromFullName(request.getCompany());
+            String generatedEmployeeId = generateEmployeeId(companyType);
+            request.setEmployeeId(generatedEmployeeId);
+
+            UserProfile user = buildUser(request);
+            user.setCreatedByUserId(importOwnerUserId);
+            user.setSource("FORM");
+
+            userRepository.save(user);
+
+            log.info("Profile imported from form | employeeId={}", generatedEmployeeId);
         }
     }

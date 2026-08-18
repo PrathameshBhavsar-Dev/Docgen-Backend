@@ -14,5 +14,5 @@ public interface UserService {
     UserProfile getUserById(Long id);
     void updateProfile(Long id, CreateProfileRequest request);
     Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction);
-
+    void importFromForm(CreateProfileRequest request, String providedSecret);
 }
