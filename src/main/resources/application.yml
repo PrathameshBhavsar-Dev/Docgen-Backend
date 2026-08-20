@@ -30,5 +30,5 @@ security:
 
 import:
   form:
-    secret: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
+    secret: 63f4945d921d599f27ae4fdf5bada3f1
     owner-user-id: 6a82a98a13421d60d7e0e553

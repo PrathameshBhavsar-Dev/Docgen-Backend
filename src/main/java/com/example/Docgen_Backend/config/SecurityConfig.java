@@ -47,12 +47,13 @@ public class SecurityConfig {
                         .requestMatchers("/api/user/**")
                         .hasAnyRole("USER", "ADMIN")
 
+                        // GOOGLE FORM IMPORT
+                        .requestMatchers("/api/v2/users/import-form")
+                        .permitAll()
+
                         // DOCGEN V2
                         .requestMatchers("/api/v2/users/**")
                         .authenticated()
-
-                        .requestMatchers("/api/v2/users/import-form")
-                        .permitAll()
 
                         .anyRequest()
                         .authenticated()
