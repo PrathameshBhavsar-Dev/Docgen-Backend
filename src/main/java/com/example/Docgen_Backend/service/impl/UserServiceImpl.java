@@ -40,9 +40,10 @@
 
                 CompanyType companyType = CompanyType.fromFullName(request.getCompany());
 
-                String generatedEmployeeId = generateEmployeeId(companyType);
-                log.info("Generated employeeId={} for company={}", generatedEmployeeId, request.getCompany());
-                request.setEmployeeId(generatedEmployeeId);
+                // ✅ TEMPORARILY DISABLED — auto-generate employeeId
+                // String generatedEmployeeId = generateEmployeeId(companyType);
+                // log.info("Generated employeeId={} for company={}", generatedEmployeeId, request.getCompany());
+                // request.setEmployeeId(generatedEmployeeId);
 
                 UserProfile user = buildUser(request);
 
@@ -89,7 +90,10 @@
         // =========================
         private void validateRequest(CreateProfileRequest request) {
 
-            // employeeId no longer required from client — generated server-side
+            // ✅ RE-ENABLED — manual employeeId entry temporarily
+            if (request.getEmployeeId() == null || request.getEmployeeId().trim().isEmpty()) {
+                throw new IllegalArgumentException("Employee ID is required");
+            }
 
             if (request.getEmployeeName() == null || request.getEmployeeName().trim().isEmpty()) {
                 throw new IllegalArgumentException("Employee name is required");
@@ -102,14 +106,6 @@
             if (request.getCompany() == null) {
                 throw new IllegalArgumentException("Company is required");
             }
-
-//            if (userRepository.existsByEmployeeName(request.getEmployeeName())) {
-//                throw new IllegalArgumentException("Employee name already exists");
-//            }
-
-//            if (userRepository.existsByEmail(request.getEmail())) {
-//                throw new IllegalArgumentException("Email already exists");
-//            }
         }
 
         // =========================
