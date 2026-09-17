@@ -1121,11 +1121,10 @@
                 throw new IllegalArgumentException("Invalid import secret");
             }
 
-            validateRequest(request);
+            // ✅ Employee ID is filled in manually later inside the app — not collected from the form
+            request.setEmployeeId("PENDING");
 
-            CompanyType companyType = CompanyType.fromFullName(request.getCompany());
-            String generatedEmployeeId = generateEmployeeId(companyType);
-            request.setEmployeeId(generatedEmployeeId);
+            validateRequest(request);
 
             UserProfile user = buildUser(request);
             user.setCreatedByUserId(importOwnerUserId);
@@ -1133,6 +1132,6 @@
 
             userRepository.save(user);
 
-            log.info("Profile imported from form | employeeId={}", generatedEmployeeId);
+            log.info("Profile imported from form | employeeId=PENDING | employeeName={}", request.getEmployeeName());
         }
     }
