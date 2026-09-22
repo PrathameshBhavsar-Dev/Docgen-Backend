@@ -13,6 +13,6 @@ public interface UserService {
     UserProfileResponseDTO getUserForEdit(Long id);
     UserProfile getUserById(Long id);
     void updateProfile(Long id, CreateProfileRequest request);
-    Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction);
+    Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction, String search);
     void importFromForm(CreateProfileRequest request, String providedSecret);
 }

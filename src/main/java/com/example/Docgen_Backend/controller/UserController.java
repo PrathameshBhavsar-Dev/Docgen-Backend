@@ -99,10 +99,11 @@ public class UserController {
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "5") int size,
             @RequestParam(defaultValue = "id") String sortBy,
-            @RequestParam(defaultValue = "asc") String direction
+            @RequestParam(defaultValue = "asc") String direction,
+            @RequestParam(required = false) String search
     ) {
         Page<UserProfile> pageResult =
-                userService.getAllUserProfiles(page, size, sortBy, direction);
+                userService.getAllUserProfiles(page, size, sortBy, direction, search);
 
         List<UserProfileResponseDTO> dtoList = pageResult.getContent().stream()
                 .map(user -> UserProfileResponseDTO.builder()

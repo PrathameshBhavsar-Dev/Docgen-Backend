@@ -339,7 +339,7 @@
         // PAGINATION
         // =========================
         @Override
-        public Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction) {
+        public Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction, String search) {
 
             String currentUserId = SecurityContextHolder.getContext().getAuthentication().getName();
 
@@ -348,6 +348,10 @@
                     Sort.by(sortBy).descending();
 
             Pageable pageable = PageRequest.of(page, size, sort);
+
+            if (search != null && !search.trim().isEmpty()) {
+                return userRepository.searchByCreatedByUserId(currentUserId, search.trim(), pageable);
+            }
 
             return userRepository.findAllByCreatedByUserId(currentUserId, pageable);
         }
