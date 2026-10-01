@@ -15,18 +15,35 @@ public interface UserRepository extends JpaRepository<UserProfile, Long> {
 
     boolean existsByEmployeeId(String employeeId);
     boolean existsByEmail(String email);
-    boolean existsByEmployeeName(String employeeName); // Only if names must also be unique
-    Page<UserProfile> findAllByCreatedByUserId(String createdByUserId, Pageable pageable);
-    Optional<UserProfile> findByIdAndCreatedByUserId(Long id, String createdByUserId);
+    boolean existsByEmployeeName(String employeeName);
 
     @Query("""
     SELECT u FROM UserProfile u
-    WHERE u.createdByUserId = :userId
+    WHERE u.createdByUserId = :userId OR u.source = 'FORM'
+    """)
+    Page<UserProfile> findAllVisibleToUser(
+            @Param("userId") String userId,
+            Pageable pageable
+    );
+
+    @Query("""
+    SELECT u FROM UserProfile u
+    WHERE u.id = :id
+    AND (u.createdByUserId = :userId OR u.source = 'FORM')
+    """)
+    Optional<UserProfile> findVisibleById(
+            @Param("id") Long id,
+            @Param("userId") String userId
+    );
+
+    @Query("""
+    SELECT u FROM UserProfile u
+    WHERE (u.createdByUserId = :userId OR u.source = 'FORM')
     AND (LOWER(u.employeeName) LIKE LOWER(CONCAT('%', :search, '%'))
          OR LOWER(u.employeeId) LIKE LOWER(CONCAT('%', :search, '%'))
          OR LOWER(u.email) LIKE LOWER(CONCAT('%', :search, '%')))
     """)
-    Page<UserProfile> searchByCreatedByUserId(
+    Page<UserProfile> searchVisibleToUser(
             @Param("userId") String userId,
             @Param("search") String search,
             Pageable pageable

@@ -349,11 +349,11 @@
 
             Pageable pageable = PageRequest.of(page, size, sort);
 
+            // getAllUserProfiles
             if (search != null && !search.trim().isEmpty()) {
-                return userRepository.searchByCreatedByUserId(currentUserId, search.trim(), pageable);
+                return userRepository.searchVisibleToUser(currentUserId, search.trim(), pageable);
             }
-
-            return userRepository.findAllByCreatedByUserId(currentUserId, pageable);
+            return userRepository.findAllVisibleToUser(currentUserId, pageable);
         }
 
         @Override
@@ -368,7 +368,7 @@
 
             try {
 
-                UserProfile user = userRepository.findByIdAndCreatedByUserId(id, currentUserId)
+                UserProfile user = userRepository.findVisibleById(id, currentUserId)
                         .orElseThrow(() -> {
                             log.warn("User not found or not owned by requester | userId={} | requestedBy={}", id, currentUserId);
                             return new UserNotFoundException("User not found");
@@ -666,27 +666,30 @@
                     .data(data)
                     .build();
         }
-    
+
         @Override
         @Transactional
         public void updateProfile(Long id, CreateProfileRequest request) {
-    
-            log.info("Updating user profile | userId={} | employeeId={}",
-                    id, request.getEmployeeId());
-    
+
+            String currentUserId = SecurityContextHolder.getContext().getAuthentication().getName();
+
+            log.info("Updating user profile | userId={} | employeeId={} | requestedBy={}",
+                    id, request.getEmployeeId(), currentUserId);
+
             long start = System.currentTimeMillis();
-    
+
             try {
-    
-                UserProfile user = userRepository.findById(id)
+
+                UserProfile user = userRepository.findVisibleById(id, currentUserId)
                         .orElseThrow(() -> {
-                            log.warn("User not found for update | userId={}", id);
+                            log.warn("User not found or not accessible for update | userId={} | requestedBy={}",
+                                    id, currentUserId);
                             return new UserNotFoundException("User not found");
                         });
-    
+
                 log.debug("Existing user fetched | userId={} | oldEmployeeId={}",
                         user.getId(), user.getEmployeeId());
-    
+
                 // ========================
                 // UPDATE BASIC PROFILE
                 // ========================
@@ -710,7 +713,7 @@
                 user.setOfferDate(request.getOfferDate());
                 user.setJoiningDate(request.getJoiningDate());
                 user.setPanNo(request.getPanNo());
-    
+
                 // ========================
                 // SAFE ENUM MAPPING
                 // ========================
@@ -722,7 +725,7 @@
                     log.error("Invalid identity value | value={}", request.getIdentity());
                     throw new IllegalArgumentException("Invalid identity value");
                 }
-    
+
                 try {
                     user.setCompany(
                             CompanyType.fromFullName(request.getCompany())
@@ -731,7 +734,7 @@
                     log.error("Invalid company value | value={}", request.getCompany());
                     throw new IllegalArgumentException("Invalid company value");
                 }
-    
+
                 try {
                     user.setPfType(
                             PFType.valueOf(request.getPfType().toUpperCase())
@@ -740,28 +743,28 @@
                     log.error("Invalid PF type value | value={}", request.getPfType());
                     throw new IllegalArgumentException("Invalid PF type value");
                 }
-    
+
                 // ========================
                 // UPDATE DOCUMENTS
                 // ========================
                 log.debug("Updating documents | userId={}", id);
                 processUpdateDocuments(request, user);
-    
+
                 // ========================
                 // SAVE
                 // ========================
                 userRepository.save(user);
-    
+
                 long end = System.currentTimeMillis();
-    
+
                 log.info("User profile updated successfully | userId={} | timeTaken={}ms",
                         id, (end - start));
-    
+
             } catch (Exception ex) {
-    
+
                 log.error("Error while updating user profile | userId={} | error={}",
                         id, ex.getMessage(), ex);
-    
+
                 throw ex;
             }
         }
