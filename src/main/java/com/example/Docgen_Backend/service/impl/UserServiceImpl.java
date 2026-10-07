@@ -135,6 +135,7 @@
                 user.setDateOfBirth(request.getDateOfBirth());
                 user.setOfferDate(request.getOfferDate());
                 user.setJoiningDate(request.getJoiningDate());
+                user.setLastWorkingDate(request.getLastWorkingDate());
                 user.setPanNo(request.getPanNo());
     
                 user.setIdentity(IdentityType.valueOf(request.getIdentity().toUpperCase()));
@@ -417,6 +418,7 @@
                         .dateOfBirth(user.getDateOfBirth())
                         .offerDate(user.getOfferDate())
                         .joiningDate(user.getJoiningDate())
+                        .lastWorkingDate(user.getLastWorkingDate())
                         .panNo(user.getPanNo())
 
                         .documents(docs)
@@ -712,6 +714,7 @@
                 user.setDateOfBirth(request.getDateOfBirth());
                 user.setOfferDate(request.getOfferDate());
                 user.setJoiningDate(request.getJoiningDate());
+                user.setLastWorkingDate(request.getLastWorkingDate());
                 user.setPanNo(request.getPanNo());
 
                 // ========================

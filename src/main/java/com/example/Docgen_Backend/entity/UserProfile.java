@@ -3,6 +3,7 @@ package com.example.Docgen_Backend.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -67,6 +68,9 @@ public class UserProfile {
 
     @Column(length = 20)
     private String source; // "FORM" or "MANUAL"
+
+    @Column(name = "last_working_date")
+    private LocalDate lastWorkingDate;
 
     // ================= RELATIONS =================
 

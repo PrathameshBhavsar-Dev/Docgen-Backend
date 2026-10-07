@@ -1,6 +1,8 @@
 package com.example.Docgen_Backend.dto;
 
 import lombok.Data;
+
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -34,6 +36,7 @@ public class CreateProfileRequest {
     private String dateOfBirth;
     private String offerDate;
     private String joiningDate;
+    private LocalDate lastWorkingDate;
     private String panNo;
 
     // Company

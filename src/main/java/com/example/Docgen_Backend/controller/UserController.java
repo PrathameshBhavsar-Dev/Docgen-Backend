@@ -127,6 +127,7 @@ public class UserController {
                         .dateOfBirth(user.getDateOfBirth())
                         .offerDate(user.getOfferDate())
                         .joiningDate(user.getJoiningDate())
+                        .lastWorkingDate(user.getLastWorkingDate())
                         .panNo(user.getPanNo())
                         .createdAt(user.getCreatedAt())
                         // .documents(...) — omit for list view; only build for single-profile fetch

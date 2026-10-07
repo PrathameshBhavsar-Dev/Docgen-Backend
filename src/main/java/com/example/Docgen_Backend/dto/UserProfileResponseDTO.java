@@ -3,6 +3,7 @@ package com.example.Docgen_Backend.dto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Map;
 
@@ -43,6 +44,7 @@ public class UserProfileResponseDTO {
     private String dateOfBirth;
     private String offerDate;
     private String joiningDate;
+    private LocalDate lastWorkingDate;
     private String panNo;
 
     private LocalDateTime createdAt;
