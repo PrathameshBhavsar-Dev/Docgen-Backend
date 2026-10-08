@@ -19,7 +19,8 @@
     import java.time.LocalDate;
     import java.util.HashMap;
     import java.util.Map;
-    
+    import java.util.Set;
+
     @Slf4j
     @Service
     @RequiredArgsConstructor
@@ -108,6 +109,17 @@
             }
         }
 
+        private <E extends Enum<E>> E parseEnum(Class<E> type, String value, String label) {
+            if (value == null || value.isBlank()) {
+                throw new IllegalArgumentException(label + " is required");
+            }
+            try {
+                return Enum.valueOf(type, value.trim().toUpperCase());
+            } catch (IllegalArgumentException e) {
+                throw new IllegalArgumentException("Invalid " + label + ": " + value);
+            }
+        }
+
         // =========================
         // BUILD USER
         // =========================
@@ -137,10 +149,10 @@
                 user.setJoiningDate(request.getJoiningDate());
                 user.setLastWorkingDate(request.getLastWorkingDate());
                 user.setPanNo(request.getPanNo());
-    
-                user.setIdentity(IdentityType.valueOf(request.getIdentity().toUpperCase()));
+
+                user.setIdentity(parseEnum(IdentityType.class, request.getIdentity(), "identity"));
                 user.setCompany(CompanyType.fromFullName(request.getCompany()));
-                user.setPfType(PFType.valueOf(request.getPfType().toUpperCase()));
+                user.setPfType(parseEnum(PFType.class, request.getPfType(), "PF type"));
 
                 user.setSource("MANUAL");
     
@@ -339,22 +351,36 @@
         // =========================
         // PAGINATION
         // =========================
+        private static final Set<String> SORTABLE_FIELDS = Set.of(
+                "id", "employeeName", "employeeId", "email",
+                "department", "joiningDate", "lastWorkingDate");
+
         @Override
         public Page<UserProfile> getAllUserProfiles(int page, int size, String sortBy, String direction, String search) {
 
             String currentUserId = SecurityContextHolder.getContext().getAuthentication().getName();
 
-            Sort sort = direction.equalsIgnoreCase("asc") ?
-                    Sort.by(sortBy).ascending() :
-                    Sort.by(sortBy).descending();
+            // ✅ only allow known sort fields (null-safe)
+            String sortField = (sortBy != null && SORTABLE_FIELDS.contains(sortBy)) ? sortBy : "id";
 
-            Pageable pageable = PageRequest.of(page, size, sort);
+            Sort sort = "asc".equalsIgnoreCase(direction)
+                    ? Sort.by(sortField).ascending()
+                    : Sort.by(sortField).descending();
 
-            // getAllUserProfiles
+            // ✅ clamp paging values
+            int safePage = Math.max(page, 0);
+            int safeSize = Math.min(Math.max(size, 1), 100);
+
+            Pageable pageable = PageRequest.of(safePage, safeSize, sort);
+
             if (search != null && !search.trim().isEmpty()) {
                 return userRepository.searchVisibleToUser(currentUserId, search.trim(), pageable);
             }
             return userRepository.findAllVisibleToUser(currentUserId, pageable);
+        }
+
+        private String enumName(Enum<?> e) {
+            return e == null ? null : e.name();
         }
 
         @Override
@@ -403,9 +429,9 @@
                         .currentDesignation(user.getCurrentDesignation())
                         .department(user.getDepartment())
 
-                        .company(user.getCompany().name())
-                        .identity(user.getIdentity().name())
-                        .pfType(user.getPfType().name())
+                        .company(enumName(user.getCompany()))
+                        .identity(enumName(user.getIdentity()))
+                        .pfType(enumName(user.getPfType()))
 
                         .accountNo(user.getAccountNo())
                         .bankName(user.getBankName())
@@ -681,6 +707,11 @@
             long start = System.currentTimeMillis();
 
             try {
+                validateRequest(request);
+
+                if ("PENDING".equalsIgnoreCase(request.getEmployeeId().trim())) {
+                    throw new IllegalArgumentException("Please enter the actual Employee ID");
+                }
 
                 UserProfile user = userRepository.findVisibleById(id, currentUserId)
                         .orElseThrow(() -> {
@@ -721,9 +752,7 @@
                 // SAFE ENUM MAPPING
                 // ========================
                 try {
-                    user.setIdentity(
-                            IdentityType.valueOf(request.getIdentity().toUpperCase())
-                    );
+                    user.setIdentity(parseEnum(IdentityType.class, request.getIdentity(), "identity"));
                 } catch (Exception e) {
                     log.error("Invalid identity value | value={}", request.getIdentity());
                     throw new IllegalArgumentException("Invalid identity value");
@@ -739,9 +768,7 @@
                 }
 
                 try {
-                    user.setPfType(
-                            PFType.valueOf(request.getPfType().toUpperCase())
-                    );
+                    user.setPfType(parseEnum(PFType.class, request.getPfType(), "PF type"));
                 } catch (Exception e) {
                     log.error("Invalid PF type value | value={}", request.getPfType());
                     throw new IllegalArgumentException("Invalid PF type value");
@@ -771,56 +798,66 @@
                 throw ex;
             }
         }
-    
+
+        private Map<String, Object> getDocData(CreateProfileRequest request, String doc) {
+            if (request.getDocumentData() == null
+                    || !(request.getDocumentData().get(doc) instanceof Map<?, ?> raw)) {
+                throw new IllegalArgumentException("Missing data for document: " + doc);
+            }
+            @SuppressWarnings("unchecked")
+            Map<String, Object> data = (Map<String, Object>) raw;
+            return data;
+        }
+
         private void processUpdateDocuments(CreateProfileRequest request,
                                             UserProfile user) {
-    
+
+            // ✅ NEW: fail early. A missing list would otherwise throw an NPE below,
+            // and treating null as "empty" would silently delete every document.
+            if (request.getDocuments() == null) {
+                throw new IllegalArgumentException("Documents list is required");
+            }
+
             // REMOVE DOCS THAT ARE UNCHECKED
             removeUncheckedDocuments(request, user);
 
             for (String doc : request.getDocuments()) {
-    
-                Map<String, Object> data =
-                        (Map<String, Object>) request.getDocumentData().get(doc);
-    
-                if (data == null) {
-                    throw new IllegalArgumentException(
-                            "Missing data for document: " + doc
-                    );
-                }
-    
+
+                // ✅ CHANGED: null-safe, no unchecked cast
+                Map<String, Object> data = getDocData(request, doc);
+
                 switch (doc) {
-    
+
                     case "OFFER_LETTER" ->
                             upsertOfferLetter(user, data);
-    
+
                     case "APPOINTMENT_LETTER" ->
                             upsertAppointmentLetter(user, data);
-    
+
                     case "INCREMENT_LETTER" ->
                             upsertIncrementLetter(user, data);
-    
+
                     case "INTERNSHIP_LETTER" ->
                             upsertInternshipLetter(user, data);
-    
+
                     case "COMPLETION_LETTER" ->
                             upsertCompletionLetter(user, data);
-    
+
                     case "CONFIRMATION_LETTER" ->
                             upsertConfirmationLetter(user, data);
-    
+
                     case "EXPERIENCE_LETTER" ->
                             upsertExperienceLetter(user, data);
-    
+
                     case "RELIEVING_LETTER" ->
                             upsertRelievingLetter(user, data);
-    
+
                     case "FULL_AND_FINAL" ->
                             upsertFullAndFinal(user, data);
-    
+
                     case "SALARY_SLIP" ->
                             upsertSalarySlip(user, data);
-    
+
                     default ->
                             throw new IllegalArgumentException(
                                     "Invalid document type: " + doc
