@@ -1,34 +1,71 @@
-spring:
+server:
+  port: ${PORT:8080}        # Render sets PORT; 8080 is the local default
 
-  # Database Config
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://auth-db948.hstgr.io:3306/u186356589_docgen_db
-    username: u186356589_docgen
-    password: Docgen@MadMax@69
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     hikari:
       minimum-idle: 2
       maximum-pool-size: 10
-      idle-timeout: 600000        # 10 minutes
-      max-lifetime: 1500000       # 25 minutes
+      idle-timeout: 600000
+      max-lifetime: 1500000
       connection-timeout: 30000
       validation-timeout: 5000
 
-  # JPA Config
   jpa:
     open-in-view: false
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
-#    show-sql: true
 
-# JWT Secret Key
 security:
   jwt:
-    secret-key: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
-    expiration-time: 3600000
+    secret-key: ${JWT_SECRET}
+    expiration-time: 1800000
+    refresh-secret: ${JWT_REFRESH_SECRET}
+    refresh-expiration-time: 604800000
 
 import:
   form:
-    secret: 63f4945d921d599f27ae4fdf5bada3f1
+    secret: ${IMPORT_FORM_SECRET}
     owner-user-id: 6a82a98a13421d60d7e0e553
+
+#spring:
+#
+#  # Database Config
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://auth-db948.hstgr.io:3306/u186356589_docgen_db
+#    username: u186356589_docgen
+#    password: Docgen@MadMax@69
+#    hikari:
+#      minimum-idle: 2
+#      maximum-pool-size: 10
+#      idle-timeout: 600000        # 10 minutes
+#      max-lifetime: 1500000       # 25 minutes
+#      connection-timeout: 30000
+#      validation-timeout: 5000
+#
+#  # JPA Config
+#  jpa:
+#    open-in-view: false
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    hibernate:
+#      ddl-auto: update
+##    show-sql: true
+#
+## JWT Secret Key
+#security:
+#  jwt:
+#    secret-key: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
+#    expiration-time: 3600000
+#    refresh-secret: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
+#    refresh-expiration-time: 604800000
+#
+#import:
+#  form:
+#    secret: 63f4945d921d599f27ae4fdf5bada3f1
+#    owner-user-id: 6a82a98a13421d60d7e0e553

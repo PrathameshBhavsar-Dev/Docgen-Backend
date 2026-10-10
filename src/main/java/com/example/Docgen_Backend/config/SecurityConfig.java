@@ -51,9 +51,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/v2/users/import-form")
                         .permitAll()
 
-                        // DOCGEN V2
-                        .requestMatchers("/api/v2/users/**")
-                        .authenticated()
+                        .requestMatchers("/api/v2/auth/login", "/api/v2/auth/refresh", "/api/v2/auth/logout")
+                        .permitAll()
+                        .requestMatchers("/api/v2/admin/**").hasRole("ADMIN")
 
                         .anyRequest()
                         .authenticated()
