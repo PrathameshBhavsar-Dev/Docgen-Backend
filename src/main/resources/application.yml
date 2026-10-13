@@ -24,7 +24,7 @@ spring:
 security:
   jwt:
     secret-key: ${JWT_SECRET}
-    expiration-time: 1800000
+    expiration-time: 86400000
     refresh-secret: ${JWT_REFRESH_SECRET}
     refresh-expiration-time: 604800000
 
@@ -61,7 +61,7 @@ import:
 #security:
 #  jwt:
 #    secret-key: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
-#    expiration-time: 3600000
+#    expiration-time: 86400000
 #    refresh-secret: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
 #    refresh-expiration-time: 604800000
 #
