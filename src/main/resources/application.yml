@@ -12,15 +12,32 @@ spring:
       maximum-pool-size: 10
       idle-timeout: 600000
       max-lifetime: 1500000
+      keepalive-time: 300000
       connection-timeout: 30000
       validation-timeout: 5000
-      keepalive-time: 300000      # 5 min
 
   jpa:
     open-in-view: false
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
+
+# Vendor database (vendor-sourced profiles only)
+vendor:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: ${VENDOR_DB_URL}
+    username: ${VENDOR_DB_USERNAME}
+    password: ${VENDOR_DB_PASSWORD}
+    minimum-idle: 0
+    maximum-pool-size: 3
+    idle-timeout: 600000
+    max-lifetime: 1500000
+    keepalive-time: 300000
+    connection-timeout: 30000
+    validation-timeout: 5000
+  jpa:
+    ddl-auto: update
 
 security:
   jwt:
@@ -32,8 +49,7 @@ security:
 import:
   form:
     secret: ${IMPORT_FORM_SECRET}
-    owner-user-id: 6a82a98a13421d60d7e0e553
-
+    owner-user-id: ${IMPORT_OWNER_USER_ID:6a82a98a13421d60d7e0e553}
 #spring:
 #
 #  # Database Config
