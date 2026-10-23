@@ -5,7 +5,6 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,101 +19,56 @@ import java.util.List;
 
 @Slf4j
 @Component
-@RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
 
     private final JwtUtil jwtUtil;
 
+    public JwtFilter(JwtUtil jwtUtil) {
+        this.jwtUtil = jwtUtil;
+    }
+
     @Override
-    protected void doFilterInternal(
-            HttpServletRequest request,
-            HttpServletResponse response,
-            FilterChain filterChain
-    ) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request,
+                                    HttpServletResponse response,
+                                    FilterChain filterChain)
+            throws ServletException, IOException {
 
         final String authHeader = request.getHeader("Authorization");
 
-        String token = null;
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            try {
+                String token = authHeader.substring(7);
 
-        try {
+                if (jwtUtil.validateToken(token)) {
+                    String userId = jwtUtil.extractUserId(token);
+                    String role = normalizeRole(jwtUtil.extractRole(token));
 
-            // =========================
-            // CHECK AUTH HEADER
-            // =========================
-
-            if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-
-                filterChain.doFilter(request, response);
-                return;
+                    if (userId != null && role != null) {
+                        UsernamePasswordAuthenticationToken authentication =
+                                new UsernamePasswordAuthenticationToken(
+                                        userId, null,
+                                        List.of(new SimpleGrantedAuthority("ROLE_" + role)));
+                        authentication.setDetails(
+                                new WebAuthenticationDetailsSource().buildDetails(request));
+                        SecurityContextHolder.getContext().setAuthentication(authentication);
+                    } else {
+                        log.warn("JWT has no usable userId/role");
+                    }
+                } else {
+                    log.warn("Invalid JWT token");
+                }
+            } catch (Exception e) {
+                SecurityContextHolder.clearContext();
+                log.error("JWT authentication failed: {}", e.getMessage());
             }
-
-            // =========================
-            // EXTRACT TOKEN
-            // =========================
-
-            token = authHeader.substring(7);
-
-            // =========================
-            // VALIDATE TOKEN
-            // =========================
-
-            if (!jwtUtil.validateToken(token)) {
-
-                log.warn("Invalid JWT token");
-
-                filterChain.doFilter(request, response);
-                return;
-            }
-
-            // =========================
-            // EXTRACT DATA
-            // =========================
-
-            String userId = jwtUtil.extractUserId(token);
-            String email = jwtUtil.extractEmail(token);
-            String role = jwtUtil.extractRole(token);
-
-            log.info("JWT validated successfully for userId={}", userId);
-
-            // =========================
-            // SET AUTHORITIES
-            // =========================
-
-            SimpleGrantedAuthority authority =
-                    new SimpleGrantedAuthority("ROLE_" + role);
-
-//            UsernamePasswordAuthenticationToken authentication =
-//                    new UsernamePasswordAuthenticationToken(
-//                            email,
-//                            null,
-//                            List.of(authority)
-//                    );
-
-            UsernamePasswordAuthenticationToken authentication =
-                    new UsernamePasswordAuthenticationToken(
-                            userId,   // ✅ now the principal is userId
-                            null,
-                            List.of(authority)
-                    );
-
-            authentication.setDetails(
-                    new WebAuthenticationDetailsSource()
-                            .buildDetails(request)
-            );
-
-            // =========================
-            // SET SECURITY CONTEXT
-            // =========================
-
-            SecurityContextHolder.getContext()
-                    .setAuthentication(authentication);
-
-        } catch (Exception e) {
-
-            log.error("JWT authentication failed: {}", e.getMessage());
-
         }
 
-        filterChain.doFilter(request, response);
+        filterChain.doFilter(request, response);   // called exactly once
+    }
+
+    private static String normalizeRole(String role) {
+        if (role == null || role.isBlank()) return null;
+        String r = role.trim().toUpperCase();
+        return r.startsWith("ROLE_") ? r.substring(5) : r;
     }
 }

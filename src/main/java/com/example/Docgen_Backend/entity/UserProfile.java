@@ -10,6 +10,8 @@ import java.util.List;
 
 @Entity
 @Data
+@Table(name = "user_profile",
+        indexes = @Index(name = "idx_user_profile_vendor_id", columnList = "vendor_id"))
 public class UserProfile {
 
     @Id
@@ -71,6 +73,9 @@ public class UserProfile {
 
     @Column(name = "last_working_date")
     private LocalDate lastWorkingDate;
+
+    @Column(name = "vendor_id")
+    private Long vendorId;   // null for internal employees
 
     // ================= RELATIONS =================
 

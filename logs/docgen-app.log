@@ -1,26 +1,28 @@
-2026-09-17 12:05:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-09-17 12:05:47 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 25432 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
-2026-09-17 12:05:47 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-09-17 12:05:47 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2026-09-17 12:05:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-17 12:05:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-17 12:05:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-17 12:05:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
-2026-09-17 12:05:48 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-09-17 12:05:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:05:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-09-17 12:05:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-09-17 12:05:48 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1253 ms
-2026-09-17 12:05:48 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
-2026-09-17 12:05:48 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-17 12:05:48 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-09-17 12:05:49 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-17 12:05:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-09-17 12:05:49 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63e83541
-2026-09-17 12:05:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-09-17 12:05:50 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
-2026-09-17 12:05:50 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-17 12:05:50 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-10-23 11:05:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 11:05:58 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 30264 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:05:58 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:05:58 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:05:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 11:05:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:05:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:05:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:05:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1479 ms
+2026-10-23 11:06:00 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-23 11:06:00 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-23 11:06:00 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-23 11:06:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:06:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-23 11:06:01 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@59413cd6
+2026-10-23 11:06:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-23 11:06:02 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:06:02 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:06:02 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [undefined/unknown]
 	Database driver: undefined/unknown
 	Database dialect: MySQLDialect
@@ -32,107 +34,15 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-17 12:05:51 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-17 12:05:56 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:05:57 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-09-17 12:05:57 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-09-17 12:05:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:05:57 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-09-17 12:05:57 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 11.129 seconds (process running for 11.782)
-2026-09-17 12:07:33 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9adaa87 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:07:40 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6bcbdad3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:07:48 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63e83541 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:09:17 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@639b0fab (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:09:27 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6c3aa164 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:10:02 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-17 12:10:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-09-17 12:10:02 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
-2026-09-17 12:10:02 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:10:03 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6bd6fabf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:10:03 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31d9abcc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:10:06 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:11:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35d346e7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:11:56 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4046badc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:11:57 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3987bc38 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:13:49 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@164c3191 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:13:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ac619af (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:13:57 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:13:59 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:14:06 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:14:07 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:14:22 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:14:24 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:15:22 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:15:22 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@74382cf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:15:22 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@11caa4c2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:15:29 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:16:22 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:16:22 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6217e26d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:16:22 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f3aff5a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:16:22 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6bfc081 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:16:24 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:17:22 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:17:22 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@72b4d6b1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:17:22 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7ca7e74d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:17:22 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ff3d0a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:17:23 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:18:25 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:18:25 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a5406a0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:18:25 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48820823 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:18:25 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@606a8297 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:18:27 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:18:57 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:18:57 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@57dfaddd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:18:57 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45bb9b66 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:18:57 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4084e32d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:18:59 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:19:07 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:19:09 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:19:22 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:19:25 [http-nio-8080-exec-6] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:20:22 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:20:22 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@16c87a5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:20:22 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b3f11e9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:20:22 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3941c063 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:20:25 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:22:00 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e241eb3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:22:05 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18b7f418 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:22:16 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@cf9d2b9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:24:04 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@290a2210 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:24:09 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d5a5f21 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:25:46 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@43393929 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:26:08 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45c23ba9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:27:41 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d4477a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:28:07 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33eccadb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:28:07 [http-nio-8080-exec-5] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
-2026-09-17 12:28:25 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:28:25 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2aa50cb2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:29:35 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 54 class path changes (0 additions, 54 deletions, 0 modifications)
-2026-09-17 12:29:35 [Thread-1] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-17 12:29:35 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:29:35 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-09-17 12:29:35 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:29:35 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:29:35 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-09-17 12:29:35 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-09-17 12:29:38 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 25432 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
-2026-09-17 12:29:38 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-09-17 12:29:38 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2026-09-17 12:29:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-17 12:29:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
-2026-09-17 12:29:39 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-09-17 12:29:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-09-17 12:29:39 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-09-17 12:29:39 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 411 ms
-2026-09-17 12:29:39 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
-2026-09-17 12:29:39 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-17 12:29:39 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-17 12:29:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2026-09-17 12:29:39 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b2da68b
-2026-09-17 12:29:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2026-09-17 12:29:39 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
-2026-09-17 12:29:39 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-17 12:29:39 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-10-23 11:06:03 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:06:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:06:13 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-23 11:06:13 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:06:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-23 11:06:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-23 11:06:14 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:06:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:06:14 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [undefined/unknown]
 	Database driver: undefined/unknown
 	Database dialect: MySQLDialect
@@ -144,314 +54,18 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-17 12:29:39 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-17 12:29:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:29:47 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-09-17 12:29:47 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-09-17 12:29:47 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 8.534 seconds (process running for 1441.455)
-2026-09-17 12:29:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2026-09-17 12:31:18 [HikariPool-2:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b2da68b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:31:30 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-17 12:31:30 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-09-17 12:31:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:31:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2026-09-17 12:31:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2026-09-17 12:31:36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-09-17 12:31:36 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 3984 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
-2026-09-17 12:31:36 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-09-17 12:31:36 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2026-09-17 12:31:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-17 12:31:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-17 12:31:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-17 12:31:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
-2026-09-17 12:31:38 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-09-17 12:31:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:31:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-09-17 12:31:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-09-17 12:31:38 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1259 ms
-2026-09-17 12:31:38 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
-2026-09-17 12:31:38 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-17 12:31:38 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-09-17 12:31:38 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-17 12:31:38 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-09-17 12:31:39 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e63a5c5
-2026-09-17 12:31:39 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-09-17 12:31:40 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
-2026-09-17 12:31:40 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-17 12:31:40 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [undefined/unknown]
-	Database driver: undefined/unknown
-	Database dialect: MySQLDialect
-	Database version: 8.0
-	Default catalog/schema: unknown/unknown
-	Autocommit mode: undefined/unknown
-	Isolation level: NONE [default NONE]
-	JDBC fetch size: undefined/unknown
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-17 12:31:41 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-17 12:31:46 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:31:47 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-09-17 12:31:47 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-09-17 12:31:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:31:47 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-09-17 12:31:47 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 11.321 seconds (process running for 11.905)
-2026-09-17 12:33:19 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e63a5c5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:33:23 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3fb42016 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:33:31 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7da19d5f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:35:21 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f0dd10 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:35:23 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f60c469 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:37:06 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b1e8749 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:37:07 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@445ffde6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:38:17 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-09-17 12:38:17 [Thread-1] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-17 12:38:17 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:38:17 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-09-17 12:38:17 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:38:17 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:38:17 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-09-17 12:38:17 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-09-17 12:38:17 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 3984 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
-2026-09-17 12:38:17 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-09-17 12:38:17 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2026-09-17 12:38:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-17 12:38:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
-2026-09-17 12:38:18 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-09-17 12:38:18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:38:18 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-09-17 12:38:18 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-09-17 12:38:18 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 482 ms
-2026-09-17 12:38:18 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
-2026-09-17 12:38:18 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-17 12:38:18 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-17 12:38:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2026-09-17 12:38:18 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73a0e094
-2026-09-17 12:38:18 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2026-09-17 12:38:18 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
-2026-09-17 12:38:18 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-17 12:38:18 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [undefined/unknown]
-	Database driver: undefined/unknown
-	Database dialect: MySQLDialect
-	Database version: 8.0
-	Default catalog/schema: unknown/unknown
-	Autocommit mode: undefined/unknown
-	Isolation level: NONE [default NONE]
-	JDBC fetch size: undefined/unknown
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-17 12:38:18 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-17 12:38:24 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:38:24 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-09-17 12:38:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:38:24 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-09-17 12:38:24 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 6.966 seconds (process running for 408.739)
-2026-09-17 12:38:24 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2026-09-17 12:38:28 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-17 12:38:28 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-09-17 12:38:28 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2026-09-17 12:38:28 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:38:32 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:39:49 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-17 12:39:50 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-09-17 12:39:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:39:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2026-09-17 12:39:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2026-09-17 12:46:35 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-09-17 12:46:35 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 15284 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
-2026-09-17 12:46:35 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-09-17 12:46:35 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2026-09-17 12:46:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-17 12:46:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-17 12:46:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-17 12:46:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
-2026-09-17 12:46:38 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-09-17 12:46:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:46:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-09-17 12:46:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-09-17 12:46:38 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3205 ms
-2026-09-17 12:46:38 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
-2026-09-17 12:46:39 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-17 12:46:39 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-09-17 12:46:40 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-17 12:46:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-09-17 12:46:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c77e331
-2026-09-17 12:46:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-09-17 12:46:43 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
-2026-09-17 12:46:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-17 12:46:44 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [undefined/unknown]
-	Database driver: undefined/unknown
-	Database dialect: MySQLDialect
-	Database version: 8.0
-	Default catalog/schema: unknown/unknown
-	Autocommit mode: undefined/unknown
-	Isolation level: NONE [default NONE]
-	JDBC fetch size: undefined/unknown
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-17 12:46:44 [restartedMain] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to load class [com.example.Docgen_Backend.entity.AppointmentLetter]
-2026-09-17 12:46:44 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to load class [com.example.Docgen_Backend.entity.AppointmentLetter]
-2026-09-17 12:46:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-09-17 12:46:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-09-17 12:46:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-09-17 12:46:44 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-09-17 12:46:44 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to load class [com.example.Docgen_Backend.entity.AppointmentLetter]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
-	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
-	at com.example.Docgen_Backend.DocgenBackendApplication.main(DocgenBackendApplication.java:12)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.example.Docgen_Backend.entity.AppointmentLetter]
-	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:88)
-	at org.hibernate.boot.models.internal.ClassLoaderServiceLoading.classForName(ClassLoaderServiceLoading.java:28)
-	at org.hibernate.models.internal.jdk.JdkBuilders.buildClassDetailsStatic(JdkBuilders.java:68)
-	at org.hibernate.models.internal.jdk.JdkBuilders.buildClassDetails(JdkBuilders.java:35)
-	at org.hibernate.models.internal.jdk.JdkBuilders.buildClassDetails(JdkBuilders.java:27)
-	at org.hibernate.models.internal.AbstractClassDetailsRegistry.createClassDetails(AbstractClassDetailsRegistry.java:209)
-	at org.hibernate.models.internal.AbstractClassDetailsRegistry.resolveClassDetails(AbstractClassDetailsRegistry.java:204)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.lambda$processManagedResources$2(MetadataBuildingProcess.java:450)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.processManagedResources(MetadataBuildingProcess.java:447)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:176)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1392)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1472)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
-	... 18 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Could not load requested class: com.example.Docgen_Backend.entity.AppointmentLetter
-	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:198)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:536)
-	at java.base/java.lang.Class.forName(Class.java:515)
-	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:85)
-	... 38 common frames omitted
-	Suppressed: java.lang.ClassNotFoundException: com.example.Docgen_Backend.entity.AppointmentLetter
-		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-		at java.base/java.lang.Class.forName0(Native Method)
-		at java.base/java.lang.Class.forName(Class.java:536)
-		at java.base/java.lang.Class.forName(Class.java:515)
-		at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123)
-		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202)
-		... 44 common frames omitted
-	Suppressed: java.lang.ClassNotFoundException: com.example.Docgen_Backend.entity.AppointmentLetter
-		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202)
-		... 44 common frames omitted
-	Suppressed: java.lang.ClassNotFoundException: com.example.Docgen_Backend.entity.AppointmentLetter
-		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-		at java.base/java.lang.Class.forName0(Native Method)
-		at java.base/java.lang.Class.forName(Class.java:536)
-		at java.base/java.lang.Class.forName(Class.java:515)
-		at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123)
-		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202)
-		... 44 common frames omitted
-	Suppressed: java.lang.ClassNotFoundException: com.example.Docgen_Backend.entity.AppointmentLetter
-		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202)
-		... 44 common frames omitted
-2026-09-17 12:47:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-09-17 12:47:25 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 24204 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
-2026-09-17 12:47:25 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-09-17 12:47:25 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
-2026-09-17 12:47:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-17 12:47:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-17 12:47:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-17 12:47:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
-2026-09-17 12:47:27 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-09-17 12:47:27 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:47:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-09-17 12:47:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-09-17 12:47:27 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1788 ms
-2026-09-17 12:47:27 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
-2026-09-17 12:47:28 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-17 12:47:28 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-09-17 12:47:28 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-17 12:47:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-09-17 12:47:29 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ef8eec9
-2026-09-17 12:47:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-09-17 12:47:29 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
-2026-09-17 12:47:29 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-17 12:47:29 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [undefined/unknown]
-	Database driver: undefined/unknown
-	Database dialect: MySQLDialect
-	Database version: 8.0
-	Default catalog/schema: unknown/unknown
-	Autocommit mode: undefined/unknown
-	Isolation level: NONE [default NONE]
-	JDBC fetch size: undefined/unknown
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-17 12:47:31 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-17 12:47:40 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:47:40 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-09-17 12:47:40 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2026-09-17 12:47:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-09-17 12:47:41 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-09-17 12:47:41 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 16.468 seconds (process running for 17.149)
-2026-09-17 12:47:47 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-17 12:47:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-09-17 12:47:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2026-09-17 12:47:47 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:47:54 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:49:17 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77974833 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:49:18 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7ef8eec9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:49:20 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7da19d5f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:51:01 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@30ba8408 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:51:09 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1edae988 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:51:16 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:51:18 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:52:03 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:52:03 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@442c9560 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:52:03 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4429570f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:52:05 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:52:09 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:52:11 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
-2026-09-17 12:53:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b1e8749 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:53:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@445ffde6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:53:53 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@522ec4b0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2026-09-17 12:54:51 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-17 12:54:51 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-09-17 12:54:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-17 12:54:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-09-17 12:54:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-23 11:06:14 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:06:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:06:20 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-23 11:06:20 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-23 11:06:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:06:21 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 11:06:21 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 24.018 seconds (process running for 24.662)
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-23 11:06:26 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.

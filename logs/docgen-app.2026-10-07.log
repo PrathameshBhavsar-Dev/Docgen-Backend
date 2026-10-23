@@ -1,0 +1,245 @@
+2026-10-07 16:45:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-07 16:45:12 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 11544 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-07 16:45:12 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-07 16:45:12 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-07 16:45:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-07 16:45:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-07 16:45:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-07 16:45:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2026-10-07 16:45:13 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-07 16:45:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-07 16:45:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-07 16:45:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-07 16:45:13 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1282 ms
+2026-10-07 16:45:13 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-07 16:45:13 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-07 16:45:14 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-07 16:45:14 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-07 16:45:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-07 16:45:15 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@346bbc8
+2026-10-07 16:45:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-07 16:45:15 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-07 16:45:15 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-07 16:45:15 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-07 16:45:17 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-07 16:45:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07 16:45:28 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-07 16:45:28 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-07 16:45:29 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-07 16:45:29 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-07 16:45:29 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 17.826 seconds (process running for 18.399)
+2026-10-07 16:45:35 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-07 16:45:35 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-07 16:45:35 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07 16:45:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-07 16:45:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-07 16:54:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-07 16:54:01 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 20940 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-07 16:54:01 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-07 16:54:01 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-07 16:54:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-07 16:54:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-07 16:54:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-07 16:54:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2026-10-07 16:54:02 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-07 16:54:02 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-07 16:54:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-07 16:54:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-07 16:54:02 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1255 ms
+2026-10-07 16:54:02 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-07 16:54:02 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-07 16:54:02 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-07 16:54:03 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-07 16:54:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-07 16:54:03 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d007442
+2026-10-07 16:54:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-07 16:54:04 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-07 16:54:04 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-07 16:54:04 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-07 16:54:05 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-07 16:54:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07 16:54:11 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-07 16:54:11 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-07 16:54:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-07 16:54:13 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-07 16:54:13 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 12.48 seconds (process running for 13.022)
+2026-10-07 16:54:26 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-07 16:54:26 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-07 16:54:26 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-07 16:54:26 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 16:54:28 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 16:55:42 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5d007442 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:56:00 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@457e95b9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:56:00 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@784c0d59 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:57:47 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@324f16a2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:57:57 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@eb4fae2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:59:22 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 16:59:22 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a03408 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:59:22 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6b9c98c0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 16:59:23 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 16:59:25 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 16:59:25 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - GET /api/v2/users/315 - Fetch request received
+2026-10-07 16:59:25 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=315 | requestedBy=6a82a98a13421d60d7e0e553
+2026-10-07 16:59:26 [http-nio-8080-exec-3] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=315 | employeeId=SMDS0411
+2026-10-07 16:59:26 [http-nio-8080-exec-3] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=315 | timeTaken=180ms
+2026-10-07 16:59:26 [http-nio-8080-exec-3] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=315
+2026-10-07 16:59:26 [http-nio-8080-exec-3] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=315, employeeName=Shrikant Nandkumar Gelewar, employeeId=SMDS0411, email=shrikantgelewar@gmail.com, mobileNo=8788293446, joiningDesignation=Consultant, currentDesignation=Consultant, department=IT, company=SMDS, identity=MR, pfType=WITH_PF, accountNo=2601422122606742, bankName=AU Bank, currentAddress=AddressOne,B22-202, Gahunje ,PCMC,Pune-412101, permanentAddress=At Post - Mukutban Tq-Zari Jamani District-Yavatmal, joiningCTC=1300008.0, currentCTC=1300008.0, dateOfBirth=1994-09-07, offerDate=2025-07-30, joiningDate=2025-08-04, lastWorkingDate=null, panNo=BFPPG0252P, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-07, endMonth=2026-09}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-07-30, probationPeriod=30})})
+2026-10-07 16:59:26 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 16:59:26 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - GET /api/v2/users/315 - Fetch request received
+2026-10-07 16:59:26 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=315 | requestedBy=6a82a98a13421d60d7e0e553
+2026-10-07 16:59:26 [http-nio-8080-exec-4] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=315 | employeeId=SMDS0411
+2026-10-07 16:59:26 [http-nio-8080-exec-4] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=315 | timeTaken=163ms
+2026-10-07 16:59:26 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=315
+2026-10-07 16:59:26 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=315, employeeName=Shrikant Nandkumar Gelewar, employeeId=SMDS0411, email=shrikantgelewar@gmail.com, mobileNo=8788293446, joiningDesignation=Consultant, currentDesignation=Consultant, department=IT, company=SMDS, identity=MR, pfType=WITH_PF, accountNo=2601422122606742, bankName=AU Bank, currentAddress=AddressOne,B22-202, Gahunje ,PCMC,Pune-412101, permanentAddress=At Post - Mukutban Tq-Zari Jamani District-Yavatmal, joiningCTC=1300008.0, currentCTC=1300008.0, dateOfBirth=1994-09-07, offerDate=2025-07-30, joiningDate=2025-08-04, lastWorkingDate=null, panNo=BFPPG0252P, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=true, data={startMonth=2026-07, endMonth=2026-09}), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2025-07-30, probationPeriod=30})})
+2026-10-07 17:00:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c3af6cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:01:11 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a42d9da (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:01:16 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@57ccc4a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:02:49 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a00bc2f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:03:13 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19fabc78 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:04:34 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@117aa98b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:05:07 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63111fdc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:06:23 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3d1099f5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:06:56 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5aa5ca8f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:08:20 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@8478f51 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:08:50 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@43b81217 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:10:09 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d17dcdb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:10:41 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1362792f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:11:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e3dd70c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:12:32 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31cc5273 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:13:51 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55194937 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:14:25 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@88f3fda (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:15:32 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2163946e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:16:09 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@162e3038 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:17:32 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7433fa79 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:17:50 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@150fcee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:19:13 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55945e11 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:19:39 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70e19169 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:21:08 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45f33b24 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:21:32 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4ae0cc99 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:22:48 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 17:22:49 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - PATCH /api/v2/users/315 - Update request received for employeeId=SMDS0411
+2026-10-07 17:22:49 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Update payload: CreateProfileRequest(employeeName=Shrikant Nandkumar Gelewar, email=shrikantgelewar@gmail.com, mobileNo=8788293446, employeeId=SMDS0411, joiningDesignation=Consultant, currentDesignation=Consultant, department=IT, currentAddress=AddressOne,B22-202, Gahunje ,PCMC,Pune-412101, permanentAddress=At Post - Mukutban Tq-Zari Jamani District-Yavatmal, accountNo=2601422122606742, bankName=AU Bank, joiningCTC=1300008.0, currentCTC=1300008.0, dateOfBirth=1994-09-07, offerDate=2025-07-30, joiningDate=2025-08-04, lastWorkingDate=2024-08-04, panNo=BFPPG0252P, company=SMDS, pfType=WITH_PF, identity=MR, documents=[SALARY_SLIP, OFFER_LETTER], documentData={OFFER_LETTER={issueDate=2025-07-30, probationPeriod=30}, SALARY_SLIP={startMonth=2026-07, endMonth=2026-09, salaryWorkdays={2026-07=31, 2026-08=31, 2026-09=30}}})
+2026-10-07 17:22:49 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3b011b3c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:22:49 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@65f87794 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:22:49 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - Updating user profile | userId=315 | employeeId=SMDS0411 | requestedBy=6a82a98a13421d60d7e0e553
+2026-10-07 17:22:50 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - Existing user fetched | userId=315 | oldEmployeeId=SMDS0411
+2026-10-07 17:22:50 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - Updating documents | userId=315
+2026-10-07 17:22:50 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - User profile updated successfully | userId=315 | timeTaken=341ms
+2026-10-07 17:22:50 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile updated successfully for userId=315, employeeId=SMDS0411
+2026-10-07 17:23:49 [http-nio-8080-exec-1] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 17:23:49 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@667486d6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:23:49 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4722e8ef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:23:49 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b054b9c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 17:23:55 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 17:23:59 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 17:24:03 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 17:24:03 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users/280 - Fetch request received
+2026-10-07 17:24:03 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=280 | requestedBy=6a82a98a13421d60d7e0e553
+2026-10-07 17:24:03 [http-nio-8080-exec-8] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=280 | employeeId=PENDING
+2026-10-07 17:24:03 [http-nio-8080-exec-8] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=280 | timeTaken=387ms
+2026-10-07 17:24:03 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=280
+2026-10-07 17:24:03 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=280, employeeName=Pranjal Supekar, employeeId=PENDING, email=pranjalsupekar91@gmail.com, mobileNo=9075799816, joiningDesignation=Application and Production support, currentDesignation=Application and Production support, department=IT, company=NCSS, identity=MR, pfType=WITH_PF, accountNo=2601235010788517, bankName=AU Bank, currentAddress=house no -5 near by Samarth dairy, Colony Road Number 3, Bhosari, Pimpri Chinchwad, Pune, Maharashtra, 411039, permanentAddress=Vadner Khurd Tal:Shirur Dist :Pune, joiningCTC=600000.0, currentCTC=15000.0, dateOfBirth=2001-12-29, offerDate=2024-01-18, joiningDate=2024-01-25, lastWorkingDate=null, panNo=OLZPS8966K, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=PAID, endDate=2021-12-12, issueDate=2020-12-12, startDate=2020-12-12}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-09-30, relievingDate=2026-09-30}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2026-10-06, totalDaysInMonth=30, month=2026-10, issueDate=2026-10-06, resignationDate=2026-10-06, paidDays=15, leavingDate=2026-10-06}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-09-30, relievingDate=2026-09-30}), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-18, probationPeriod=3})})
+2026-10-07 17:24:03 [http-nio-8080-exec-7] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 17:24:03 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/280 - Fetch request received
+2026-10-07 17:24:03 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - Fetching user profile for edit | userId=280 | requestedBy=6a82a98a13421d60d7e0e553
+2026-10-07 17:24:04 [http-nio-8080-exec-7] DEBUG c.e.D.service.impl.UserServiceImpl - User found | userId=280 | employeeId=PENDING
+2026-10-07 17:24:04 [http-nio-8080-exec-7] INFO  c.e.D.service.impl.UserServiceImpl - User profile fetched successfully | userId=280 | timeTaken=562ms
+2026-10-07 17:24:04 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=280
+2026-10-07 17:24:04 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=280, employeeName=Pranjal Supekar, employeeId=PENDING, email=pranjalsupekar91@gmail.com, mobileNo=9075799816, joiningDesignation=Application and Production support, currentDesignation=Application and Production support, department=IT, company=NCSS, identity=MR, pfType=WITH_PF, accountNo=2601235010788517, bankName=AU Bank, currentAddress=house no -5 near by Samarth dairy, Colony Road Number 3, Bhosari, Pimpri Chinchwad, Pune, Maharashtra, 411039, permanentAddress=Vadner Khurd Tal:Shirur Dist :Pune, joiningCTC=600000.0, currentCTC=15000.0, dateOfBirth=2001-12-29, offerDate=2024-01-18, joiningDate=2024-01-25, lastWorkingDate=null, panNo=OLZPS8966K, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=true, data={internshipType=PAID, endDate=2021-12-12, issueDate=2020-12-12, startDate=2020-12-12}), EXPERIENCE_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-09-30, relievingDate=2026-09-30}), FULL_AND_FINAL=DocumentResponseDTO(generated=true, data={fnfDate=2026-10-06, totalDaysInMonth=30, month=2026-10, issueDate=2026-10-06, resignationDate=2026-10-06, paidDays=15, leavingDate=2026-10-06}), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2026-09-30, relievingDate=2026-09-30}), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2024-01-18, probationPeriod=3})})
+2026-10-07 17:25:01 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-07 17:25:02 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-07 17:25:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07 17:25:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-07 17:25:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-07 18:36:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-07 18:36:44 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 27028 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-07 18:36:44 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-07 18:36:44 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-07 18:36:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-07 18:36:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-07 18:36:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-07 18:36:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2026-10-07 18:36:47 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-07 18:36:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-07 18:36:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-07 18:36:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-07 18:36:47 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3106 ms
+2026-10-07 18:36:47 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-07 18:36:47 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-07 18:36:47 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-07 18:36:48 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-07 18:36:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-07 18:36:50 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b87fc8b
+2026-10-07 18:36:50 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-07 18:36:52 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-07 18:36:52 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-07 18:36:52 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-07 18:36:53 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-07 18:37:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07 18:37:00 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-07 18:37:00 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-07 18:37:02 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-07 18:37:02 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-07 18:37:02 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 20.222 seconds (process running for 21.523)
+2026-10-07 18:37:30 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-07 18:37:30 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-07 18:37:30 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-07 18:37:31 [http-nio-8080-exec-3] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:37:31 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b87fc8b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:37:31 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6b3f02a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:37:31 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d34635f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:37:32 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:39:21 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@218e7ff3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:39:26 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@10653f1f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:39:27 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41a180bc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:40:41 [http-nio-8080-exec-8] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:40:42 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@46fd5674 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:40:42 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ac89c77 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:40:43 [http-nio-8080-exec-9] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:42:30 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@32055500 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:42:31 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@8066860 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:42:36 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45efbdbc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:42:36 [http-nio-8080-exec-4] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:42:37 [http-nio-8080-exec-5] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:43:56 [http-nio-8080-exec-10] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:43:56 [http-nio-8080-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@550c159 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:43:56 [http-nio-8080-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@418a5f76 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-07 18:43:58 [http-nio-8080-exec-2] INFO  c.e.Docgen_Backend.config.JwtFilter - JWT validated successfully for userId=6a82a98a13421d60d7e0e553
+2026-10-07 18:44:04 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-07 18:44:04 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-07 18:44:04 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-07 18:44:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-07 18:44:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

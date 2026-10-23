@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -21,10 +22,13 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
-@RequiredArgsConstructor
 public class SecurityConfig {
 
     private final JwtFilter jwtFilter;
+
+    public SecurityConfig(JwtFilter jwtFilter) {
+        this.jwtFilter = jwtFilter;
+    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http)
@@ -47,8 +51,11 @@ public class SecurityConfig {
                         .requestMatchers("/api/user/**")
                         .hasAnyRole("USER", "ADMIN")
 
+                        .requestMatchers(HttpMethod.GET, "/api/v2/vendors/**").hasAnyRole("ADMIN", "USER")
+                        .requestMatchers("/api/v2/vendors/**").hasAnyRole("ADMIN")
+
                         // GOOGLE FORM IMPORT
-                        .requestMatchers("/api/v2/users/import-form")
+                        .requestMatchers("/api/v2/users/import-form", "/api/v2/vendor-profiles/import-form")
                         .permitAll()
 
                         .requestMatchers("/api/v2/auth/login", "/api/v2/auth/refresh", "/api/v2/auth/logout")

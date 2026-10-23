@@ -1,0 +1,1109 @@
+2026-10-16 00:13:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-16 00:13:13 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 12144 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-16 00:13:13 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-16 00:13:13 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-16 00:13:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-16 00:13:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-16 00:13:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 00:13:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2026-10-16 00:13:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 00:13:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-10-16 00:13:15 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-16 00:13:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-16 00:13:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-16 00:13:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-16 00:13:15 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2048 ms
+2026-10-16 00:13:15 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-16 00:13:15 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-16 00:13:15 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-16 00:13:16 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 00:13:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-16 00:13:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f259286
+2026-10-16 00:13:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-16 00:13:17 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 00:13:17 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 00:13:17 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 00:13:19 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 00:13:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 00:13:29 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-16 00:13:29 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 00:13:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-16 00:13:29 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-16 00:13:29 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 00:13:29 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 00:13:29 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 00:13:29 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 00:13:35 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 00:13:35 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16 00:13:37 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-16 00:13:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-16 00:13:47 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-16 00:13:47 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 34.539 seconds (process running for 35.585)
+2026-10-16 00:14:18 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-16 00:14:18 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-16 00:14:18 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 95 ms
+2026-10-16 00:14:18 [http-nio-8080-exec-3] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-16 00:14:18 [http-nio-8080-exec-4] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-16 00:15:02 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@61ba5eeb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:15:04 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@690fda69 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:15:05 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f259286 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:15:14 [http-nio-8080-exec-9] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-16 00:15:14 [http-nio-8080-exec-10] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-16 00:15:20 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6cbaf7b4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:16:41 [http-nio-8080-exec-3] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-16 00:16:41 [http-nio-8080-exec-4] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-16 00:16:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a719ca5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:16:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ae131cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:18:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b685dde (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:18:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a1009a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:20:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3db8ec40 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:20:24 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6fcb9f30 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:20:30 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2febcbb0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:22:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f7c247b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:22:07 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14477135 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:23:05 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@203e4bd3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:23:05 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d10f318 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:23:15 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - GET /api/v2/users/346 - Fetch request received
+2026-10-16 00:23:15 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=346
+2026-10-16 00:23:15 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=346, employeeName=Zaid Mustafa Balure, employeeId=PENDING, email=zaidbalure@gmail.com, mobileNo=9699005148, joiningDesignation=Account Receivable Executive, currentDesignation=Account Receivable Executive, department=IT, company=DSS, identity=MR, pfType=WITHOUT_PF, accountNo=072891900025310, bankName=Yes Bank, currentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, permanentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, joiningCTC=315000.0, currentCTC=320000.0, dateOfBirth=2004-12-11, offerDate=2024-10-06, joiningDate=2024-10-07, lastWorkingDate=2026-04-30, panNo=GTLPB7422P, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-10-16 00:23:15 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - GET /api/v2/users/346 - Fetch request received
+2026-10-16 00:23:15 [http-nio-8080-exec-6] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=346
+2026-10-16 00:23:15 [http-nio-8080-exec-6] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=346, employeeName=Zaid Mustafa Balure, employeeId=PENDING, email=zaidbalure@gmail.com, mobileNo=9699005148, joiningDesignation=Account Receivable Executive, currentDesignation=Account Receivable Executive, department=IT, company=DSS, identity=MR, pfType=WITHOUT_PF, accountNo=072891900025310, bankName=Yes Bank, currentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, permanentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, joiningCTC=315000.0, currentCTC=320000.0, dateOfBirth=2004-12-11, offerDate=2024-10-06, joiningDate=2024-10-07, lastWorkingDate=2026-04-30, panNo=GTLPB7422P, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=false, data=null), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=false, data=null)})
+2026-10-16 00:24:28 [http-nio-8080-exec-4] INFO  c.e.D.controller.UserController - PATCH /api/v2/users/346 - Update request received for employeeId=PENDING
+2026-10-16 00:24:28 [http-nio-8080-exec-4] DEBUG c.e.D.controller.UserController - Update payload: CreateProfileRequest(employeeName=Zaid Mustafa Balure, email=zaidbalure@gmail.com, mobileNo=9699005148, employeeId=PENDING, joiningDesignation=Account Receivable Executive, currentDesignation=Account Receivable Executive, department=IT, currentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, permanentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, accountNo=072891900025310, bankName=Yes Bank, joiningCTC=315000.0, currentCTC=320000.0, dateOfBirth=2004-12-11, offerDate=2024-10-06, joiningDate=2024-10-07, lastWorkingDate=2026-04-30, panNo=GTLPB7422P, company=DSS, pfType=WITHOUT_PF, identity=MR, documents=[SALARY_SLIP, OFFER_LETTER, INCREMENT_LETTER], documentData={OFFER_LETTER={issueDate=2024-10-06, probationPeriod=3}, INCREMENT_LETTER={issueDate=2025-04-01}, SALARY_SLIP={startMonth=2026-01, endMonth=2026-03, salaryWorkdays={2026-01=31, 2026-02=28, 2026-03=31}}})
+2026-10-16 00:24:28 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@449941c4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:24:28 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@705b2f8e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:24:28 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@49e73a81 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:24:28 [http-nio-8080-exec-4] ERROR c.e.D.e.GlobalExceptionHandler - Invalid input: Please enter the actual Employee ID
+2026-10-16 00:24:28 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Please enter the actual Employee ID]
+2026-10-16 00:25:13 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - PATCH /api/v2/users/346 - Update request received for employeeId=DSS147
+2026-10-16 00:25:13 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Update payload: CreateProfileRequest(employeeName=Zaid Mustafa Balure, email=zaidbalure@gmail.com, mobileNo=9699005148, employeeId=DSS147, joiningDesignation=Account Receivable Executive, currentDesignation=Account Receivable Executive, department=IT, currentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, permanentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, accountNo=072891900025310, bankName=Yes Bank, joiningCTC=315000.0, currentCTC=320000.0, dateOfBirth=2004-12-11, offerDate=2024-10-06, joiningDate=2024-10-07, lastWorkingDate=2026-04-30, panNo=GTLPB7422P, company=DSS, pfType=WITHOUT_PF, identity=MR, documents=[SALARY_SLIP, OFFER_LETTER, INCREMENT_LETTER], documentData={OFFER_LETTER={issueDate=2024-10-06, probationPeriod=3}, INCREMENT_LETTER={issueDate=2025-04-01}, SALARY_SLIP={startMonth=2026-01, endMonth=2026-03, salaryWorkdays={2026-01=31, 2026-02=28, 2026-03=31}}})
+2026-10-16 00:25:13 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23067c29 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:25:13 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15daa2ae (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:25:14 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile updated successfully for userId=346, employeeId=DSS147
+2026-10-16 00:26:36 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - PATCH /api/v2/users/346 - Update request received for employeeId=DSS05203
+2026-10-16 00:26:36 [http-nio-8080-exec-5] DEBUG c.e.D.controller.UserController - Update payload: CreateProfileRequest(employeeName=Zaid Mustafa Balure, email=zaidbalure@gmail.com, mobileNo=9699005148, employeeId=DSS05203, joiningDesignation=Account Receivable Executive, currentDesignation=Account Receivable Executive, department=IT, currentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, permanentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, accountNo=072891900025310, bankName=Yes Bank, joiningCTC=315000.0, currentCTC=320000.0, dateOfBirth=2004-12-11, offerDate=2024-10-06, joiningDate=2024-10-07, lastWorkingDate=2026-04-30, panNo=GTLPB7422P, company=DSS, pfType=WITHOUT_PF, identity=MR, documents=[SALARY_SLIP, OFFER_LETTER, INCREMENT_LETTER], documentData={OFFER_LETTER={issueDate=2024-10-06, probationPeriod=3}, INCREMENT_LETTER={issueDate=2025-04-01}, SALARY_SLIP={startMonth=2026-01, endMonth=2026-03, salaryWorkdays={2026-01=31, 2026-02=28, 2026-03=31}}})
+2026-10-16 00:26:36 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a7a2c3b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:26:36 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50cd6922 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:26:36 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c95ceb7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:26:37 [http-nio-8080-exec-5] INFO  c.e.D.controller.UserController - Profile updated successfully for userId=346, employeeId=DSS05203
+2026-10-16 00:28:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@209842ac (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:28:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f2b83ff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:28:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@604a9df6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:30:09 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63246b28 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:30:10 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4412ae13 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:31:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f6fc646 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:32:10 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@467eb5e2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:33:48 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6014051 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:33:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e674103 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:35:30 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a152934 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:35:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ac81d18 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:37:22 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@289f396c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:37:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45755b65 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:38:50 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - PATCH /api/v2/users/346 - Update request received for employeeId=DSS05203
+2026-10-16 00:38:50 [http-nio-8080-exec-1] DEBUG c.e.D.controller.UserController - Update payload: CreateProfileRequest(employeeName=Zaid Mustafa Balure, email=zaidbalure@gmail.com, mobileNo=9699005148, employeeId=DSS05203, joiningDesignation=Account Receivable Executive, currentDesignation=Account Receivable Executive, department=IT, currentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, permanentAddress=Kalewadi, Pawana Nagar, Colony Room No 3, Room No 1, Pune Maharashtra, accountNo=072891900025310, bankName=Yes Bank, joiningCTC=315000.0, currentCTC=320000.0, dateOfBirth=2004-12-11, offerDate=2024-10-06, joiningDate=2024-10-07, lastWorkingDate=2026-04-30, panNo=GTLPB7422P, company=DSS, pfType=WITHOUT_PF, identity=MR, documents=[SALARY_SLIP, OFFER_LETTER, INCREMENT_LETTER, RELIEVING_LETTER, EXPERIENCE_LETTER], documentData={OFFER_LETTER={issueDate=2024-10-06, probationPeriod=3}, INCREMENT_LETTER={issueDate=2025-04-01}, EXPERIENCE_LETTER={relievingDate=2026-04-30, issueDate=2026-04-30}, RELIEVING_LETTER={relievingDate=2026-04-30, issueDate=2026-04-30}, SALARY_SLIP={startMonth=2026-01, endMonth=2026-03, salaryWorkdays={2026-01=31, 2026-02=28, 2026-03=31}}})
+2026-10-16 00:38:50 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e7cc23c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:38:50 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@541be89 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:38:50 [http-nio-8080-exec-1] INFO  c.e.D.controller.UserController - Profile updated successfully for userId=346, employeeId=DSS05203
+2026-10-16 00:40:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39842503 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:40:30 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a06723a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:40:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2547a66c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:42:19 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ceb525d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:42:40 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3de9da52 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:44:08 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1fde9225 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:44:39 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62ffa914 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:45:53 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1afe0a6b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:46:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a9f4daf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:47:51 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@662a7b8e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:48:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3c9de707 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:49:32 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69fa0769 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-16 00:49:48 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-16 00:49:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-16 11:21:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-16 11:21:05 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 11720 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-16 11:21:05 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-16 11:21:05 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-16 11:21:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-16 11:21:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-16 11:21:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 11:21:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
+2026-10-16 11:21:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 11:21:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-10-16 11:21:06 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-16 11:21:06 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-16 11:21:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-16 11:21:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-16 11:21:06 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1327 ms
+2026-10-16 11:21:06 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-16 11:21:06 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-16 11:21:06 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-16 11:21:07 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 11:21:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-16 11:21:08 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5039a583
+2026-10-16 11:21:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-16 11:21:08 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 11:21:08 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 11:21:08 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 11:21:09 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 11:21:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 11:21:15 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-16 11:21:15 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 11:21:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-16 11:21:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-16 11:21:16 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 11:21:16 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 11:21:16 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 11:21:16 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 11:21:22 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 11:21:22 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16 11:21:22 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-16 11:21:23 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-16 11:21:23 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-16 11:21:23 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 19.2 seconds (process running for 20.0)
+2026-10-16 11:23:03 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@713dfdf8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:23:04 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5039a583 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:23:08 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2fa0e975 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:23:14 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@afc7aa8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:24:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31ec0344 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:25:03 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37ba87fa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:26:45 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e5efdb1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:26:50 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ddf5f2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:28:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b29894b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:28:45 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40bad7ea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:30:34 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@209f46bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:30:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e707b33 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:32:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2645bd03 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:32:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b03a55c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:34:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76c7fcec (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:34:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d6bd22d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-16 11:34:37 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-16 11:34:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-16 15:35:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-16 15:35:46 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 18100 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-16 15:35:46 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-16 15:35:46 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-16 15:35:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-16 15:35:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-16 15:35:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 15:35:47 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.ClassFormatError: Invalid method Code length 0 in class file com/example/Docgen_Backend/entity/UserProfile
+2026-10-16 15:35:47 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-16 15:35:47 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.ClassFormatError: Invalid method Code length 0 in class file com/example/Docgen_Backend/entity/UserProfile
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:138)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:120)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:536)
+	at java.base/java.lang.Class.forName(Class.java:515)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1298)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:544)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:492)
+	at org.springframework.data.core.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:264)
+	at org.springframework.data.core.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:328)
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55)
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:79)
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:93)
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:170)
+	at org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupport.registerBeanDefinitions(RepositoryBeanDefinitionRegistrarSupport.java:96)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromImportBeanDefinitionRegistrars$0(ConfigurationClassBeanDefinitionReader.java:422)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportBeanDefinitionRegistrars(ConfigurationClassBeanDefinitionReader.java:421)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:152)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:464)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.Docgen_Backend.DocgenBackendApplication.main(DocgenBackendApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+2026-10-16 15:36:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-16 15:36:43 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 14388 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-16 15:36:43 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-16 15:36:43 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-16 15:36:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-16 15:36:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-16 15:36:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 15:36:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2026-10-16 15:36:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 15:36:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-10-16 15:36:45 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-16 15:36:45 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-16 15:36:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-16 15:36:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-16 15:36:45 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2152 ms
+2026-10-16 15:36:45 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-16 15:36:45 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-16 15:36:45 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-16 15:36:46 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 15:36:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-16 15:36:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@523c8f03
+2026-10-16 15:36:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-16 15:36:49 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 15:36:49 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 15:36:49 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 15:36:51 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 15:36:59 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 15:36:59 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-16 15:36:59 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 15:36:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-16 15:37:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-16 15:37:00 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 15:37:00 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 15:37:00 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 15:37:00 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 15:37:07 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 15:37:07 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16 15:37:08 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-16 15:37:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-16 15:37:11 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-16 15:37:11 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 28.812 seconds (process running for 29.646)
+2026-10-16 15:38:32 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@523c8f03 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:38:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6d15ddda (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:38:54 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@187116bd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:39:15 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-16 15:39:15 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-16 15:39:15 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 34 ms
+2026-10-16 15:39:16 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27e76474 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:39:16 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@29ef80ae (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:39:34 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - GET /api/v2/users/350 - Fetch request received
+2026-10-16 15:39:35 [http-nio-8080-exec-7] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=350
+2026-10-16 15:39:35 [http-nio-8080-exec-7] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=350, employeeName=Anil Jejurkar, employeeId=SSS2428, email=aniljejurkar286@gmail.com, mobileNo=7448012826, joiningDesignation=Software Executive, currentDesignation=Software Test Engineer, department=IT, company=CTS, identity=MR, pfType=WITHOUT_PF, accountNo=40856070317, bankName=AU Small Finance Bank, currentAddress=Flat no 08, Shalimar Apt, near patel saw mill,  kaviltali, chiplun. 415605, permanentAddress=Flat no 08, Shalimar Apt, near patel saw mill,  kaviltali, chiplun. 415605, joiningCTC=350400.0, currentCTC=450000.0, dateOfBirth=1994-03-04, offerDate=2020-06-04, joiningDate=2020-06-12, lastWorkingDate=2023-01-23, panNo=CCRPA5069C, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2020-06-12, probationPeriod=30}), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2020-06-04, probationPeriod=30})})
+2026-10-16 15:39:35 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - GET /api/v2/users/350 - Fetch request received
+2026-10-16 15:39:35 [http-nio-8080-exec-8] INFO  c.e.D.controller.UserController - Profile fetched successfully for userId=350
+2026-10-16 15:39:35 [http-nio-8080-exec-8] DEBUG c.e.D.controller.UserController - Fetched profile data: UserProfileResponseDTO(id=350, employeeName=Anil Jejurkar, employeeId=SSS2428, email=aniljejurkar286@gmail.com, mobileNo=7448012826, joiningDesignation=Software Executive, currentDesignation=Software Test Engineer, department=IT, company=CTS, identity=MR, pfType=WITHOUT_PF, accountNo=40856070317, bankName=AU Small Finance Bank, currentAddress=Flat no 08, Shalimar Apt, near patel saw mill,  kaviltali, chiplun. 415605, permanentAddress=Flat no 08, Shalimar Apt, near patel saw mill,  kaviltali, chiplun. 415605, joiningCTC=350400.0, currentCTC=450000.0, dateOfBirth=1994-03-04, offerDate=2020-06-04, joiningDate=2020-06-12, lastWorkingDate=2023-01-23, panNo=CCRPA5069C, createdAt=null, documents={APPOINTMENT_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2020-06-12, probationPeriod=30}), INTERNSHIP_LETTER=DocumentResponseDTO(generated=false, data=null), EXPERIENCE_LETTER=DocumentResponseDTO(generated=false, data=null), FULL_AND_FINAL=DocumentResponseDTO(generated=false, data=null), CONFIRMATION_LETTER=DocumentResponseDTO(generated=false, data=null), INCREMENT_LETTER=DocumentResponseDTO(generated=false, data=null), RELIEVING_LETTER=DocumentResponseDTO(generated=false, data=null), SALARY_SLIP=DocumentResponseDTO(generated=false, data=null), COMPLETION_LETTER=DocumentResponseDTO(generated=false, data=null), OFFER_LETTER=DocumentResponseDTO(generated=true, data={issueDate=2020-06-04, probationPeriod=30})})
+2026-10-16 15:40:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27caabff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:40:57 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5feb98e1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:41:12 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1cd365cb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:42:48 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3d7d0da8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:43:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39a8714a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:44:47 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2795ce75 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:44:58 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76873f07 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:46:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@920524a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:46:56 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33d58180 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:48:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@46cf318e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:48:51 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a8f20e5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:50:13 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4cbf4023 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:50:30 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@618142c9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:52:13 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ec762e3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:52:34 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@110686d4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:53:49 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6044cc43 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:54:31 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f2343e3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:55:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@476f4473 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:56:22 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a8a8ced (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:57:25 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@bbeb411 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:58:03 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35cb9b21 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 15:59:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@438f693 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:00:02 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ae877c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:00:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7dda8680 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:01:41 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48724f6d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:02:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@74a8a67c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:03:27 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d8c40f6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:04:40 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f44a50a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:05:22 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c61fa8f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:06:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2bfbec31 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:07:07 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77b8bdee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:08:16 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69ae7130 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:08:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b2612a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:09:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@182405e7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:10:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@627d918 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:11:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@725a8f55 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:12:25 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1e0ca304 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:13:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3fe26b79 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:14:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38a49704 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:15:12 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2e96c0ea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:15:45 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2981bc99 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:17:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d4434d0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:17:38 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3435eec0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:18:56 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64d24d9d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:19:17 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48208e90 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:20:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@366be9b0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:20:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6857b69a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:22:27 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5eb01fb0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:22:37 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50d61a2b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:24:14 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4343fcd4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:24:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@22bee522 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:25:57 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62e190ca (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:26:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3835d257 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:27:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b2de018 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:28:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6d52e4df (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:29:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e0543c9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:29:57 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56bea684 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:31:24 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ab805da (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:31:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@53d5b182 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:33:10 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f0e3105 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:33:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@245c70dc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:34:58 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ce50892 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:35:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d98b7a1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:36:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@67c02f8c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:37:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4af89519 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:38:25 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@172bf76b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:39:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2320a717 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:40:15 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12a498d4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:41:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6c43ca74 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:42:10 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@65364d77 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:43:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33ac2399 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:43:50 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27e8abb0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:45:13 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@467a14b3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:45:37 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@44467066 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:47:13 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@42b1612 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:47:15 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5af0d4a4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:48:58 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5aa949c4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:49:13 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39b228f6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:50:37 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@754c0c8a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:51:12 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@29738e0a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:52:27 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b8ac7c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:53:04 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@464c205a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:54:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38b96a87 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:54:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3b115eaf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:55:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27d731d8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:56:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4dbdbf8f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:57:51 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b0fdd88 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:58:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@542d8a19 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 16:59:30 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77ddf97f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:00:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5bd65cb7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:01:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5db46de8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:02:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4cf955a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-16 17:02:47 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-16 17:02:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-16 17:53:59 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-16 17:53:59 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 22196 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-16 17:53:59 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-16 17:53:59 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-16 17:53:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-16 17:53:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-16 17:54:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 17:54:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+2026-10-16 17:54:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16 17:54:00 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-10-16 17:54:01 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-16 17:54:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-16 17:54:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-16 17:54:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-16 17:54:01 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1395 ms
+2026-10-16 17:54:01 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-16 17:54:01 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-16 17:54:01 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-16 17:54:01 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 17:54:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-16 17:54:02 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2dc718a1
+2026-10-16 17:54:02 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-16 17:54:02 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 17:54:02 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 17:54:02 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 17:54:03 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 17:54:10 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 17:54:10 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-16 17:54:10 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16 17:54:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-16 17:54:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-16 17:54:10 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-16 17:54:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-16 17:54:10 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16 17:54:10 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16 17:54:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 17:54:17 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16 17:54:18 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-16 17:54:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-16 17:54:19 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-16 17:54:19 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 20.791 seconds (process running for 21.498)
+2026-10-16 17:55:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-16 17:55:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-16 17:55:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+2026-10-16 17:55:20 [http-nio-8080-exec-6] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendor-profiles for request '/vendor-profiles'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-16 17:55:20 [http-nio-8080-exec-5] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-16 17:55:20 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.]
+2026-10-16 17:55:20 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendor-profiles for request '/vendor-profiles'.]
+2026-10-16 17:55:20 [http-nio-8080-exec-8] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-16 17:55:20 [http-nio-8080-exec-7] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendor-profiles for request '/vendor-profiles'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-16 17:55:20 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.]
+2026-10-16 17:55:20 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendor-profiles for request '/vendor-profiles'.]
+2026-10-16 17:55:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@475e9711 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:55:53 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2dc718a1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:56:00 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5576f482 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:56:09 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63407b5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:57:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5fe73a27 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:57:47 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@43006b82 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:59:33 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@238af975 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 17:59:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@66077681 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 18:01:10 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52ae495f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 18:01:36 [http-nio-8080-exec-1] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-16 18:01:36 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.]
+2026-10-16 18:01:36 [http-nio-8080-exec-3] ERROR c.e.D.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.Docgen_Backend.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-16 18:01:36 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource vendors for request '/vendors'.]
+2026-10-16 18:01:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c404430 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-16 18:02:11 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-16 18:02:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
