@@ -1,0 +1,940 @@
+2026-10-23 11:05:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 11:05:58 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 30264 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:05:58 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:05:58 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:05:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 11:05:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:05:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:05:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:05:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:05:59 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1479 ms
+2026-10-23 11:06:00 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-23 11:06:00 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-23 11:06:00 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-23 11:06:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:06:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-23 11:06:01 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@59413cd6
+2026-10-23 11:06:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-23 11:06:02 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:06:02 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:06:02 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 11:06:03 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:06:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:06:13 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-23 11:06:13 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:06:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-23 11:06:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-23 11:06:14 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:06:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:06:14 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 11:06:14 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:06:19 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:06:20 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-23 11:06:20 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-23 11:06:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:06:21 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 11:06:21 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 24.018 seconds (process running for 24.662)
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-23 11:06:26 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-23 11:06:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-23 11:50:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 11:50:14 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 16696 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:50:14 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:50:14 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:50:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 11:50:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 11:50:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:50:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:50:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:50:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2026-10-23 11:50:17 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:50:17 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:50:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:50:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:50:18 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3055 ms
+2026-10-23 11:50:18 [restartedMain] ERROR o.s.b.t.s.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtFilter' defined in file [E:\DocGen New Front\Docgen-Backend\target\classes\com\example\Docgen_Backend\config\JwtFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+2026-10-23 11:50:18 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-23 11:50:18 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-10-23 11:50:18 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-23 11:50:18 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.Docgen_Backend.DocgenBackendApplication.main(DocgenBackendApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:408)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:166)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 11 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter' defined in file [E:\DocGen New Front\Docgen-Backend\target\classes\com\example\Docgen_Backend\config\JwtFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4416)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:435)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 56 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'JWT_SECRET' in value "${JWT_SECRET}" <-- "${security.jwt.secret-key}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:959)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1672)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	... 68 common frames omitted
+2026-10-23 11:50:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 11:50:28 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 32568 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:50:28 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:50:28 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:50:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 11:50:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 11:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:50:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2026-10-23 11:50:31 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:50:31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:50:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:50:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:50:31 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3056 ms
+2026-10-23 11:50:32 [restartedMain] ERROR o.s.b.t.s.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtFilter' defined in file [E:\DocGen New Front\Docgen-Backend\target\classes\com\example\Docgen_Backend\config\JwtFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+2026-10-23 11:50:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-23 11:50:32 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-10-23 11:50:32 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-23 11:50:32 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.Docgen_Backend.DocgenBackendApplication.main(DocgenBackendApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:408)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:166)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 11 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter' defined in file [E:\DocGen New Front\Docgen-Backend\target\classes\com\example\Docgen_Backend\config\JwtFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4416)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:435)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 56 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'JWT_SECRET' in value "${JWT_SECRET}" <-- "${security.jwt.secret-key}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:959)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1672)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	... 68 common frames omitted
+2026-10-23 11:51:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 11:51:16 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 14312 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:51:16 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:51:16 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:51:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 11:51:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 11:51:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:51:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:51:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:51:17 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-10-23 11:51:19 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:51:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:51:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:51:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:51:19 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2336 ms
+2026-10-23 11:51:19 [restartedMain] ERROR o.s.b.t.s.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtFilter' defined in file [E:\DocGen New Front\Docgen-Backend\target\classes\com\example\Docgen_Backend\config\JwtFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+2026-10-23 11:51:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-23 11:51:19 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-10-23 11:51:19 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-23 11:51:19 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.Docgen_Backend.DocgenBackendApplication.main(DocgenBackendApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:408)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:166)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 11 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtFilter' defined in file [E:\DocGen New Front\Docgen-Backend\target\classes\com\example\Docgen_Backend\config\JwtFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4416)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:435)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtUtil': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 56 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'JWT_SECRET' in value "${JWT_SECRET}" <-- "${security.jwt.secret-key}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:959)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1672)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	... 68 common frames omitted
+2026-10-23 11:52:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 11:52:30 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 13404 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:52:30 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:52:30 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:52:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 11:52:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 11:52:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:52:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:52:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:52:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-10-23 11:52:31 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:52:31 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:52:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:52:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:52:31 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1810 ms
+2026-10-23 11:52:31 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-23 11:52:32 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-23 11:52:32 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-23 11:52:32 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:52:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-23 11:52:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3898a8a0
+2026-10-23 11:52:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-23 11:52:33 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:52:33 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:52:33 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 11:52:35 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:52:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:52:45 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-23 11:52:45 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:52:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-23 11:52:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-23 11:52:46 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:52:46 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:52:46 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 11:52:46 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:52:52 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:52:53 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-23 11:52:53 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-23 11:52:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:52:55 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 11:52:55 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 26.431 seconds (process running for 27.54)
+2026-10-23 11:54:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 11:54:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-23 11:54:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2026-10-23 11:54:05 [http-nio-8080-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3898a8a0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:54:05 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@59d3c9a2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:54:05 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@895cd22 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:54:06 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f48886a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:54:06 [http-nio-8080-exec-5] WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-23 11:54:39 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33ec4f38 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:54:39 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@403e4020 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:55:46 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@345a9d7e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:55:49 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1be899bc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:55:49 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@beddaa8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:55:49 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e17522a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:57:24 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 18 class path changes (0 additions, 0 deletions, 18 modifications)
+2026-10-23 11:57:24 [Thread-1] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-23 11:57:24 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:57:24 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-23 11:57:24 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:57:24 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:57:24 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-23 11:57:24 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-23 11:57:24 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:57:24 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-23 11:57:24 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-23 11:57:24 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 13404 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 11:57:24 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 11:57:24 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 11:57:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:57:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 11:57:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 683 ms
+2026-10-23 11:57:25 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-23 11:57:25 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-23 11:57:25 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:57:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-23 11:57:26 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bf6f6cc
+2026-10-23 11:57:26 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-23 11:57:26 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:57:26 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:57:26 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 11:57:26 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:57:32 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 11:57:32 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-23 11:57:32 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 11:57:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-23 11:57:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-23 11:57:32 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 11:57:32 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 11:57:32 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 11:57:32 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 11:57:40 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 11:57:40 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-23 11:57:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 11:57:41 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 11:57:41 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 16.391 seconds (process running for 313.368)
+2026-10-23 11:57:41 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-10-23 11:59:10 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6bf6f6cc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:59:22 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c7174f1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 11:59:25 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d4270dc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:01:01 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@75890a3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:01:16 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f21139a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:03:01 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7ac24454 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:03:14 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64251fcf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:04:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@559a58bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:04:57 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@719522d0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:06:51 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ef57048 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:06:52 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7048aa09 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:08:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28938572 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:08:37 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@692d18db (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:10:17 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c00ff15 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:10:24 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3b76eaec (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:11:54 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@613f7e98 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:12:05 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@675b4e9c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:13:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 12:13:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-23 12:13:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 63 ms
+2026-10-23 12:13:43 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6415d853 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:13:43 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62ee7782 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:14:02 [http-nio-8080-exec-10] WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-23 12:15:24 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21fe96b3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:15:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4002f6d0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:15:41 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51d0d770 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:15:55 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27ba1bac (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:16:16 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6529e1d3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:16:16 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b36211b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:17:53 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@781fa02b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:18:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f8ffcef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:18:08 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@161f3338 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:19:51 [http-nio-8080-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@54d66b2e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:19:51 [http-nio-8080-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c60f939 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:20:30 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19ec5378 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:20:30 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f039b6b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:21:12 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55771cc3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:21:12 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50e7a687 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:21:12 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56fdbe6b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:21:50 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3133b1b5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:21:50 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c4f4613 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:23:39 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34bd14 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:23:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1571f2f2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:23:50 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5fe15bdd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:25:32 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a829fb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:25:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6c48abfe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:26:55 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7091048f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:26:55 [http-nio-8080-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14ab5464 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:27:24 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27e50497 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:28:04 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3db6b7d9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:28:04 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3a6463c0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:28:04 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@10e37a51 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:28:55 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c42c924 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:29:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5452a290 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:29:49 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3a7c1bea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:31:35 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13c24000 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:31:41 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5d4981ac (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:33:15 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@673e012 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:33:19 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6caecf92 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:34:16 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3d9a1c21 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:34:16 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@458d547 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:36:05 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@688f25e1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:36:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@571380bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:37:48 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5cea83e3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:38:02 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f56d425 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:39:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52d968d0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:39:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@735613fc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:41:05 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@716a0488 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:41:05 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5580dc55 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:42:49 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9672b17 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:42:53 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a38b508 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:43:04 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2400b2b6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:44:38 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19b29440 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:44:51 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@332e7283 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:46:23 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21bc905b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:46:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21e481ef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:48:17 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@401213af (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:48:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56181195 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-23 12:50:07 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-23 12:50:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-23 14:15:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 14:15:40 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 27492 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 14:15:40 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 14:15:40 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 14:15:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 14:15:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 14:15:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 14:15:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2026-10-23 14:15:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 14:15:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-10-23 14:15:42 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 14:15:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 14:15:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 14:15:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 14:15:42 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1758 ms
+2026-10-23 14:15:42 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-23 14:15:42 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-23 14:15:42 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-23 14:15:43 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 14:15:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-23 14:15:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3898a8a0
+2026-10-23 14:15:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-23 14:15:44 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 14:15:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 14:15:45 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 14:15:46 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 14:15:52 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 14:15:52 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-23 14:15:52 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 14:15:52 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-23 14:15:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-23 14:15:53 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 14:15:53 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 14:15:53 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 14:15:54 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 14:16:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 14:16:00 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-23 14:16:01 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-23 14:16:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 14:16:03 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 14:16:03 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 24.088 seconds (process running for 25.037)
+2026-10-23 14:17:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 14:17:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-23 14:17:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-10-23 14:17:08 [http-nio-8080-exec-6] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-23 14:17:08 [http-nio-8080-exec-4] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-23 14:17:08 [http-nio-8080-exec-7] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-23 14:17:08 [http-nio-8080-exec-8] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-23 14:17:21 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3898a8a0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:17:23 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a9bd15a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:17:42 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1315ca8f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:17:44 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e7c17a5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:19:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1ac87e36 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:19:40 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23218dc2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:01 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@42d68fcd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:12 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2553f7a0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:19 [http-nio-8080-exec-2] WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-23 14:21:58 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b23ced1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:58 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@513b91fa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:58 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2fdfed11 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:58 [http-nio-8080-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a3ffb7d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:21:58 [http-nio-8080-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a8ef4e0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:23:37 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@323775f0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:23:37 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@fe6c3cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:23:37 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b48496d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:23:38 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2226264e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:25:19 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1877aac3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:25:20 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@54847cd5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:25:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@466d7fc1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:25:38 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f01175d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:27:03 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6b123cfd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:27:33 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ac6f79f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:28:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@30c1da09 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:29:20 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35b078cf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:30:32 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36ff1bab (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:30:58 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50fa0ad9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:32:31 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12032a50 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:32:41 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@272696d3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:34:20 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a34ef3d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:34:27 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69ac206e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:36:09 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@357469dd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:36:20 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3af4b770 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:38:03 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@157280e4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:38:05 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2229a0d8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:39:58 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@505b87ed (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:39:59 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@225c0d78 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:41:02 [http-nio-8080-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e0871cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:41:02 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@576d3a92 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:42:56 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d1c468b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:42:58 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2f79048b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:43:02 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ab57efe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:43:46 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a60e5a6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:43:46 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6bb921ab (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:45:25 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c7aa80 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:45:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21f6bbb8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:45:36 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d52d6fa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:46:01 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7460e539 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:46:01 [http-nio-8080-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c3bfd80 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:46:30 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18a22688 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:46:30 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15d32ab0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:46:30 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e49bf64 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:48:15 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c9b9818 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:48:23 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73da39b0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:48:25 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3bc111a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:50:01 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@75111f0f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:50:09 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c597a26 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:51:40 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5232efd8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:52:04 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77c6f5da (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:52:16 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28cf15ff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-23 14:53:08 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-23 14:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.
+2026-10-23 16:16:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-10-23 16:16:38 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Starting DocgenBackendApplication using Java 21.0.9 with PID 14596 (E:\DocGen New Front\Docgen-Backend\target\classes started by prath in E:\DocGen New Front\Docgen-Backend)
+2026-10-23 16:16:38 [restartedMain] DEBUG c.e.D.DocgenBackendApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-23 16:16:38 [restartedMain] INFO  c.e.D.DocgenBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 16:16:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-23 16:16:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-23 16:16:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 16:16:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2026-10-23 16:16:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23 16:16:38 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-10-23 16:16:39 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 16:16:39 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 16:16:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 16:16:39 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-23 16:16:39 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1720 ms
+2026-10-23 16:16:39 [restartedMain] DEBUG c.e.Docgen_Backend.config.JwtFilter - Filter 'jwtFilter' configured for use
+2026-10-23 16:16:40 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: main]
+2026-10-23 16:16:40 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-23 16:16:40 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 16:16:40 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Starting...
+2026-10-23 16:16:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - main-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fa901b
+2026-10-23 16:16:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Start completed.
+2026-10-23 16:16:44 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 16:16:45 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 16:16:45 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 16:16:46 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 16:16:53 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 16:16:53 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: vendor]
+2026-10-23 16:16:53 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23 16:16:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Starting...
+2026-10-23 16:16:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Start completed.
+2026-10-23 16:16:53 [restartedMain] WARN  org.hibernate.orm.jdbc - HHH100045: Could not obtain connection metadata: java.sql.SQLSyntaxErrorException: Unknown column 'RESERVED' in 'WHERE'
+2026-10-23 16:16:53 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-23 16:16:53 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23 16:16:54 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23 16:16:59 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 16:16:59 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-23 16:17:00 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-23 16:17:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 16:17:03 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 16:17:03 [restartedMain] INFO  c.e.D.DocgenBackendApplication - Started DocgenBackendApplication in 26.477 seconds (process running for 27.483)
+2026-10-23 16:17:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 16:17:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-23 16:17:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-10-23 16:17:26 [http-nio-8080-exec-3] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-23 16:17:26 [http-nio-8080-exec-4] WARN  c.e.Docgen_Backend.config.JwtFilter - Invalid JWT token
+2026-10-23 16:17:55 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4fa901b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:17:55 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50a0499 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:18:30 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6bb3e739 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:19:41 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@617aa57c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:19:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50d141a6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:19:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1555a33 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:21:33 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19f62a5a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:21:35 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@72850a99 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:23:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51b27d7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:23:20 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6adff97a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:24:56 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@674183a5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:25:02 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64c832dd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:26:46 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1afeea30 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:26:49 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45ef7c72 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:27:44 [http-nio-8080-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@472358a5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:27:44 [http-nio-8080-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2f4e5368 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:27:46 [http-nio-8080-exec-9] WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-23 16:28:11 [http-nio-8080-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4582135b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:11 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36c3d882 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:11 [http-nio-8080-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@524bf7e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:12 [http-nio-8080-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f3d516b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:51 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ca50bbe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:51 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20645022 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:51 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e247cec (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:28:52 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c9774a4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:30:30 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c079e63 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:30:43 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56b5bd3a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:30:46 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@614b8c49 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:32:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28b32887 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:32:27 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@68cff28e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:34:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3aa19432 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:34:11 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e5761c8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:36:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@491bb30e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:36:06 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f5d8df3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:36:45 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@67debd1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:36:45 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4082db8d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:38:27 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ae1ecf1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:38:33 [vendor-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - vendor-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15270c4e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:38:40 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c3985c3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:40:03 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a8b44d2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:40:21 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41cadb33 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:41:49 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b48096b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:42:04 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2790d23f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:43:29 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3c958094 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:43:56 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@91763b4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:45:21 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70c06aeb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:45:44 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50301e07 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:46:59 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d4122b4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:47:28 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3924c279 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:48:55 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f067e78 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:49:18 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38997c2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:50:39 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7ad196d1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:50:58 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@246b7663 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:52:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@32acbc67 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:52:57 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1bf9c45d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:54:26 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@669ffb7b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:54:49 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24ae1010 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:56:07 [main-pool:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - main-pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35493211 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-23 16:56:22 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'vendor'
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown initiated...
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - vendor-pool - Shutdown completed.
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'main'
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown initiated...
+2026-10-23 16:56:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - main-pool - Shutdown completed.

@@ -30,6 +30,7 @@ public class MainDbConfig {
             @Value("${spring.datasource.username}") String username,
             @Value("${spring.datasource.password}") String password,
             @Value("${spring.datasource.driver-class-name}") String driver) {
+        NetProbe.probe(url);
         HikariDataSource ds = new HikariDataSource();
         ds.setJdbcUrl(url);
         ds.setUsername(username);
